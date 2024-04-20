@@ -5,12 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gameflix</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
     <script defer type="text/javascript" src="./js/index.js"></script>
+    <script defer type="text/javascript" src="./js/srcript.js"></script>
 </head>
 
 <body>
-    <h1>Gameflix</h1>
+    <main>
+        <div class="container">
+            <h1 class="title-2">Catalogos de jogos</h1>
+            <h2 class="title-4">Produtos</h2>
+            <p class="text-1">Lista de jogos</p>
+            <div class="card">
+                <div class="lineInput">
+                    <label>Nome do Jogo</label>
+                    <input type="text" id="jogo" placeholder="nome do jogo">
+                </div>
+                <div class="lineInput">
+                    <label>Descrição do jogo</label>
+                    <input type="text" id="descricao" placeholder="valor do jogo">
+                </div>
+                <div class="content-btn">
+                    <button id="save" onclick="jogo.salvar()" class="btn btn-add">Salvar</button>
+                    <button id="cancel" class="btn btn-remove">Cancelar</button>
+                </div>
+            </div>
+            <div class="content">
+                <table border="1">
+                    <thead>
+                        <th class="center">ID</th>
+                        <th>Jogo</th>
+                        <th>Valor</th>
+                        <th class="center">Ações</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

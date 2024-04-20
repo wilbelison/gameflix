@@ -1,0 +1,65 @@
+.card{
+    background-color: #000;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.lineInput{
+    display: grid;
+    margin-bottom: 16px;
+}
+
+label{
+    color:#fff;
+    padding-bottom: 6px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    outline: 0;
+    background-color: rgb(45, 45, 45);
+    color:#fff;
+    text-align: left;
+}
+
+.content-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 8px;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #888888;
+    width: 100%;
+}
+
+table th{
+    background-color: rgb(180, 180, 180);
+}
+table th, td{
+    text-align: left;
+    padding: 4px 5px;
+
+}
+table td{
+    background-color: rgb(228, 228, 228);
+}
+table td img{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+}
+
+.center{
+    text-align: center;
+}
