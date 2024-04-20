@@ -1,5 +1,6 @@
 class game {
   constructor(title, description, plataforms, release, players, genres, publisher, languages, poster, video){
+    this.id = Math.random();
     this.title = title;
     this.description = description;
     this.plataforms = plataforms;
