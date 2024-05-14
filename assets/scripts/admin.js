@@ -45,9 +45,9 @@ class Jogo {
 
       // Cria botões de edição e exclusão para cada jogo
       let imgEdit = document.createElement("img");
-      imgEdit.src = "imgs/edit.png";
+      imgEdit.src = "./assets/images/icon-edit.png";
       let imgDelete = document.createElement("img");
-      imgDelete.src = "imgs/delete.png";
+      imgDelete.src = "./assets/images/icon-delete.png";
       imgDelete.setAttribute(
         "onclick",
         `jogo.deletar(${this.arrayJogos[i].id})`
