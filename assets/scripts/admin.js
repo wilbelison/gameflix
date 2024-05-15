@@ -1,8 +1,8 @@
 class Jogo {
   constructor() {
-    // Inicializa o ID e a lista de jogos
-    this.id = 0;
-    this.arrayJogos = [];
+    // Inicializa o ID e a lista de jogos e utiliza localStorage para armazenar as informações
+    this.id = localStorage.getItem("id") ? localStorage.getItem("id") : 0;
+    this.arrayJogos = localStorage.getItem("arrayJogos") ? JSON.parse(localStorage.getItem("arrayJogos")) : [];
   }
 
   // Método para salvar um novo jogo
@@ -23,6 +23,9 @@ class Jogo {
 
   // Método para listar os jogos na tabela HTML
   listaTabela() {
+    localStorage.setItem("id", this.id);
+    localStorage.setItem("arrayJogos", JSON.stringify(this.arrayJogos));
+
     // Obtém a referência ao corpo da tabela
     let tbody = document.getElementById("tbody");
     // Limpa o conteúdo atual da tabela
@@ -101,7 +104,8 @@ class Jogo {
   // Método para deletar um jogo da lista
   deletar(id) {
     // Filtra os jogos, removendo o jogo com o ID especificado
-    this.arrayJogos = this.arrayJogos.filter((jogo) => jogo.id !== id);
+    this.arrayJogos = this.arrayJogos.filter((jogo) => parseInt(jogo.id) !== parseInt(id));
+    console.log(id);
     // Atualiza a tabela na página com a lista atualizada de jogos
     this.listaTabela();
   }
@@ -109,3 +113,6 @@ class Jogo {
 
 // Cria uma nova instância da classe Jogo
 let jogo = new Jogo();
+
+// Se tiver jogos salvos no localStorage vai listar assim que carrega a página
+jogo.listaTabela();
