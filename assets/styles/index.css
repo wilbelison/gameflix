@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row-container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0;
+}
+
+.row-wrapper {
+    overflow-x: auto;
+}
+
+.row-items {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.row-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.row-control:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.row-arrow-left {
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+}
+
+.row-arrow-right {
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.row-item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.5;
+}
