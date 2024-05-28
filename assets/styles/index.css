@@ -66,7 +66,11 @@ html {
   height: 250px;
   flex-shrink: 0;
   opacity: 0.5;
-  transition: all 200ks;
+  transition: all 200ms;
+}
+
+.row-item:hover {
+  opacity: 0.8;
 }
 
 .row-current-item {

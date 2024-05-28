@@ -69,40 +69,48 @@
 // console.log(games);
 // console.log(games[0].title);
 
-const rowControls = document.querySelectorAll(".row-control");
-let rowCurrentItem = 0;
-const rowItems = document.querySelectorAll(".row-item");
-const rowMaxItems = rowItems.length - 1;
+const applyRowControls = (e) => {
+  const controls = e.querySelectorAll(".row-control");
+  const items = e.querySelectorAll(".row-item");
+  const maxItems = items.length - 1;
+  console.log(maxItems);
 
-rowItems.forEach((item, key) => {
-  item.addEventListener("click", (event) => {
-    rowItems.forEach((item) => {
-      item.classList.remove("row-current-item");
-    });
-    rowItems[key].classList.add("row-current-item");
-    rowItems[key].scrollIntoView({
-      inline: "center",
-      behavior: "smooth",
+  let currentItem = 0;
+
+  items.forEach((item, key) => {
+    item.addEventListener("click", (event) => {
+      items.forEach((item) => {
+        item.classList.remove("row-current-item");
+      });
+      items[key].classList.add("row-current-item");
+      items[key].scrollIntoView({
+        inline: "center",
+        behavior: "smooth",
+      });
+      currentItem = key;
     });
   });
-});
 
-rowControls.forEach((control) => {
-  control.addEventListener("click", (event) => {
-    const controlClassLeft = event.target.classList.value.search("left") != -1;
-    if (rowCurrentItem > 0 && controlClassLeft) {
-      rowCurrentItem--;
-    } else if (rowCurrentItem < rowMaxItems && !controlClassLeft) {
-      rowCurrentItem++;
-    }
-    console.log(rowCurrentItem);
-    rowItems.forEach((item) => {
-      item.classList.remove("row-current-item");
+  controls.forEach((control) => {
+    control.addEventListener("click", (e) => {
+      const isLeft = e.target.classList.value.search("left") != -1;
+      if (currentItem > 0 && isLeft) {
+        currentItem--;
+      } else if (currentItem < maxItems && !isLeft) {
+        currentItem++;
+      }
+      items[currentItem].scrollIntoView({
+        inline: "center",
+        behavior: "smooth",
+      });
+      items.forEach((item) => {
+        item.classList.remove("row-current-item");
+      });
+      items[currentItem].classList.add("row-current-item");
     });
-    rowItems[rowCurrentItem].scrollIntoView({
-      inline: "center",
-      behavior: "smooth",
-    });
-    rowItems[rowCurrentItem].classList.add("row-current-item");
   });
+};
+
+document.querySelectorAll(".row-container").forEach((e) => {
+  applyRowControls(e);
 });
