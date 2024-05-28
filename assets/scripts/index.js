@@ -72,7 +72,20 @@
 const rowControls = document.querySelectorAll(".row-control");
 let rowCurrentItem = 0;
 const rowItems = document.querySelectorAll(".row-item");
-const rowMaxItems = rowItems.length -1;
+const rowMaxItems = rowItems.length - 1;
+
+rowItems.forEach((item, key) => {
+  item.addEventListener("click", (event) => {
+    rowItems.forEach((item) => {
+      item.classList.remove("row-current-item");
+    });
+    rowItems[key].classList.add("row-current-item");
+    rowItems[key].scrollIntoView({
+      inline: "center",
+      behavior: "smooth",
+    });
+  });
+});
 
 rowControls.forEach((control) => {
   control.addEventListener("click", (event) => {
