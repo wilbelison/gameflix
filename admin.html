@@ -13,7 +13,7 @@
 <body>
     <main>
         <div class="container">
-            <h1 class="title-2">Catalogos de jogos</h1>
+            <h1 class="title-2">Catálogo de jogos</h1>
             <h2 class="title-4">Produtos</h2>
             <p class="text-1">Lista de jogos</p>
             <div class="card">
@@ -23,25 +23,42 @@
                 </div>
                 <div class="lineInput">
                     <label>Descrição do jogo</label>
-                    <input type="text" id="descricao" placeholder="valor do jogo">
+                    <input type="text" id="descricao" placeholder="descrição do jogo">
+                </div>
+                <div class="lineInput">
+                    <label>Imagem do jogo (URL)</label>
+                    <input type="text" id="imagem" placeholder="URL da imagem">
+                </div>
+                <div class="lineInput">
+                    <label>Gênero</label>
+                    <input type="text" id="generos" placeholder="gêneros do jogo">
+                </div>
+                <div class="lineInput">
+                    <label>Plataforma</label>
+                    <input type="text" id="plataforma" placeholder="plataforma do jogo">
                 </div>
                 <div class="content-btn">
                     <button id="save" onclick="jogo.salvar()" class="btn btn-add">Salvar</button>
-                    <button id="cancel" class="btn btn-remove">Cancelar</button>
+                    <button id="cancel" class="btn btn-remove" onclick="jogo.cancelar()">Cancelar</button>
                 </div>
             </div>
             <div class="content">
                 <table border="1">
                     <thead>
-                        <th class="center">ID</th>
-                        <th>Jogo</th>
-                        <th>Valor</th>
-                        <th class="center">Ações</th>
+                        <tr>
+                            <th class="center">ID</th>
+                            <th>Jogo</th>
+                            <th>Descrição</th>
+                            <th>Imagem</th>
+                            <th>Gênero</th>
+                            <th>Plataforma</th>
+                            <th class="center">Ações</th>
+                        </tr>
                     </thead>
                     <tbody id="tbody">
-
                     </tbody>
                 </table>
+                <button onclick="jogo.exportarJSON()" class="btn btn-export">Exportar JSON</button>
             </div>
         </div>
     </main>
