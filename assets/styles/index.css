@@ -1,11 +1,182 @@
+/* Netflix Fonst */
+
+@font-face {
+  font-family: nf-icon;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/nf-icon-v1-93.eot);
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/nf-icon-v1-93.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/nf-icon-v1-93.woff)
+      format("woff"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/nf-icon-v1-93.ttf)
+      format("truetype"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/nf-icon-v1-93.svg#nf-icon-v1-93)
+      format("svg");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+/* Defaults */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  background-color: #333;
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #141414;
+  color: #e5e5e5;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Header & Nav */
+
+.header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  padding: 0 56px;
+  background-color: transparent; /* #141414 */
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  margin-right: 25px;
+  width: 150px;
+  height: 34px;
+}
+
+.logo a,
+.logo a:hover,
+.logo a:active,
+.logo a:visited {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e50914;
+}
+
+.logo img {
+  background-size: contain;
+  width: 100%;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:active,
+.nav a:visited {
+  font-size: 14px;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+.nav a:hover {
+  color: #b3b3b3;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('https://occ-0-1308-185.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWTjAWDdV6aTSH4otLdQEiCNtEzhy6uMiGLELPCt9iRfUU997DpyXPusOQx2iw4VMjkNvb1gbjTlKJVMzrnxYoDcLoomMw5v57RD.webp?r=cbf');
+}
+
+/* rows */
+
+.row {
+  margin: 25px 0;
+}
+
+#row-0 {
+  margin-top: -200px;
 }
 
 .row-container {
@@ -37,7 +208,7 @@ html {
   top: 0;
   bottom: 0;
   font-size: 20px;
-  line-height: 250px;
+  line-height: 100%;
   width: 60px;
   text-align: center;
   color: #fff;
@@ -62,8 +233,6 @@ html {
 }
 
 .row-item {
-  width: 250px;
-  height: 250px;
   flex-shrink: 0;
   opacity: 0.5;
   transition: all 200ms;

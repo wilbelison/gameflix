@@ -73,7 +73,6 @@ const applyRowControls = (e) => {
   const controls = e.querySelectorAll(".row-control");
   const items = e.querySelectorAll(".row-item");
   const maxItems = items.length - 1;
-  console.log(maxItems);
 
   let currentItem = 0;
 
