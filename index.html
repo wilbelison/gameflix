@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script
       defer
       type="text/javascript"
@@ -13,167 +14,128 @@
     <title>Gameflix</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header transparent">
       <h1 class="logo">
         <a href="/" title="Gameflix"
           ><img src="./assets/images/logo-gameflix.svg" alt="Gameflix"
         /></a>
       </h1>
       <ul class="nav">
-        <li><a href="#row-0" title="Continue Playing">Continue Playing</a></li>
-        <li><a href="#row-1" title="Top 10 Games">Top 10 Games</a></li>
-        <li><a href="#row-2" title="Nintendo Switch">Nintendo Switch</a></li>
-        <li><a href="#row-3" title="Playstation 5">Playstation 5</a></li>
-        <li><a href="#row-4" title="XBOX Series X|S">XBOX Series X|S</a></li>
-        <li><a href="./admin.html" class="admin" title="Admin">Admin</a></li>
+        <li>
+          <a href="#row-continue" title="Continue Playing">Continue Playing</a>
+        </li>
+        <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
+        <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
+        <li><a href="#row-megadrive" title="Mega Drive">Mega Drive</a></li>
+        <li><a href="#row-ps" title="Playstation">Playstation</a></li>
+        <li class="right">
+          <a href="./admin.html" class="admin" title="Admin">Admin</a>
+        </li>
       </ul>
     </div>
-    <div class="hero"></div>
+    <div class="hero">
+      <video
+        class="background-video"
+        autoplay
+        playsinline
+        muted
+        loop
+        preload
+        poster="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_600,q_auto,w_1000/v1/ncom/software/switch/70010000072957/Video/posters/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264"
+      >
+        <source
+          src="https://assets.nintendo.com/video/upload/br_3500k,c_limit,h_540,vc_h265,w_960/v1716497154/ncom/software/switch/70010000072957/Video/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264.m4s"
+        />
+      </video>
+      <div class="infos">
+        <h2 class="title">
+          <img
+            src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/05-May/Paper%20Mario%20TTYD/Animated/Ncom-CS-Desktop-PMTTYD-Logo"
+            alt="Paper Mario: The Thousand-Year Door"
+          />
+        </h2>
+        <div class="description">
+          Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o
+          que encontram são segredos, forças sobrenaturais e uma menina.
+        </div>
+        <button>Jogar</button>
+        <button>Mais informações</button>
+      </div>
+    </div>
 
-    <div class="row" id="row-0">
+    <div class="row" id="row-continue">
+      <script id="template-row" type="text/x-handlebars-template">
+        <h1 id="title">Characters</h1>
+        {{#if results}}
+          <div class="results">Page
+            <span class="page"></span>
+            of
+            {{info.pages}}
+            <span class="count">({{info.count}} characters)</span></div>
+          <div id="content" class="grid">
+            {{#each results}}
+              <div class="card">
+                <h3 clas="name">{{name}}</h3>
+                <img class="avatar" src="{{image}}" alt="{{name}}'s avatar" />
+                <ul class="infos">
+                  {{#if status}}
+                    <li><span class="label">Status</span> {{status}}</li>
+                  {{/if}}
+                  {{#if species}}
+                    <li><span class="label">Specie</span> {{species}}</li>
+                  {{/if}}
+                  {{#if type}}
+                    <li><span class="label">Subspecie</span> {{type}}</li>
+                  {{/if}}
+                  {{#if gender}}
+                    <li><span class="label">Gender</span> {{gender}}</li>
+                  {{/if}}
+                  {{#if origin.name}}
+                    <li><span class="label">Origin</span> {{origin.name}}</li>
+                  {{/if}}
+                  {{#if location.name}}
+                    <li><span class="label">Last known location</span>
+                      {{location.name}}</li>
+                  {{/if}}
+                  {{#if episode.length}}
+                    <li><span class="label">Episodes</span>
+                      {{episode.length}}</li>
+                  {{/if}}
+                </ul>
+              </div>
+            {{/each}}
+          </div>
+        {{else}}
+          <span class="results noresults">No results found</span>
+        {{/if}}
+      </script>
+    </div>
+
+    <div class="row" id="row-continue">
       <h2 class="row-title">Continue Playing</h2>
       <div class="row-container">
         <div class="row-wrapper">
           <div class="row-items">
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item row-current-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
+            <div class="row-item row-current-item">
+              <div class="row-card">
+                <div class="row-card-front">
+                  <img src="https://placehold.co/240x120" alt="" />
+                </div>
+                <div class="row-card-back">
+                  <h3 class="title">The Legend of Zelda: Breath of the Wild</h3>
+                  <p class="description">
+                    Um jogo de ação e aventura em mundo aberto.
+                  </p>
+                  <p class="genre">Ação, Aventura</p>
+                  <p class="plataform">Nintendo Switch</p>
+                </div>
+              </div>
+            </div>
           </div>
           <button class="row-control row-arrow-left">◄</button>
           <button class="row-control row-arrow-right">►</button>
         </div>
       </div>
-    </div>
-
-    <div class="row" id="row-1">
-      <h2 class="row-title">Top 10 Games</h2>
-      <div class="row-container">
-        <div class="row-wrapper">
-          <div class="row-items">
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item row-current-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-            <img
-              src="https://placehold.co/240x120?text=game"
-              alt=""
-              class="row-item"
-            />
-          </div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div style="width: 100px; height:  100px;">
-      <svg
-        id="rank-1"
-        width="100%"
-        height="100%"
-        viewBox="-20 0 70 154"
-        class="svg-icon svg-icon-rank-1 top-10-rank"
-      >
-        <path
-          stroke="#595959"
-          stroke-linejoin="square"
-          stroke-width="4"
-          d="M35.377 152H72V2.538L2 19.362v30.341l33.377-8.459V152z"
-        ></path>
-      </svg>
-      <img
-        src="https://occ-0-1308-185.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABaV7OnEMFPZUbyOF4uAfjFzi385CqYpIwumvCi0NJ2oBOOlQ60ys0xOr4ibFfCqP7Y30T3O90hdKJy9xLstuVTRq-owUK2EVYb-1D20NqG7wOmxXBsSWzOJ2rn0qg2J0zYkQ8X8WRDg2yRoO2SBiqZW4FxjUc6xwYt0eyMUtnNsDSy0q_PSBOhYWtQi1bDOOF28UN2fhvJP-JuXPB2lD7XUhw1Xr0g-mNdaIjw2OC7MN3G56SIAOM1GlEk532qumBq2EVdpmIKJUAr62CUQmr1dDQW13qauklFmr1Z5PsdLf0x43fBhCAc-s0Q.jpg?r=ce3"
-        alt="Bridgerton"
-        height="100%"
-      /> -->
     </div>
   </body>
 </html>
