@@ -60,81 +60,108 @@
           que encontram são segredos, forças sobrenaturais e uma menina.
         </div>
         <div class="buttons">
-          <button class="primary"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="PlayStandard" aria-hidden="true"><path d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z" fill="currentColor"></path></svg> Jogar</button>
-          <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="CircleIStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z" fill="currentColor"></path></svg> Mais informações</button>
+          <button class="primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              data-icon="PlayStandard"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            Jogar
+          </button>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              data-icon="CircleIStandard"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            Mais informações
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="row" id="row-continue">
-      <script id="template-row" type="text/x-handlebars-template">
-        <h1 id="title">Characters</h1>
-        {{#if results}}
-          <div class="results">Page
-            <span class="page"></span>
-            of
-            {{info.pages}}
-            <span class="count">({{info.count}} characters)</span></div>
-          <div id="content" class="grid">
-            {{#each results}}
-              <div class="card">
-                <h3 clas="name">{{name}}</h3>
-                <img class="avatar" src="{{image}}" alt="{{name}}'s avatar" />
-                <ul class="infos">
-                  {{#if status}}
-                    <li><span class="label">Status</span> {{status}}</li>
-                  {{/if}}
-                  {{#if species}}
-                    <li><span class="label">Specie</span> {{species}}</li>
-                  {{/if}}
-                  {{#if type}}
-                    <li><span class="label">Subspecie</span> {{type}}</li>
-                  {{/if}}
-                  {{#if gender}}
-                    <li><span class="label">Gender</span> {{gender}}</li>
-                  {{/if}}
-                  {{#if origin.name}}
-                    <li><span class="label">Origin</span> {{origin.name}}</li>
-                  {{/if}}
-                  {{#if location.name}}
-                    <li><span class="label">Last known location</span>
-                      {{location.name}}</li>
-                  {{/if}}
-                  {{#if episode.length}}
-                    <li><span class="label">Episodes</span>
-                      {{episode.length}}</li>
-                  {{/if}}
-                </ul>
-              </div>
-            {{/each}}
+    <script id="template-row" type="text/x-handlebars-template">
+      {{#each .}}
+      <div class="row-item">
+        <div class="row-card">
+          <div class="row-card-front">
+            <img src="{{imagem}}" alt="{{nomeJogo}}" />
           </div>
-        {{else}}
-          <span class="results noresults">No results found</span>
-        {{/if}}
-      </script>
-    </div>
+          <div class="row-card-back">
+            <h3 class="title">{{nomeJogo}}</h3>
+            <p class="description">{{descricao}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      {{#each .}}
+      <div class="row-item row-current-item">
+        <div class="row-card">
+          <div class="row-card-front">
+            <img src="{{imagem}}" alt="{{nomeJogo}}" />
+          </div>
+          <div class="row-card-back">
+            <h3 class="title">{{nomeJogo}}</h3>
+            <p class="description">{{descricao}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      {{#each .}}
+      <div class="row-item row-current-item">
+        <div class="row-card">
+          <div class="row-card-front">
+            <img src="{{imagem}}" alt="{{nomeJogo}}" />
+          </div>
+          <div class="row-card-back">
+            <h3 class="title">{{nomeJogo}}</h3>
+            <p class="description">{{descricao}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      {{#each .}}
+      <div class="row-item row-current-item">
+        <div class="row-card">
+          <div class="row-card-front">
+            <img src="{{imagem}}" alt="{{nomeJogo}}" />
+          </div>
+          <div class="row-card-back">
+            <h3 class="title">{{nomeJogo}}</h3>
+            <p class="description">{{descricao}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </script>
 
     <div class="row" id="row-continue">
       <h2 class="row-title">Continue Playing</h2>
       <div class="row-container">
         <div class="row-wrapper">
-          <div class="row-items">
-            <div class="row-item row-current-item">
-              <div class="row-card">
-                <div class="row-card-front">
-                  <img src="https://placehold.co/240x120" alt="" />
-                </div>
-                <div class="row-card-back">
-                  <h3 class="title">The Legend of Zelda: Breath of the Wild</h3>
-                  <p class="description">
-                    Um jogo de ação e aventura em mundo aberto.
-                  </p>
-                  <p class="genre">Ação, Aventura</p>
-                  <p class="plataform">Nintendo Switch</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row-items"></div>
           <button class="row-control row-arrow-left">◄</button>
           <button class="row-control row-arrow-right">►</button>
         </div>

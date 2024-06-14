@@ -1,3 +1,17 @@
+// handlebars reapeat function
+
+Handlebars.registerHelper("repeat", function (n, options) {
+  var out = "";
+  for (var i = 1; i < n + 1; ++i) out += options.fn(i);
+  return out;
+});
+
+const containerContinue = document.querySelector("#row-continue .row-items");
+
+const rowTemplate = Handlebars.compile(
+  document.querySelector("#template-row").innerHTML
+);
+
 fetch("./data/jogos.json")
   .then((response) => {
     if (!response.ok) {
@@ -5,7 +19,10 @@ fetch("./data/jogos.json")
     }
     return response.json();
   })
-  .then((data) => console.log(data))
+  .then((data) => {
+    containerContinue.innerHTML = rowTemplate(data);
+    console.log(data);
+  })
   .catch((error) => console.error(error));
 
 /* row controls */

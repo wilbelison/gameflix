@@ -27,12 +27,12 @@ body {
   height: 68px;
   padding: 0 4%;
   background-color: #141414ff;
-  background-image: linear-gradient(180deg, #141414, transparent);
+  background-image: linear-gradient(180deg, rgba(20, 20, 20, 1));
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  transition: background-color 0.5s;
+  transition: 0.5s background-color ease-in-out;
 }
 
 .header.transparent {
@@ -108,10 +108,18 @@ body {
 /* hero */
 
 .hero {
-  width: 100%;
-  height: 680px;
-  overflow: hidden;
   position: relative;
+  width: 100%;
+  min-height: 700px;
+}
+
+@keyframes flicker {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .hero .background-video-overlay {
@@ -131,21 +139,6 @@ body {
   z-index: 1;
   animation: flicker 100ms infinite;
 }
-.hero .video-overlay:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 70%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  z-index: 2;
-}
 
 .hero .background-video {
   width: 100%;
@@ -162,8 +155,8 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 20px;
-  position: absolute;
-  bottom: 120px;
+  position: relative;
+  top: 100px;
   left: 56px;
   width: 520px;
   z-index: 3;
@@ -175,8 +168,7 @@ body {
   font-size: 72px;
   color: #e5e5e5;
   line-height: 72px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
-  max-height: 320px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .hero .title img {
@@ -185,7 +177,7 @@ body {
 
 .hero .description {
   font-size: 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .hero .buttons {
@@ -194,7 +186,7 @@ body {
   flex-direction: row;
   gap: 15px;
   font-size: 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
 .hero button {
@@ -223,9 +215,6 @@ body {
 .hero button.primary:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
-
-
-
 
 /* rows */
 
@@ -298,12 +287,44 @@ body {
 }
 
 .row-card-front {
-  background-color: red;
+  background-color: #141414;
+}
+
+.row-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .row-card-back {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  background-color: #141414;
   transform: rotateY(180deg);
+  padding: 8px 16px;
+}
+
+.row-card-back .title {
+  display: block;
+  display: -webkit-box;
+  font-size: 16px;                 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+}
+
+.row-card-back .description {
+  display: -webkit-box;
+  font-size: 12px;                 
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 44px;
 }
 
 .row-control {
