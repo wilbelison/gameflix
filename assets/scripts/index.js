@@ -1,11 +1,3 @@
-// handlebars reapeat function
-
-Handlebars.registerHelper("repeat", function (n, options) {
-  var out = "";
-  for (var i = 1; i < n + 1; ++i) out += options.fn(i);
-  return out;
-});
-
 const containerContinue = document.querySelector("#row-continue .row-items");
 
 const rowTemplate = Handlebars.compile(
