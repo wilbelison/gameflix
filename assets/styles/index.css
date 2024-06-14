@@ -26,23 +26,23 @@ body {
   width: 100%;
   height: 68px;
   padding: 0 4%;
-  background-color: #141414;
+  background-color: #141414ff;
+  background-image: linear-gradient(180deg, #141414, transparent);
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  transition: all 0.5s;
+  transition: background-color 0.5s;
 }
 
 .header.transparent {
-  background-color: transparent;
+  background-color: #14141400;
   background-image: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.7) 10%,
     transparent
   );
 }
-
 
 .logo {
   margin: 0;
@@ -109,9 +109,42 @@ body {
 
 .hero {
   width: 100%;
-  height: 600px;
+  height: 680px;
   overflow: hidden;
   position: relative;
+}
+
+.hero .background-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  background-size: 100% 4px, 30px 100%;
+  z-index: 1;
+  animation: flicker 100ms infinite;
+}
+.hero .video-overlay:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 2;
 }
 
 .hero .background-video {
@@ -121,16 +154,89 @@ body {
   top: 0;
   padding: 0;
   object-fit: cover;
+  opacity: 0.4;
 }
+
+.hero .infos {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  bottom: 120px;
+  left: 56px;
+  width: 520px;
+  z-index: 3;
+  justify-content: flex-end;
+}
+
+.hero .title {
+  font-weight: 500;
+  font-size: 72px;
+  color: #e5e5e5;
+  line-height: 72px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+  max-height: 320px;
+}
+
+.hero .title img {
+  width: 100%;
+}
+
+.hero .description {
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.hero .buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.hero button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+.hero button.primary {
+  color: #000;
+  background-color: #fff;
+}
+
+.hero button.primary:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+
 
 /* rows */
 
-#row-0 {
-  margin-top: -100px;
+#row-continue {
+  margin-top: -80px;
 }
 
 .row {
+  position: relative;
   margin: 20px 0;
+  z-index: 1;
 }
 
 .row-title {

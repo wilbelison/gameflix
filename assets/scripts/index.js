@@ -8,6 +8,8 @@ fetch("./data/jogos.json")
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
 
+/* row controls */
+
 const applyRowControls = (e) => {
   const controls = e.querySelectorAll(".row-control");
   const items = e.querySelectorAll(".row-item");
@@ -52,6 +54,8 @@ const applyRowControls = (e) => {
 document.querySelectorAll(".row-container").forEach((e) => {
   applyRowControls(e);
 });
+
+/* header background change on scroll */
 
 const header = document.querySelector(".header");
 
