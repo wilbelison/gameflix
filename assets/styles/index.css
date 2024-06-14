@@ -253,6 +253,7 @@ body {
 }
 
 .row-items {
+  width: fit-content;
   display: flex;
   flex-flow: row nowrap;
   gap: 15px;
