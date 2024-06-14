@@ -110,7 +110,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 720px;
 }
 
 @keyframes flicker {
