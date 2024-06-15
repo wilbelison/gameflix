@@ -246,6 +246,10 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
+.hero button .icon-info .icon-path {
+  color: #fff;
+}
+
 /* rows */
 
 #row-continue {
@@ -298,8 +302,8 @@ body {
 
 .no-items {
   display: flex;
-  padding: 40px;
-  color: #ccc;
+  padding: 20px 56px;
+  color: #737373;
 }
 
 .row-card {
@@ -308,6 +312,12 @@ body {
   height: 100%;
   transform-style: preserve-3d;
   transition: 200ms all ease-in-out;
+}
+
+.row-item:hover,
+.row-current-item,
+.row-item:focus {
+  border: solid 2px #fff;
 }
 
 .row-item:hover .row-card {
