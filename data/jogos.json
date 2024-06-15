@@ -1,98 +1,98 @@
 [
   {
-    "id": 0,
-    "nomeJogo": "The Legend of Zelda: Breath of the Wild",
-    "descricao": "Um jogo de ação e aventura em mundo aberto.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
-    "generos": "Ação, Aventura",
-    "plataforma": "Nintendo Switch"
+    "nomeJogo": "Super Mario World",
+    "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "SNES",
+    "id": 0
   },
   {
-    "id": 1,
-    "nomeJogo": "God of War",
-    "descricao": "A jornada de Kratos e seu filho Atreus.",
-    "imagem": "https://cdn.dol.com.br/img/Artigo-Destaque/780000/640x360/GOW_00784214_0_-3.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F780000%2FGOW_00784214_0_.jpg%3Fxid%3D2485001&xid=2485001",
-    "generos": "Ação, Aventura",
-    "plataforma": "PlayStation 4"
+    "nomeJogo": "The Legend of Zelda: A Link to the Past",
+    "descricao": "Aventura épica de ação com Link em busca de salvar a terra de Hyrule.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%2C%20Europe%29%20%28Switch%20Online%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "SNES",
+    "id": 1
   },
   {
-    "id": 2,
-    "nomeJogo": "Minecraft",
-    "descricao": "Um jogo de construção em um mundo de blocos.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
-    "generos": "Sandbox, Aventura",
-    "plataforma": "Multiplataforma"
+    "nomeJogo": "Super Mario Kart",
+    "descricao": "Jogo de corrida com personagens da série Mario, com itens e atalhos.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20Kart%20%28USA%29.png",
+    "generos": "Corrida",
+    "plataforma": "SNES",
+    "id": 2
   },
   {
-    "id": 0,
-    "nomeJogo": "The Legend of Zelda: Breath of the Wild",
-    "descricao": "Um jogo de ação e aventura em mundo aberto.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
-    "generos": "Ação, Aventura",
-    "plataforma": "Nintendo Switch"
+    "nomeJogo": "Doom",
+    "descricao": "Jogo de tiro em primeira pessoa ambientado em Marte, enfrentando criaturas alienígenas.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Doom%20%28USA%29.png",
+    "generos": "FPS",
+    "plataforma": "SNES",
+    "id": 3
   },
   {
-    "id": 1,
-    "nomeJogo": "God of War",
-    "descricao": "A jornada de Kratos e seu filho Atreus.",
-    "imagem": "https://cdn.dol.com.br/img/Artigo-Destaque/780000/640x360/GOW_00784214_0_-3.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F780000%2FGOW_00784214_0_.jpg%3Fxid%3D2485001&xid=2485001",
-    "generos": "Ação, Aventura",
-    "plataforma": "PlayStation 4"
+    "nomeJogo": "Donkey Kong Country",
+    "descricao": "Aventura de plataforma com Donkey Kong e Diddy Kong em busca de tesouros de bananas.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "SNES",
+    "id": 4
   },
   {
-    "id": 2,
-    "nomeJogo": "Minecraft",
-    "descricao": "Um jogo de construção em um mundo de blocos.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
-    "generos": "Sandbox, Aventura",
-    "plataforma": "Multiplataforma"
+    "nomeJogo": "Chrono Trigger",
+    "descricao": "RPG com viagem no tempo para salvar o mundo, trilha sonora elogiada.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "SNES",
+    "id": 5
   },
   {
-    "id": 0,
-    "nomeJogo": "The Legend of Zelda: Breath of the Wild",
-    "descricao": "Um jogo de ação e aventura em mundo aberto.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
-    "generos": "Ação, Aventura",
-    "plataforma": "Nintendo Switch"
+    "nomeJogo": "Super Mario World 2: Yoshi’s Island\t",
+    "descricao": "Continuação do clássico, focando em Yoshi e bebês Mario.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "SNES",
+    "id": 6
   },
   {
-    "id": 1,
-    "nomeJogo": "God of War",
-    "descricao": "A jornada de Kratos e seu filho Atreus.",
-    "imagem": "https://cdn.dol.com.br/img/Artigo-Destaque/780000/640x360/GOW_00784214_0_-3.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F780000%2FGOW_00784214_0_.jpg%3Fxid%3D2485001&xid=2485001",
-    "generos": "Ação, Aventura",
-    "plataforma": "PlayStation 4"
+    "nomeJogo": "Super Castlevania IV",
+    "descricao": "Jogo de ação e aventura com temática de vampiros, onde você controla Simon Belmont.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Castlevania%20IV%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "SNES",
+    "id": 7
   },
   {
-    "id": 2,
-    "nomeJogo": "Minecraft",
-    "descricao": "Um jogo de construção em um mundo de blocos.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
-    "generos": "Sandbox, Aventura",
-    "plataforma": "Multiplataforma"
+    "nomeJogo": "Final Fantasy III no EUA",
+    "descricao": "Um dos melhores RPGs da era 16 bits, com uma história envolvente e personagens memoráveis.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20VI%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "SNES",
+    "id": 8
   },
   {
-    "id": 0,
-    "nomeJogo": "The Legend of Zelda: Breath of the Wild",
-    "descricao": "Um jogo de ação e aventura em mundo aberto.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
-    "generos": "Ação, Aventura",
-    "plataforma": "Nintendo Switch"
+    "nomeJogo": "Earthbound",
+    "descricao": "Uma aventura moderna e excêntrica, com elementos de humor e uma trilha sonora única.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "SNES",
+    "id": 9
   },
   {
-    "id": 1,
-    "nomeJogo": "God of War",
-    "descricao": "A jornada de Kratos e seu filho Atreus.",
-    "imagem": "https://cdn.dol.com.br/img/Artigo-Destaque/780000/640x360/GOW_00784214_0_-3.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F780000%2FGOW_00784214_0_.jpg%3Fxid%3D2485001&xid=2485001",
-    "generos": "Ação, Aventura",
-    "plataforma": "PlayStation 4"
+    "nomeJogo": "Secret of Mana",
+    "descricao": "Jogo cooperativo com gráficos coloridos e uma trilha sonora marcante.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Secret%20of%20Mana%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "SNES",
+    "id": 10
   },
   {
-    "id": 2,
-    "nomeJogo": "Minecraft",
-    "descricao": "Um jogo de construção em um mundo de blocos.",
-    "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
-    "generos": "Sandbox, Aventura",
-    "plataforma": "Multiplataforma"
+    "nomeJogo": "Mega Man X",
+    "descricao": "Ação e plataformas com o robô Mega Man X lutando contra Mavericks.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X%20%28USA%29.png",
+    "generos": "Ação/Plataforma",
+    "plataforma": "SNES",
+    "id": 11
   }
 ]

@@ -10,45 +10,27 @@ class Jogo {
     // Verifica se arrayJogos está vazio e inicializa com jogos padrão se necessário
     if (this.arrayJogos.length === 0) {
       this.inicializarJogos();
-      this.listaTabela(); // Adiciona esta linha para garantir que a tabela seja atualizada após inicializar os jogos
+    } else {
+      this.listaTabela();
     }
   }
 
   inicializarJogos() {
-    const jogosIniciais = [
-      {
-        id: 0,
-        nomeJogo: "The Legend of Zelda: Breath of the Wild",
-        descricao: "Um jogo de ação e aventura em mundo aberto.",
-        imagem:
-          "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
-        generos: "Ação, Aventura",
-        plataforma: "Nintendo Switch",
-      },
-      {
-        id: 1,
-        nomeJogo: "God of War",
-        descricao: "A jornada de Kratos e seu filho Atreus.",
-        imagem:
-          "https://cdn.dol.com.br/img/Artigo-Destaque/780000/640x360/GOW_00784214_0_-3.webp?fallback=https%3A%2F%2Fcdn.dol.com.br%2Fimg%2FArtigo-Destaque%2F780000%2FGOW_00784214_0_.jpg%3Fxid%3D2485001&xid=2485001",
-        generos: "Ação, Aventura",
-        plataforma: "PlayStation 4",
-      },
-      {
-        id: 2,
-        nomeJogo: "Minecraft",
-        descricao: "Um jogo de construção em um mundo de blocos.",
-        imagem:
-          "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
-        generos: "Sandbox, Aventura",
-        plataforma: "Multiplataforma",
-      },
-    ];
-
-    this.arrayJogos = jogosIniciais;
-    this.id = jogosIniciais.length;
-    localStorage.setItem("arrayJogos", JSON.stringify(this.arrayJogos));
-    localStorage.setItem("id", this.id);
+    fetch("./data/jogos.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Erro de rede - Código ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((jogosIniciais) => {
+        this.arrayJogos = jogosIniciais;
+        this.id = jogosIniciais.length;
+        localStorage.setItem("arrayJogos", JSON.stringify(this.arrayJogos));
+        localStorage.setItem("id", this.id);
+        this.listaTabela();
+      })
+      .catch((error) => console.error(error));
   }
 
   salvar() {
@@ -57,7 +39,7 @@ class Jogo {
       this.adicionar(jogo);
     }
     this.listaTabela();
-    this.cancelar();
+    this.limpar();
   }
 
   listaTabela() {
@@ -94,17 +76,25 @@ class Jogo {
       td_generos.innerText = this.arrayJogos[i].generos;
       td_plataforma.innerText = this.arrayJogos[i].plataforma;
 
+      let buttonEdit = document.createElement("button");
+      buttonEdit.setAttribute("onclick", `jogo.editar(${this.arrayJogos[i].id})`);
       let imgEdit = document.createElement("img");
       imgEdit.src = "./assets/images/icon-edit.png";
+      buttonEdit.appendChild(imgEdit);
+
+      let buttonDelete = document.createElement("button");
+      buttonDelete.setAttribute("onclick", `jogo.deletar(${this.arrayJogos[i].id})`);
       let imgDelete = document.createElement("img");
       imgDelete.src = "./assets/images/icon-delete.png";
-      imgDelete.setAttribute(
-        "onclick",
-        `jogo.deletar(${this.arrayJogos[i].id})`
-      );
+      buttonDelete.appendChild(imgDelete);
 
-      td_acao.appendChild(imgEdit);
-      td_acao.appendChild(imgDelete);
+      let actionButtons = document.createElement("div");
+      actionButtons.classList.add("buttons");
+
+      actionButtons.appendChild(buttonEdit);
+      actionButtons.appendChild(buttonDelete);
+
+      td_acao.appendChild(actionButtons);
     }
   }
 
@@ -149,7 +139,7 @@ class Jogo {
     return true;
   }
 
-  cancelar() {
+  limpar() {
     document.getElementById("jogo").value = "";
     document.getElementById("descricao").value = "";
     document.getElementById("imagem").value = "";
@@ -158,10 +148,17 @@ class Jogo {
   }
 
   deletar(id) {
-    this.arrayJogos = this.arrayJogos.filter(
-      (jogo) => parseInt(jogo.id) !== parseInt(id)
-    );
-    this.listaTabela();
+    let result = confirm(`Excluir o jogo ${this.arrayJogos[id].nomeJogo}?`);
+    if (result === true) {
+      this.arrayJogos = this.arrayJogos.filter(
+        (jogo) => parseInt(jogo.id) !== parseInt(id)
+      );
+      this.listaTabela();
+    }
+  }
+
+  editar(id) {
+    console.log(id);
   }
 
   exportarJSON() {
@@ -175,7 +172,14 @@ class Jogo {
     a.click();
     document.body.removeChild(a);
   }
+
+  restaurarJSON() {
+    let result = confirm("Restaurar o JSON inicial?");
+    if (result === true) {
+      localStorage.clear();
+      this.inicializarJogos();
+    }
+  }
 }
 
 let jogo = new Jogo();
-jogo.listaTabela();

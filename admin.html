@@ -39,7 +39,7 @@
                 </div>
                 <div class="content-btn">
                     <button id="save" onclick="jogo.salvar()" class="btn btn-add">Salvar</button>
-                    <button id="cancel" class="btn btn-remove" onclick="jogo.cancelar()">Cancelar</button>
+                    <button id="clean" class="btn btn-remove" onclick="jogo.limpar()">Limpar</button>
                 </div>
             </div>
             <div class="content">
@@ -58,7 +58,10 @@
                     <tbody id="tbody">
                     </tbody>
                 </table>
-                <button onclick="jogo.exportarJSON()" class="btn btn-export">Exportar JSON</button>
+                <div class="buttons">
+                    <button onclick="jogo.exportarJSON()" class="btn btn-add">Exportar JSON</button>
+                    <button onclick="jogo.restaurarJSON()" class="btn btn-remove">Restaurar JSON</button>
+                </div>
             </div>
         </div>
     </main>

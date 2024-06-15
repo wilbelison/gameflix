@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,20 +21,17 @@
         /></a>
       </h1>
       <ul class="nav">
-        <li>
-          <a href="#row-continue" title="Continue Playing">Continue Playing</a>
-        </li>
-        <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
         <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
-        <li><a href="#row-megadrive" title="Mega Drive">Mega Drive</a></li>
+        <li><a href="#row-md" title="Mega Drive">Mega Drive</a></li>
         <li><a href="#row-ps" title="Playstation">Playstation</a></li>
         <li class="right">
-          <a href="./admin.html" class="admin" title="Admin">Admin</a>
+          <a href="./admin.html" class="admin" title="Gerenciar jogos" target="_blank">Gerenciar jogos</a>
         </li>
       </ul>
     </div>
     <div class="hero">
       <div class="background-video-overlay"></div>
+      <div class="background-video-fade"></div>
       <video
         class="background-video"
         autoplay
@@ -103,6 +100,7 @@
     </div>
 
     <script id="template-row" type="text/x-handlebars-template">
+      {{#if .}}
       {{#each .}}
       <div class="row-item">
         <div class="row-card">
@@ -116,10 +114,46 @@
         </div>
       </div>
       {{/each}}
+      {{else}}
+        <div class="no-items">Nenhum jogo encontrado</div>
+      {{/if}}
     </script>
 
-    <div class="row" id="row-continue">
-      <h2 class="row-title">Continue Playing</h2>
+    <div class="row" id="row-snes">
+      <h2 class="row-title">Super Nintendo</h2>
+      <div class="row-container">
+        <div class="row-wrapper">
+          <div class="row-items"></div>
+          <button class="row-control row-arrow-left">◄</button>
+          <button class="row-control row-arrow-right">►</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="row-md">
+      <h2 class="row-title">Mega Drive</h2>
+      <div class="row-container">
+        <div class="row-wrapper">
+          <div class="row-items"></div>
+          <button class="row-control row-arrow-left">◄</button>
+          <button class="row-control row-arrow-right">►</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="row-ps">
+      <h2 class="row-title">Playstation</h2>
+      <div class="row-container">
+        <div class="row-wrapper">
+          <div class="row-items"></div>
+          <button class="row-control row-arrow-left">◄</button>
+          <button class="row-control row-arrow-right">►</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="row-teste">
+      <h2 class="row-title">Teste</h2>
       <div class="row-container">
         <div class="row-wrapper">
           <div class="row-items"></div>

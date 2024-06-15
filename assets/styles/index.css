@@ -1,8 +1,8 @@
 /* Defaults */
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -15,6 +15,7 @@ body {
     sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
 /* Header & Nav */
@@ -110,7 +111,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 700px;
 }
 
 @keyframes flicker {
@@ -140,6 +141,20 @@ body {
   animation: flicker 100ms infinite;
 }
 
+.hero .background-video-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    transparent,
+    rgba(20, 20, 20, 0) 50%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  z-index: 2;
+}
+
 .hero .background-video {
   width: 100%;
   height: 100%;
@@ -164,15 +179,19 @@ body {
 }
 
 .hero .title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 56px;
   color: #e5e5e5;
   line-height: 72px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  height: 240px;
 }
 
 .hero .title img {
-  width: 100%;
+  height: 100%;
 }
 
 .hero .description {
@@ -220,12 +239,12 @@ body {
 
 #row-continue {
   margin-top: -80px;
+  z-index: 3;
 }
 
 .row {
   position: relative;
   margin: 20px 0;
-  z-index: 1;
 }
 
 .row-title {
@@ -245,7 +264,6 @@ body {
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  cursor: grab;
 }
 
 .row-wrapper::-webkit-scrollbar {
@@ -262,9 +280,15 @@ body {
 
 .row-item {
   width: 240px;
-  height: 120px;
+  height: 166px;
   border-radius: 4px;
   overflow: clip;
+}
+
+.no-items {
+  display: flex;
+  padding: 40px;
+  color: #ccc;
 }
 
 .row-card {
@@ -310,7 +334,7 @@ body {
 .row-card-back .title {
   display: block;
   display: -webkit-box;
-  font-size: 16px;                 
+  font-size: 16px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -320,12 +344,13 @@ body {
 
 .row-card-back .description {
   display: -webkit-box;
-  font-size: 12px;                 
-  -webkit-line-clamp: 3;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 44px;
+  max-height: 82px;
 }
 
 /* row controls */
