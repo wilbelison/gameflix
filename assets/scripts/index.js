@@ -4,11 +4,11 @@ const rowTemplate = Handlebars.compile(
   document.querySelector("#template-row").innerHTML
 );
 
-const containerSNES = document.querySelector("#row-snes .row-items");
-const containerMD = document.querySelector("#row-md .row-items");
-const containerPS = document.querySelector("#row-ps .row-items");
+const containerSNES = document.querySelector("#row-snes .row-container");
+const containerMD = document.querySelector("#row-md .row-container");
+const containerPS = document.querySelector("#row-ps .row-container");
 
-const containerTeste = document.querySelector("#row-teste .row-items");
+const containerTeste = document.querySelector("#row-teste .row-container");
 
 /* jogos iniciais */
 
@@ -60,10 +60,14 @@ fetch("./data/jogos.json")
 const applyRowControls = (e) => {
   const controls = e.querySelectorAll(".row-control");
   const items = e.querySelectorAll(".row-item");
-  const numItems = items.length;
 
-  let controlJump = 1;
+  const numItems = items.length;
+  let controlJump = 2;
   let currentItem = 0;
+
+  console.log(
+    `numItems: ${numItems} numItems: ${controlJump} numItems: ${currentItem}`
+  );
 
   if (numItems <= controlJump) controls.forEach((e) => e.remove());
 
@@ -71,15 +75,20 @@ const applyRowControls = (e) => {
     control.addEventListener("click", (e) => {
       const isLeft = e.target.classList.contains("row-arrow-left");
       if (currentItem > 0 && isLeft) {
-        currentItem -= controlJump;
+        currentItem - controlJump >= 0
+          ? (currentItem -= controlJump)
+          : (currentItem = 0);
       }
       if (currentItem < numItems - 1 && !isLeft) {
-        currentItem += controlJump;
+        currentItem + controlJump <= numItems - 1
+          ? (currentItem += controlJump)
+          : (currentItem = numItems - 1);
       }
       items.forEach((item) => {
         item.classList.remove("row-current-item");
       });
       items[currentItem].classList.add("row-current-item");
+      console.log(currentItem);
     });
   });
 };

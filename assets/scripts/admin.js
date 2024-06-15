@@ -77,13 +77,19 @@ class Jogo {
       td_plataforma.innerText = this.arrayJogos[i].plataforma;
 
       let buttonEdit = document.createElement("button");
-      buttonEdit.setAttribute("onclick", `jogo.editar(${this.arrayJogos[i].id})`);
+      buttonEdit.setAttribute(
+        "onclick",
+        `jogo.editar(${this.arrayJogos[i].id})`
+      );
       let imgEdit = document.createElement("img");
       imgEdit.src = "./assets/images/icon-edit.png";
       buttonEdit.appendChild(imgEdit);
 
       let buttonDelete = document.createElement("button");
-      buttonDelete.setAttribute("onclick", `jogo.deletar(${this.arrayJogos[i].id})`);
+      buttonDelete.setAttribute(
+        "onclick",
+        `jogo.deletar(${this.arrayJogos[i].id})`
+      );
       let imgDelete = document.createElement("img");
       imgDelete.src = "./assets/images/icon-delete.png";
       buttonDelete.appendChild(imgDelete);

@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameflix - Home</title>
+    <link
+      rel="icon"
+      type="image/png"
+      rel="noopener"
+      target="_blank"
+      href="./assets/images/favicon.png"
+    />
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
@@ -11,24 +19,55 @@
       type="text/javascript"
       src="./assets/scripts/index.js"
     ></script>
-    <title>Gameflix</title>
   </head>
   <body>
+    <!-- HEADER -->
+
     <div class="header transparent">
       <h1 class="logo">
-        <a href="/" title="Gameflix"
+        <a href="/" title="Ir para a Home"
           ><img src="./assets/images/logo-gameflix.svg" alt="Gameflix"
         /></a>
       </h1>
+
+      <!-- NAV -->
+
       <ul class="nav">
-        <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
-        <li><a href="#row-md" title="Mega Drive">Mega Drive</a></li>
-        <li><a href="#row-ps" title="Playstation">Playstation</a></li>
+        <li>
+          <a href="#row-continuar" title="Continuar jogando"
+            >Continuar jogando</a
+          >
+        </li>
+        <li>
+          <a href="#row-continuar" title="Continuar jogando"
+            >Continuar jogando</a
+          >
+        </li>
+        <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
+        <li>
+          <a href="#row-aventura" title="Ação e Aventura">Ação e Aventura</a>
+        </li>
+        <li><a href="#row-luta" title="Luta">Ação e Aventura</a></li>
+        <li><a href="#row-plataforma" title="Plataforma">Plataforma</a></li>
+        <li><a href="#row-rpg" title="RPG">RPG</a></li>
         <li class="right">
-          <a href="./admin.html" class="admin" title="Gerenciar jogos" target="_blank">Gerenciar jogos</a>
+          <a
+            href="./admin.html"
+            class="admin"
+            title="Gerenciar jogos"
+            target="_blank"
+            >Gerenciador de jogos</a
+          >
         </li>
       </ul>
+
+      <!-- FIM NAV-->
     </div>
+
+    <!-- FIM HEADER -->
+
+    <!-- HERO -->
+
     <div class="hero">
       <div class="background-video-overlay"></div>
       <div class="background-video-fade"></div>
@@ -99,68 +138,76 @@
       </div>
     </div>
 
+    <!-- FIM HERO -->
+
+    <!-- TEMPLATE ROW -->
+
     <script id="template-row" type="text/x-handlebars-template">
       {{#if .}}
-      {{#each .}}
-      <div class="row-item">
-        <div class="row-card">
-          <div class="row-card-front">
-            <img src="{{imagem}}" alt="{{nomeJogo}}" />
+        <div class="row-wrapper">
+          <div class="row-items">
+            {{#each .}}
+              <div class="row-item">
+                <div class="row-card">
+                  <div class="row-card-front">
+                    <img src="{{imagem}}" alt="{{nomeJogo}}" />
+                  </div>
+                  <div class="row-card-back">
+                    <h3 class="title">{{nomeJogo}}</h3>
+                    <p class="description">{{descricao}}</p>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
           </div>
-          <div class="row-card-back">
-            <h3 class="title">{{nomeJogo}}</h3>
-            <p class="description">{{descricao}}</p>
-          </div>
+          <button class="row-control row-arrow-left">◄</button>
+          <button class="row-control row-arrow-right">►</button>
         </div>
-      </div>
-      {{/each}}
       {{else}}
         <div class="no-items">Nenhum jogo encontrado</div>
       {{/if}}
     </script>
 
+    <!-- FIM TEMPLATE ROW -->
+
+    <!-- ROWS -->
+
+    <div class="row" id="row-continuar">
+      <h2 class="row-title">Continuar jogando</h2>
+      <div class="row-container"></div>
+    </div>
+
+    <div class="row" id="row-top">
+      <h2 class="row-title">Super Nintendo</h2>
+      <div class="row-container"></div>
+    </div>
+
     <div class="row" id="row-snes">
       <h2 class="row-title">Super Nintendo</h2>
-      <div class="row-container">
-        <div class="row-wrapper">
-          <div class="row-items"></div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
-        </div>
-      </div>
+      <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-md">
       <h2 class="row-title">Mega Drive</h2>
-      <div class="row-container">
-        <div class="row-wrapper">
-          <div class="row-items"></div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
-        </div>
-      </div>
+      <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-ps">
       <h2 class="row-title">Playstation</h2>
-      <div class="row-container">
-        <div class="row-wrapper">
-          <div class="row-items"></div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
-        </div>
-      </div>
+      <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-teste">
       <h2 class="row-title">Teste</h2>
-      <div class="row-container">
-        <div class="row-wrapper">
-          <div class="row-items"></div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
-        </div>
-      </div>
+      <div class="row-container"></div>
     </div>
   </body>
+
+  <!-- FIM ROWS -->
+
+  <!-- FOOTER -->
+
+  <div class="footer">© 2024-2024 Gameflix, Inc.</div>
+
+  <!-- FIM FOOTER -->
 </html>

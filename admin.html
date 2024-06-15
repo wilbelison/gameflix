@@ -1,70 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gameflix</title>
-    <link rel="stylesheet" href="./assets/styles/admin-base.css" />
-    <link rel="stylesheet" href="./assets/styles/admin-card.css" />
-    <script defer type="text/javascript" src="./assets/scripts/admin.js"></script>
-</head>
+    <title>Gameflix - Gerenciador de Jogos</title>
+    <link
+      rel="icon"
+      type="image/png"
+      rel="noopener"
+      target="_blank"
+      href="./assets/images/favicon.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/admin.css" />
+    <script
+      defer
+      type="text/javascript"
+      src="./assets/scripts/admin.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="container">
-            <h1 class="title-2">Catálogo de jogos</h1>
-            <h2 class="title-4">Produtos</h2>
-            <p class="text-1">Lista de jogos</p>
-            <div class="card">
-                <div class="lineInput">
-                    <label>Nome do Jogo</label>
-                    <input type="text" id="jogo" placeholder="nome do jogo">
-                </div>
-                <div class="lineInput">
-                    <label>Descrição do jogo</label>
-                    <input type="text" id="descricao" placeholder="descrição do jogo">
-                </div>
-                <div class="lineInput">
-                    <label>Imagem do jogo (URL)</label>
-                    <input type="text" id="imagem" placeholder="URL da imagem">
-                </div>
-                <div class="lineInput">
-                    <label>Gênero</label>
-                    <input type="text" id="generos" placeholder="gêneros do jogo">
-                </div>
-                <div class="lineInput">
-                    <label>Plataforma</label>
-                    <input type="text" id="plataforma" placeholder="plataforma do jogo">
-                </div>
-                <div class="content-btn">
-                    <button id="save" onclick="jogo.salvar()" class="btn btn-add">Salvar</button>
-                    <button id="clean" class="btn btn-remove" onclick="jogo.limpar()">Limpar</button>
-                </div>
-            </div>
-            <div class="content">
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th class="center">ID</th>
-                            <th>Jogo</th>
-                            <th>Descrição</th>
-                            <th>Imagem</th>
-                            <th>Gênero</th>
-                            <th>Plataforma</th>
-                            <th class="center">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody">
-                    </tbody>
-                </table>
-                <div class="buttons">
-                    <button onclick="jogo.exportarJSON()" class="btn btn-add">Exportar JSON</button>
-                    <button onclick="jogo.restaurarJSON()" class="btn btn-remove">Restaurar JSON</button>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+      <div class="container">
 
+        <h1 class="title">Gerenciador de jogos</h1>
+
+        <!-- ADICIONAR NOVO JOGO -->
+
+        <div class="card">
+          <h2 class="sub-title">Adicionar novo jogo</h2>
+          <div class="lineInput">
+            <label for="jogo">Nome do Jogo</label>
+            <input type="text" id="jogo" placeholder="Ex.: Super Mario World" />
+          </div>
+          <div class="lineInput">
+            <label for="descricao">Descrição do jogo</label>
+            <input
+              type="text"
+              id="descricao"
+              placeholder="Ex.: Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach."
+            />
+          </div>
+          <div class="lineInput">
+            <label for="imagem">Imagem do jogo (URL)</label>
+            <input
+              type="text"
+              id="imagem"
+              placeholder="Ex.: https://thumbnails.libretro.com/mario.png"
+            />
+          </div>
+          <div class="lineInput">
+            <label for="generos">Gênero</label>
+            <input type="text" id="generos" placeholder="E.: Ação/Avemtura" />
+          </div>
+          <div class="lineInput">
+            <label for="plataforma">Plataforma</label>
+            <input
+              type="text"
+              id="plataforma"
+              placeholder="Ex.: Super Nintendo"
+            />
+          </div>
+          <div class="content-btn">
+            <button id="save" onclick="jogo.salvar()" class="btn btn-green">
+              Salvar
+            </button>
+            <button id="clean" class="btn btn-red" onclick="jogo.limpar()">
+              Limpar
+            </button>
+          </div>
+        </div>
+
+        <!-- FIM ADICIONAR NOVO JOGO -->
+
+        <!-- LISTA DE JOGOS -->
+
+        <div class="content">
+
+          <h2 class="sub-title">Lista de jogos</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="center">ID</th>
+                <th>Jogo</th>
+                <th>Descrição</th>
+                <th>Imagem</th>
+                <th>Gênero</th>
+                <th>Plataforma</th>
+                <th class="center">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+
+          <div class="content-btn">
+            <button onclick="jogo.exportarJSON()" class="btn btn-green">
+              Exportar JSON
+            </button>
+            <button onclick="jogo.restaurarJSON()" class="btn btn-red">
+              Restaurar JSON
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
