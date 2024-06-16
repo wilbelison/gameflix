@@ -206,5 +206,21 @@
     "generos": "Ação/Aventura",
     "plataforma": "Genesis/Mega Drive",
     "id": 25
+  },
+  {
+    "nomeJogo": "Sonic The Hedgehog",
+    "descricao": "Aventura de alta velocidade com o icônico ouriço azul.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
+    "generos": "Plataforma, Aventura",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 26
+  },
+  {
+    "nomeJogo": "Shining Force II",
+    "descricao": "Estratégia tática envolvente com elementos de RPG.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shining%20Force%20II%20%28USA%29.png",
+    "generos": "RPG Tático/Estratégia",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 27
   }
 ]
