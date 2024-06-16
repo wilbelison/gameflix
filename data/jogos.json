@@ -102,5 +102,61 @@
     "generos": "Puzzle/Ação",
     "plataforma": "Super Nintendo",
     "id": 12
+  },
+  {
+    "nomeJogo": "F-Zero",
+    "descricao": "Corridas futurísticas em alta velocidade com veículos antigravidade.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/F-Zero%20%28USA%29.png",
+    "generos": "Corrida",
+    "plataforma": "Super Nintendo",
+    "id": 13
+  },
+  {
+    "nomeJogo": "Star Fox",
+    "descricao": "Pilote uma nave espacial e combata inimigos no espaço e em planetas alienígenas.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Star%20Fox%20%28USA%29.png",
+    "generos": "Tiro/Sci-fi",
+    "plataforma": "Super Nintendo",
+    "id": 14
+  },
+  {
+    "nomeJogo": "Super Punch-Out!!",
+    "descricao": "Suba no ringue e enfrente uma variedade de boxeadores caricatos.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Punch-Out%21%21%20%28USA%29.png",
+    "generos": "Esporte/Luta",
+    "plataforma": "Super Nintendo",
+    "id": 15
+  },
+  {
+    "nomeJogo": "Kirby Super Star",
+    "descricao": "Uma coleção de jogos estrelando o adorável Kirby e suas habilidades de cópia.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Kirby%20Super%20Star%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "Super Nintendo",
+    "id": 16
+  },
+  {
+    "nomeJogo": "Super Mario RPG: Legend of the Seven Stars",
+    "descricao": "Mario se aventura em um mundo RPG com aliados inesperados para derrotar Smithy.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20RPG%20-%20Legend%20of%20the%20Seven%20Stars%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "Super Nintendo",
+    "id": 17
+  },
+  {
+    "nomeJogo": "Pilotwings",
+    "descricao": "Aprenda a pilotar diferentes tipos de aeronaves em desafios variados.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Pilotwings%20%28USA%29.png",
+    "generos": "Simulação/Voo",
+    "plataforma": "Super Nintendo",
+    "id": 18
+  },
+  {
+    "nomeJogo": "Super Metroid",
+    "descricao": "Samus Aran explora o planeta Zebes para derrotar Mother Brain.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Metroid%20%28USA%2C%20Europe%29%20%28En%2CJa%29%20%28Virtual%20Console%2C%20Classic%20Mini%2C%20Switch%20Online%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "Super Nintendo",
+    "id": 19
   }
 ]
