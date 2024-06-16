@@ -238,5 +238,13 @@
     "generos": "Plataforma/Ação",
     "plataforma": "Genesis/Mega Drive",
     "id": 29
+  },
+  {
+    "nomeJogo": "Street Fighter II’",
+    "descricao": "O clássico jogo de luta que definiu um gênero.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Street%20Fighter%20II%27%20-%20Remastered%20Edition.png",
+    "generos": "Luta",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 30
   }
 ]

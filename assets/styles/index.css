@@ -282,6 +282,8 @@ body {
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin: -20px 0;
+  padding: 20px;
 }
 
 .row-wrapper::-webkit-scrollbar {
@@ -302,8 +304,11 @@ body {
   border-radius: 4px;
   overflow: clip;
   color: #e5e5e5;
+  background-color: #000;
   text-decoration: none;
   outline-style: none;
+  z-index: 0;
+  transition: all 200ms ease-in-out;
 }
 
 .no-items {
@@ -320,13 +325,12 @@ body {
   transition: 200ms all ease-in-out;
 }
 
-.row-item:hover {
-  border: solid 2px #333;
-}
-
 .row-current-item,
 .row-item:focus {
   border: solid 2px #fff;
+  transform: scale(1.2);
+  z-index: 9;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
 }
 
 .row-current-item .row-card,
@@ -391,7 +395,6 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: start;
-  background-color: #141414;
   transform: rotateY(180deg);
   padding: 16px;
 }
@@ -400,11 +403,10 @@ body {
   display: block;
   display: -webkit-box;
   font-size: 16px;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 40px;
 }
 
 .row-card-back .description {

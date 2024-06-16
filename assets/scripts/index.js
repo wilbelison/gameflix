@@ -106,18 +106,17 @@ const applyRowControls = (e) => {
         currentItem - controlJump >= 0
           ? (currentItem -= controlJump)
           : (currentItem = numItems - 1);
-        goToItem(items, currentItem);
       } else if (currentItem < numItems && !isLeft) {
         currentItem + controlJump <= numItems
           ? (currentItem += controlJump)
           : (currentItem = numItems - 1);
-        if (currentItem != numItems) {
-          goToItem(items, currentItem);
-        } else {
+        if (currentItem == numItems) {
           currentItem = 0;
-          goToItem(items, currentItem);
         }
+      } else {
+        currentItem = numItems - 1
       }
+      goToItem(items, currentItem);
 
       console.log(currentItem);
     });
