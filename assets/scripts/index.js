@@ -4,11 +4,13 @@ const rowTemplate = Handlebars.compile(
   document.querySelector("#template-row").innerHTML
 );
 
+const containerContinuar = document.querySelector(
+  "#row-continuar .row-container"
+);
+const containerTop = document.querySelector("#row-top .row-container");
 const containerSNES = document.querySelector("#row-snes .row-container");
 const containerMD = document.querySelector("#row-md .row-container");
 const containerPS = document.querySelector("#row-ps .row-container");
-
-const containerTeste = document.querySelector("#row-teste .row-container");
 
 /* jogos iniciais */
 
@@ -20,20 +22,29 @@ fetch("./data/jogos.json")
     return response.json();
   })
   .then((jogosIniciais) => {
+    /* todos os jogos */
     const arrayJogos = localStorage.getItem("arrayJogos")
       ? JSON.parse(localStorage.getItem("arrayJogos"))
       : jogosIniciais;
 
+    /* continuar jogando */
+    const jogosContinuar = arrayJogos.map((jogo) => {});
+
+    /* super nintendo */
     const jogosSNES = arrayJogos.filter(
       (jogo) =>
         jogo.plataforma.toLowerCase().includes("snes") ||
         jogo.plataforma.toLowerCase().includes("super nintendo")
     );
+
+    /* mega drive */
     const jogosMD = arrayJogos.filter(
       (jogo) =>
         jogo.plataforma.toLowerCase().includes("md") ||
         jogo.plataforma.toLowerCase().includes("mega drive")
     );
+
+    /* playstation  */
     const jogosPS = arrayJogos.filter(
       (jogo) =>
         jogo.plataforma.toLowerCase().includes("ps") ||
@@ -42,10 +53,12 @@ fetch("./data/jogos.json")
 
     /* renderiza conteudo */
 
+    containerContinuar.innerHTML = rowTemplate(arrayJogos);
+    containerTop.innerHTML = rowTemplate(arrayJogos);
     containerSNES.innerHTML = rowTemplate(jogosSNES);
     containerMD.innerHTML = rowTemplate(jogosMD);
     containerPS.innerHTML = rowTemplate(jogosPS);
-    containerTeste.innerHTML = rowTemplate(arrayJogos);
+    
 
     /* aplica controles de slider aos rows */
 

@@ -261,6 +261,7 @@ body {
 .row {
   position: relative;
   margin: 20px 0;
+  scroll-margin-top: 80px;
 }
 
 .row-title {
@@ -350,6 +351,37 @@ body {
   object-fit: cover;
 }
 
+.row.top .row-card-front::before {
+  position: absolute;
+  width: 50%;
+  top: -32px;
+  left: 0;
+  content: "#";
+  font-size: 220px;
+  line-height: 100%;
+  font-weight: 900;
+  letter-spacing: -40px;
+  color: #000;
+  -webkit-text-stroke: 4px #595959;
+}
+
+.row.top .row-item:nth-child(1) .row-card-front::before { content: "1"; }
+.row.top .row-item:nth-child(2) .row-card-front::before { content: "2"; }
+.row.top .row-item:nth-child(3) .row-card-front::before { content: "3"; }
+.row.top .row-item:nth-child(4) .row-card-front::before { content: "4"; }
+.row.top .row-item:nth-child(5) .row-card-front::before { content: "5"; }
+.row.top .row-item:nth-child(6) .row-card-front::before { content: "6"; }
+.row.top .row-item:nth-child(7) .row-card-front::before { content: "7"; }
+.row.top .row-item:nth-child(8) .row-card-front::before { content: "8"; }
+.row.top .row-item:nth-child(9) .row-card-front::before { content: "9"; }
+.row.top .row-item:nth-child(10) .row-card-front::before { content: "10"; }
+
+.row.top .row-card-front img {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
 .row-card-back {
   display: flex;
   flex-direction: column;
@@ -418,7 +450,7 @@ body {
 
 .row-arrow-left:hover,
 .row-arrow-right:hover {
-  background: #141414CC;
+  background: #141414cc;
 }
 
 /* footer */
