@@ -30,19 +30,14 @@ input,
 textarea,
 select,
 .btn {
-  font-size: 16px;
   align-items: center;
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
   padding: 16px 24px;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
-}
-
-.btn:hover {
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .content-btn {
@@ -52,20 +47,24 @@ select,
   gap: 20px;
 }
 
+.btn {
+  color: #141414;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
 .btn-green {
   color: #fff;
-  background-color: #68b631;
+  background-color: hsl(138, 100%, 30%);
 }
-.btn-green:hover {
-  background-color: #40751b;
-}
+
 .btn-red {
   color: #fff;
   background-color: #e50914;
-}
-
-.btn-red:hover {
-  background-color: #6f0006;
 }
 
 h1,
@@ -138,12 +137,12 @@ label {
   padding-bottom: 16px;
 }
 
-input {
+input, textarea {
   padding: 16px;
   border: 1px solid #666;
   border-radius: 6px;
   outline: 0;
-  background-color: rgb(45, 45, 45);
+  background-color: #000;
   color: #fff;
   text-align: left;
 }
@@ -156,27 +155,28 @@ input {
 }
 
 .content {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 table {
   border-collapse: collapse;
-  border: 1px solid #ccc;
   width: 100%;
   background: #e5e5e5;
   color: #141414;
 }
 
 table th {
-  background-color: rgb(180, 180, 180);
+  border: 1px solid #ccc;
+  background-color: #eee;
 }
 table th,
 td {
   text-align: left;
-  padding: 8px 16px;
+  padding: 16px;
 }
 table td {
-  background-color: rgb(228, 228, 228);
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 table .buttons {
@@ -188,14 +188,14 @@ table .buttons {
   align-items: center;
 }
 
-table button {
+table .buttons button {
   width: 36px;
   height: 36px;
   object-fit: contain;
   cursor: pointer;
-  border: solid 1px #ccc;
+  border: none;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: transparent;
   padding: 8px;
 }
 

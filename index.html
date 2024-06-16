@@ -115,7 +115,7 @@
         <div class="row-wrapper">
           <div class="row-items">
             {{#each .}}
-              <div class="row-item">
+              <a class="row-item" title="{{nomeJogo}}" href="#">
                 <div class="row-card">
                   <div class="row-card-front">
                     <img src="{{imagem}}" alt="{{nomeJogo}}" />
@@ -125,7 +125,7 @@
                     <p class="description">{{descricao}}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             {{/each}}
           </div>
           <button class="row-control row-arrow-left">◄</button>

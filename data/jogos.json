@@ -4,7 +4,7 @@
     "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%20%28USA%29.png",
     "generos": "Plataforma",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 0
   },
   {
@@ -12,7 +12,7 @@
     "descricao": "Aventura épica de ação com Link em busca de salvar a terra de Hyrule.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%2C%20Europe%29%20%28Switch%20Online%29.png",
     "generos": "Ação/Aventura",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 1
   },
   {
@@ -20,7 +20,7 @@
     "descricao": "Jogo de corrida com personagens da série Mario, com itens e atalhos.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20Kart%20%28USA%29.png",
     "generos": "Corrida",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 2
   },
   {
@@ -28,7 +28,7 @@
     "descricao": "Jogo de tiro em primeira pessoa ambientado em Marte, enfrentando criaturas alienígenas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Doom%20%28USA%29.png",
     "generos": "FPS",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 3
   },
   {
@@ -36,7 +36,7 @@
     "descricao": "Aventura de plataforma com Donkey Kong e Diddy Kong em busca de tesouros de bananas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%20%28USA%29.png",
     "generos": "Plataforma",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 4
   },
   {
@@ -44,7 +44,7 @@
     "descricao": "RPG com viagem no tempo para salvar o mundo, trilha sonora elogiada.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
     "generos": "RPG",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 5
   },
   {
@@ -52,7 +52,7 @@
     "descricao": "Continuação do clássico, focando em Yoshi e bebês Mario.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
     "generos": "Plataforma",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 6
   },
   {
@@ -60,7 +60,7 @@
     "descricao": "Jogo de ação e aventura com temática de vampiros, onde você controla Simon Belmont.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Castlevania%20IV%20%28USA%29.png",
     "generos": "Plataforma",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 7
   },
   {
@@ -68,7 +68,7 @@
     "descricao": "Um dos melhores RPGs da era 16 bits, com uma história envolvente e personagens memoráveis.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20VI%20%28USA%29.png",
     "generos": "RPG",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 8
   },
   {
@@ -76,7 +76,7 @@
     "descricao": "Uma aventura moderna e excêntrica, com elementos de humor e uma trilha sonora única.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
     "generos": "RPG",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 9
   },
   {
@@ -84,7 +84,7 @@
     "descricao": "Jogo cooperativo com gráficos coloridos e uma trilha sonora marcante.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Secret%20of%20Mana%20%28USA%29.png",
     "generos": "RPG",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 10
   },
   {
@@ -92,7 +92,15 @@
     "descricao": "Ação e plataformas com o robô Mega Man X lutando contra Mavericks.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X%20%28USA%29.png",
     "generos": "Ação/Plataforma",
-    "plataforma": "SNES",
+    "plataforma": "Super Nintendo",
     "id": 11
+  },
+  {
+    "nomeJogo": "Super Bomberman",
+    "descricao": "Coloque bombas e derrote inimigos em labirintos explosivos.",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Bomberman%20%28USA%29.png",
+    "generos": "Puzzle/Ação",
+    "plataforma": "Super Nintendo",
+    "id": 12
   }
 ]

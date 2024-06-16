@@ -82,7 +82,7 @@ class Jogo {
         `jogo.editar(${this.arrayJogos[i].id})`
       );
       let imgEdit = document.createElement("img");
-      imgEdit.src = "./assets/images/icon-edit.png";
+      imgEdit.src = "./assets/images/icon-edit.svg";
       buttonEdit.appendChild(imgEdit);
 
       let buttonDelete = document.createElement("button");
@@ -91,7 +91,7 @@ class Jogo {
         `jogo.deletar(${this.arrayJogos[i].id})`
       );
       let imgDelete = document.createElement("img");
-      imgDelete.src = "./assets/images/icon-delete.png";
+      imgDelete.src = "./assets/images/icon-delete.svg";
       buttonDelete.appendChild(imgDelete);
 
       let actionButtons = document.createElement("div");

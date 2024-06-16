@@ -57,38 +57,60 @@ fetch("./data/jogos.json")
 
 /* controle de slider para os rows */
 
+function clearAllItems() {
+  const allItems = document.querySelectorAll(".row-item");
+  allItems.forEach((item) => {
+    item.classList.remove("row-current-item");
+  });
+}
+
+function goToItem(items, currentItem) {
+  clearAllItems();
+
+  items[currentItem].classList.add("row-current-item");
+
+  items[currentItem].scrollIntoView({
+    inline: "center",
+    block: "nearest",
+    behavior: "smooth",
+  });
+}
+
 const applyRowControls = (e) => {
   const controls = e.querySelectorAll(".row-control");
   const items = e.querySelectorAll(".row-item");
 
   const numItems = items.length;
-  let controlJump = 2;
+  let controlJump = 1;
   let currentItem = 0;
-
-  console.log(
-    `numItems: ${numItems} numItems: ${controlJump} numItems: ${currentItem}`
-  );
 
   if (numItems <= controlJump) controls.forEach((e) => e.remove());
 
   controls.forEach((control) => {
     control.addEventListener("click", (e) => {
       const isLeft = e.target.classList.contains("row-arrow-left");
+
       if (currentItem > 0 && isLeft) {
         currentItem - controlJump >= 0
           ? (currentItem -= controlJump)
           : (currentItem = 0);
-      }
-      if (currentItem < numItems - 1 && !isLeft) {
+        goToItem(items, currentItem);
+      } else if (currentItem < numItems - 1 && !isLeft) {
         currentItem + controlJump <= numItems - 1
           ? (currentItem += controlJump)
           : (currentItem = numItems - 1);
+        goToItem(items, currentItem);
+      } else {
+        clearAllItems();
       }
-      items.forEach((item) => {
-        item.classList.remove("row-current-item");
+    });
+
+    items.forEach((item, key) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentItem = key;
+        goToItem(items, currentItem);
       });
-      items[currentItem].classList.add("row-current-item");
-      console.log(currentItem);
     });
   });
 };

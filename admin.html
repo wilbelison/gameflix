@@ -29,21 +29,13 @@
         <!-- ADICIONAR NOVO JOGO -->
 
         <div class="card">
-          <h2 class="sub-title">Adicionar novo jogo</h2>
+          <h2 class="sub-title">Adicionar jogo</h2>
           <div class="lineInput">
-            <label for="jogo">Nome do Jogo</label>
+            <label for="jogo">Título</label>
             <input type="text" id="jogo" placeholder="Ex.: Super Mario World" />
           </div>
           <div class="lineInput">
-            <label for="descricao">Descrição do jogo</label>
-            <input
-              type="text"
-              id="descricao"
-              placeholder="Ex.: Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach."
-            />
-          </div>
-          <div class="lineInput">
-            <label for="imagem">Imagem do jogo (URL)</label>
+            <label for="imagem">Imagem (URL)</label>
             <input
               type="text"
               id="imagem"
@@ -51,8 +43,15 @@
             />
           </div>
           <div class="lineInput">
+            <label for="descricao">Descrição</label>
+            <textarea
+              id="descricao"
+              placeholder="Ex.: Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach."
+            ></textarea>
+          </div>
+          <div class="lineInput">
             <label for="generos">Gênero</label>
-            <input type="text" id="generos" placeholder="E.: Ação/Avemtura" />
+            <input type="text" id="generos" placeholder="Ex.: Ação/Avemtura" />
           </div>
           <div class="lineInput">
             <label for="plataforma">Plataforma</label>
@@ -60,6 +59,7 @@
               type="text"
               id="plataforma"
               placeholder="Ex.: Super Nintendo"
+              value="Super Nintendo"
             />
           </div>
           <div class="content-btn">
