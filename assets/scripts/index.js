@@ -8,9 +8,11 @@ const containerContinuar = document.querySelector(
   "#row-continuar .row-container"
 );
 const containerTop = document.querySelector("#row-top .row-container");
-const containerSNES = document.querySelector("#row-snes .row-container");
-const containerMD = document.querySelector("#row-md .row-container");
-const containerPS = document.querySelector("#row-ps .row-container");
+const containerSuperNintendo = document.querySelector(
+  "#row-snes .row-container"
+);
+const containerGenesis = document.querySelector("#row-genesis .row-container");
+const containerPlaystation = document.querySelector("#row-playstation .row-container");
 
 /* jogos iniciais */
 
@@ -31,33 +33,31 @@ fetch("./data/jogos.json")
     const jogosContinuar = arrayJogos.map((jogo) => {});
 
     /* super nintendo */
-    const jogosSNES = arrayJogos.filter(
+    const jogosSuperNintendo = arrayJogos.filter(
       (jogo) =>
         jogo.plataforma.toLowerCase().includes("snes") ||
         jogo.plataforma.toLowerCase().includes("super nintendo")
     );
 
     /* mega drive */
-    const jogosMD = arrayJogos.filter(
+    const jogosGenesis = arrayJogos.filter(
       (jogo) =>
-        jogo.plataforma.toLowerCase().includes("md") ||
+        jogo.plataforma.toLowerCase().includes("genesis") ||
         jogo.plataforma.toLowerCase().includes("mega drive")
     );
 
     /* playstation  */
-    const jogosPS = arrayJogos.filter(
-      (jogo) =>
-        jogo.plataforma.toLowerCase().includes("ps") ||
-        jogo.plataforma.toLowerCase().includes("playstation")
+    const jogosPlaystation = arrayJogos.filter((jogo) =>
+      jogo.plataforma.toLowerCase().includes("playstation")
     );
 
     /* renderiza conteudo */
 
     containerContinuar.innerHTML = rowTemplate(arrayJogos);
     containerTop.innerHTML = rowTemplate(arrayJogos);
-    containerSNES.innerHTML = rowTemplate(jogosSNES);
-    containerMD.innerHTML = rowTemplate(jogosMD);
-    containerPS.innerHTML = rowTemplate(jogosPS);
+    containerSuperNintendo.innerHTML = rowTemplate(jogosSuperNintendo);
+    containerGenesis.innerHTML = rowTemplate(jogosGenesis);
+    containerPlaystation.innerHTML = rowTemplate(jogosPlaystation);
 
     /* aplica controles de slider aos rows */
 
@@ -94,7 +94,7 @@ const applyRowControls = (e) => {
 
   const numItems = items.length;
   let controlJump = 1;
-  let currentItem = 0;
+  let currentItem = -1;
 
   if (numItems <= controlJump) controls.forEach((e) => e.remove());
 
@@ -124,6 +124,11 @@ const applyRowControls = (e) => {
 
     items.forEach((item, key) => {
       item.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentItem = key;
+        goToItem(items, currentItem);
+      });
+      item.addEventListener("focus", (e) => {
         e.preventDefault();
         currentItem = key;
         goToItem(items, currentItem);

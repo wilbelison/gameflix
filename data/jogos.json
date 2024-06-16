@@ -158,5 +158,53 @@
     "generos": "Ação/Aventura",
     "plataforma": "Super Nintendo",
     "id": 19
+  },
+  {
+    "nomeJogo": "Sonic The Hedgehog 2",
+    "descricao": "Aventuras velozes com Sonic e Tails.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%202%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 20
+  },
+  {
+    "nomeJogo": "Streets of Rage 2",
+    "descricao": "Lute contra gangues nas ruas neste clássico beat 'em up.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Streets%20of%20Rage%202%20%28USA%29.png",
+    "generos": "Ação",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 21
+  },
+  {
+    "nomeJogo": "Shinobi III: Return of the Ninja Master",
+    "descricao": "Missões ninja com ação e plataformas.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
+    "generos": "Ação/Plataforma",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 22
+  },
+  {
+    "nomeJogo": "Gunstar Heroes",
+    "descricao": "Ação intensa e tiroteios em um jogo de tiro run and gun.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Gunstar%20Heroes%20%28USA%29.png",
+    "generos": "Tiro",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 23
+  },
+  {
+    "nomeJogo": "Phantasy Star IV: The End of the Millennium",
+    "descricao": "Uma saga espacial épica em um RPG clássico.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Phantasy%20Star%20IV%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 24
+  },
+  {
+    "nomeJogo": "Castlevania: Bloodlines",
+    "descricao": "A caçada aos vampiros continua com novos personagens e desafios.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Castlevania%20-%20Bloodlines%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 25
   }
 ]

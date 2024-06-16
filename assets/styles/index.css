@@ -262,6 +262,7 @@ body {
   position: relative;
   margin: 20px 0;
   scroll-margin-top: 80px;
+  margin-bottom: 56px;
 }
 
 .row-title {
@@ -302,6 +303,7 @@ body {
   overflow: clip;
   color: #e5e5e5;
   text-decoration: none;
+  outline-style: none;
 }
 
 .no-items {
@@ -327,6 +329,7 @@ body {
   border: solid 2px #fff;
 }
 
+.row-current-item .row-card,
 .row-item:hover .row-card,
 .row-item:focus .row-card {
   transform: rotateY(180deg);
@@ -354,12 +357,12 @@ body {
 .row.top .row-card-front::before {
   position: absolute;
   width: 50%;
-  top: -20px;
-  left: 0;
+  top: -30px;
+  left: 16px;
   content: "#";
-  font-size: 200px;
+  font-size: 210px;
   line-height: 100%;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -30px;
   color: #000;
   text-shadow: -4px -4px 0 #595959, 0 -4px 0 #595959, 4px -4px 0 #595959, 4px 0 0 #595959, 4px 4px 0 #595959, 0 4px 0 #595959, -4px 4px 0 #595959, -4px 0 0 #595959;
