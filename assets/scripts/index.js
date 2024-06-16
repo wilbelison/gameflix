@@ -58,7 +58,6 @@ fetch("./data/jogos.json")
     containerSNES.innerHTML = rowTemplate(jogosSNES);
     containerMD.innerHTML = rowTemplate(jogosMD);
     containerPS.innerHTML = rowTemplate(jogosPS);
-    
 
     /* aplica controles de slider aos rows */
 
@@ -103,19 +102,24 @@ const applyRowControls = (e) => {
     control.addEventListener("click", (e) => {
       const isLeft = e.target.classList.contains("row-arrow-left");
 
-      if (currentItem > 0 && isLeft) {
+      if (currentItem >= 0 && isLeft) {
         currentItem - controlJump >= 0
           ? (currentItem -= controlJump)
-          : (currentItem = 0);
-        goToItem(items, currentItem);
-      } else if (currentItem < numItems - 1 && !isLeft) {
-        currentItem + controlJump <= numItems - 1
-          ? (currentItem += controlJump)
           : (currentItem = numItems - 1);
         goToItem(items, currentItem);
-      } else {
-        clearAllItems();
+      } else if (currentItem < numItems && !isLeft) {
+        currentItem + controlJump <= numItems
+          ? (currentItem += controlJump)
+          : (currentItem = numItems - 1);
+        if (currentItem != numItems) {
+          goToItem(items, currentItem);
+        } else {
+          currentItem = 0;
+          goToItem(items, currentItem);
+        }
       }
+
+      console.log(currentItem);
     });
 
     items.forEach((item, key) => {

@@ -354,15 +354,16 @@ body {
 .row.top .row-card-front::before {
   position: absolute;
   width: 50%;
-  top: -32px;
+  top: -20px;
   left: 0;
   content: "#";
-  font-size: 220px;
+  font-size: 200px;
   line-height: 100%;
   font-weight: 900;
-  letter-spacing: -40px;
+  letter-spacing: -30px;
   color: #000;
-  -webkit-text-stroke: 4px #595959;
+  text-shadow: -4px -4px 0 #595959, 0 -4px 0 #595959, 4px -4px 0 #595959, 4px 0 0 #595959, 4px 4px 0 #595959, 0 4px 0 #595959, -4px 4px 0 #595959, -4px 0 0 #595959;
+  /* -webkit-text-stroke: 4px #595959; */
 }
 
 .row.top .row-item:nth-child(1) .row-card-front::before { content: "1"; }
@@ -374,7 +375,7 @@ body {
 .row.top .row-item:nth-child(7) .row-card-front::before { content: "7"; }
 .row.top .row-item:nth-child(8) .row-card-front::before { content: "8"; }
 .row.top .row-item:nth-child(9) .row-card-front::before { content: "9"; }
-.row.top .row-item:nth-child(10) .row-card-front::before { content: "10"; }
+.row.top .row-item:nth-child(10) .row-card-front::before { content: "10"; left: -16px; }
 
 .row.top .row-card-front img {
   position: absolute;
