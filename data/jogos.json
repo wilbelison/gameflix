@@ -222,5 +222,21 @@
     "generos": "RPG Tático/Estratégia",
     "plataforma": "Genesis/Mega Drive",
     "id": 27
+  },
+  {
+    "nomeJogo": "Contra: Hard Corps",
+    "descricao": "Shooter intenso com muita ação e cooperação.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Contra%20-%20Hard%20Corps%20%28USA%29%20%28Genesis%20Mini%29.png",
+    "generos": "Shooter/Ação",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 28
+  },
+  {
+    "nomeJogo": "Shinobi III",
+    "descricao": "Ninja enfrenta inimigos em um jogo de ação e plataforma.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
+    "generos": "Plataforma/Ação",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 29
   }
 ]
