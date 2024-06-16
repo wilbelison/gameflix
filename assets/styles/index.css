@@ -440,13 +440,13 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 100%;
   width: 60px;
   text-align: center;
   color: #fff;
   border: none;
-  opacity: 0.2;
+  opacity: 0.5;
   transition: all 200ms ease-in-out;
 }
 
@@ -457,6 +457,7 @@ body {
 .row-control:hover {
   opacity: 1;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .row-arrow-left {

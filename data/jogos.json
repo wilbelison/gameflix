@@ -115,7 +115,7 @@
     "nomeJogo": "Star Fox",
     "descricao": "Pilote uma nave espacial e combata inimigos no espaço e em planetas alienígenas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Star%20Fox%20%28USA%29.png",
-    "generos": "Tiro/Sci-fi",
+    "generos": "Shooter/Sci-fi",
     "plataforma": "Super Nintendo",
     "id": 14
   },
@@ -187,7 +187,7 @@
     "nomeJogo": "Gunstar Heroes",
     "descricao": "Ação intensa e tiroteios em um jogo de tiro run and gun.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Gunstar%20Heroes%20%28USA%29.png",
-    "generos": "Tiro",
+    "generos": "Shooter",
     "plataforma": "Genesis/Mega Drive",
     "id": 23
   },
