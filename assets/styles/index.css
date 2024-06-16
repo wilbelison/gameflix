@@ -308,6 +308,7 @@ body {
   text-decoration: none;
   outline-style: none;
   z-index: 0;
+  border: solid 2px transparent;
   transition: all 200ms ease-in-out;
 }
 
@@ -323,6 +324,10 @@ body {
   height: 100%;
   transform-style: preserve-3d;
   transition: 200ms all ease-in-out;
+}
+
+.row-item:hover {
+  border: solid 2px #333;
 }
 
 .row-current-item,
