@@ -138,3 +138,5 @@ window.addEventListener("scroll", () => {
     ? header.classList.add("transparent")
     : header.classList.remove("transparent");
 });
+
+/* filtros */
