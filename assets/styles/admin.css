@@ -51,10 +51,11 @@ select,
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  opacity: 0.75;
 }
 
 .btn:hover {
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .btn-green {
@@ -171,7 +172,8 @@ label {
   padding-bottom: 16px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 16px;
   border: 1px solid #666;
   border-radius: 6px;
@@ -192,72 +194,96 @@ input, textarea {
   margin-top: 20px;
 }
 
-table {
+#lista table {
   border-collapse: collapse;
   width: 100%;
   background: #e5e5e5;
   color: #141414;
 }
 
-table th {
-  border: 1px solid #ccc;
-  background-color: #eee;
-}
-table th,
-td {
+#lista table th,
+#lista table td {
   text-align: left;
-  padding: 16px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
 }
 
-table .row.edit td {
+#lista table th {
+  background-color: #eee;
+}
+
+#lista table td {
+  background-color: #fff;
+}
+
+#lista table tr:hover td {
+  background-color: #eee;
+}
+
+#lista table .row .actionButtons,
+#lista table .row .editButtons {
+  display: flex;
+  flex-direction: row;  
+  gap: 8px;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+#lista table .row:hover .actionButtons {
+  opacity: 1;
+}
+
+#lista table .row .actionButtons .edit {
+  background-color: #141414;
+}
+
+#lista table .row .editButtons .confirm {
+  background-color: #65b539;
+}
+
+#lista table .row .actionButtons .delete,
+#lista table .row .editButtons .cancel {
+  background-color: #e50914;
+}
+
+#lista table .row.edit td {
   background-color: #e5e5e5;
 }
 
-table .row .editButtons {
+#lista table .row .editButtons {
   display: none;
 }
 
-table .row.edit .actionButtons {
+#lista table .row.edit .actionButtons {
   display: none;
 }
 
-table .row.edit .editButtons {
-  display: initial;
-}
-
-table td {
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-
-table .actionButtons,
-table .editButtons {
+#lista table .row.edit .editButtons {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
+  opacity: 1;
 }
 
-table .actionButtons button,
-table .editButtons button {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  cursor: pointer;
+#lista table button {
+  margin: 0;
+  padding: 0;
   border: none;
+  cursor: pointer;
+  padding: 8px 16px;
   border-radius: 8px;
-  background-color: transparent;
-  padding: 8px;
+  opacity: 0.75;
+  transition: all 200ms ease-in-out;
 }
 
-table button img {
-  width: 100%;
-  height: 100%;
+#lista table button:hover {
+  opacity: 1;
+}
+
+#lista table button img {
+  width: 16px;
+  height: 16px;
   object-fit: contain;
 }
 
-.center {
+#lista .center {
   text-align: center;
 }

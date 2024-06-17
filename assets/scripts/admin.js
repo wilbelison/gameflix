@@ -92,6 +92,8 @@ class Jogo {
         "onclick",
         `jogo.editar(${this.arrayJogos[i].id})`
       );
+      buttonEdit.setAttribute("title", "Editar");
+      buttonEdit.classList.add("edit");
       let imgEdit = document.createElement("img");
       imgEdit.src = "./assets/images/icon-edit.svg";
       buttonEdit.appendChild(imgEdit);
@@ -103,6 +105,8 @@ class Jogo {
         "onclick",
         `jogo.deletar(${this.arrayJogos[i].id})`
       );
+      buttonDelete.setAttribute("title", "Excluir");
+      buttonDelete.classList.add("delete");
       let imgDelete = document.createElement("img");
       imgDelete.src = "./assets/images/icon-delete.svg";
       buttonDelete.appendChild(imgDelete);
@@ -121,6 +125,11 @@ class Jogo {
         "onclick",
         `jogo.atualizar(${this.arrayJogos[i].id})`
       );
+      buttonConfirm.setAttribute(
+        "title",
+        "Confirmar"
+      );
+      buttonConfirm.classList.add("confirm");
       let imgConfirm = document.createElement("img");
       imgConfirm.src = "./assets/images/icon-confirm.svg";
       buttonConfirm.appendChild(imgConfirm);
@@ -132,6 +141,8 @@ class Jogo {
         "onclick",
         `jogo.cancelar(${this.arrayJogos[i].id})`
       );
+      buttonCancel.classList.add("cancel");
+      buttonCancel.setAttribute("title", "Cancelar");
       let imgCancel = document.createElement("img");
       imgCancel.src = "./assets/images/icon-cancel.svg";
       buttonCancel.appendChild(imgCancel);
