@@ -308,7 +308,6 @@ body {
   text-decoration: none;
   outline-style: none;
   z-index: 0;
-  border: solid 2px transparent;
   transition: all 200ms ease-in-out;
 }
 
@@ -360,10 +359,6 @@ body {
   height: 100%;
   backface-visibility: hidden;
   background-color: #000;
-}
-
-.row-card-front {
-  background-color: #141414;
 }
 
 .row-card-front img {
