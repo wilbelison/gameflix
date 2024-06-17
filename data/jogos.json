@@ -259,7 +259,7 @@
     "id": 32,
     "nomeJogo": "Altered Beast",
     "descricao": "Transforme-se em feras poderosas neste clássico beat 'em up.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Altered%20Beast%20%28USA%2C%20Europe%29.png",
     "generos": "Beat 'em up, Ação",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -267,23 +267,23 @@
     "id": 33,
     "nomeJogo": "Golden Axe",
     "descricao": "Aventura épica em um mundo de fantasia com combate intenso.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
-    "generos": "Ação, Aventura",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Golden%20Axe%20%28World%29.png",
+    "generos": "Ação/Aventura",
     "plataforma": "Genesis/Mega Drive"
   },
   {
     "id": 34,
     "nomeJogo": "Comix Zone",
     "descricao": "Lute contra vilões em um mundo de quadrinhos interativo.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
-    "generos": "Ação, Aventura",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Comix%20Zone%20%28USA%29.png",
+    "generos": "Ação/Aventura",
     "plataforma": "Genesis/Mega Drive"
   },
   {
     "id": 35,
     "nomeJogo": "Ristar",
     "descricao": "Estenda seus braços para explorar e resolver quebra-cabeças.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Ristar%20%28USA%2C%20Europe%29.png",
     "generos": "Plataforma, Puzzle",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -291,15 +291,15 @@
     "id": 36,
     "nomeJogo": "Vectorman",
     "descricao": "Salve a Terra como um robô poderoso neste shooter clássico.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
-    "generos": "Shooter, Plataforma",
+    "imagem": "Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Vectorman%20%28USA%29%20%28Beta%29.png",
+    "generos": "Shooter/Plataforma",
     "plataforma": "Genesis/Mega Drive"
   },
   {
     "id": 37,
     "nomeJogo": "Beyond Oasis",
     "descricao": "Descubra segredos e magia neste RPG de ação.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
     "generos": "RPG, Ação",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -307,7 +307,7 @@
     "id": 38,
     "nomeJogo": "Ecco the Dolphin",
     "descricao": "Explore o oceano e resolva mistérios como um golfinho inteligente.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
     "generos": "Aventura, Puzzle",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -315,7 +315,7 @@
     "id": 39,
     "nomeJogo": "ToeJam & Earl",
     "descricao": "Ajude esta dupla alienígena a encontrar peças para sua nave.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/ToeJam%20_%20Earl%20%28World%29%20%28Rev%20A%29.png",
     "generos": "Aventura, Roguelike",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -323,7 +323,7 @@
     "id": 40,
     "nomeJogo": "Mortal Kombat II",
     "descricao": "Lute pela supremacia neste icônico jogo de luta.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Mortal%20Kombat%20II%20%28World%29.png",
     "generos": "Luta",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -331,7 +331,7 @@
     "id": 41,
     "nomeJogo": "NBA Jam",
     "descricao": "Jogue basquete com regras exageradas e muita diversão.",
-    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/NBA%20Jam%20%28USA%2C%20Europe%29.png",
     "generos": "Esportes",
     "plataforma": "Genesis/Mega Drive"
   },
@@ -494,5 +494,85 @@
     "generos": "Terror/Sobrevivência",
     "plataforma": "PlayStation 1",
     "id": 61
+  },
+  {
+    "id": 62,
+    "nomeJogo": "The Legend of Zelda: Tears of the Kingdom",
+    "descricao": "Uma nova aventura no vasto mundo de Hyrule, onde Link deve enfrentar novos desafios e descobrir segredos ocultos.",
+    "imagem": "https://example.com/zelda_tears_of_the_kingdom.jpg",
+    "generos": "Ação/Aventura",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "id": 63,
+    "nomeJogo": "Super Mario Odyssey",
+    "descricao": "Mario explora diversos reinos ao redor do mundo para resgatar a Princesa Peach das garras de Bowser.",
+    "imagem": "https://example.com/super_mario_odyssey.jpg",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "id": 64,
+    "nomeJogo": "Animal Crossing: New Horizons",
+    "descricao": "Crie e personalize sua ilha dos sonhos em um jogo relaxante de simulação de vida.",
+    "imagem": "https://example.com/animal_crossing_new_horizons.jpg",
+    "generos": "Simulação/Social",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "id": 65,
+    "nomeJogo": "God of War: Ragnarok",
+    "descricao": "Kratos e seu filho Atreus enfrentam novos perigos enquanto exploram os reinos nórdicos.",
+    "imagem": "https://example.com/god_of_war_ragnarok.jpg",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "id": 66,
+    "nomeJogo": "Horizon Forbidden West",
+    "descricao": "Aloy explora terras desconhecidas e enfrenta máquinas perigosas em sua jornada para salvar a Terra.",
+    "imagem": "https://example.com/horizon_forbidden_west.jpg",
+    "generos": "Ação/RPG",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "id": 67,
+    "nomeJogo": "Ratchet & Clank: Rift Apart",
+    "descricao": "Ratchet e Clank viajam por diferentes dimensões para derrotar um imperador maligno.",
+    "imagem": "https://example.com/ratchet_clank_rift_apart.jpg",
+    "generos": "Ação/Plataforma",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "id": 68,
+    "nomeJogo": "Forza Horizon 5",
+    "descricao": "Participe de corridas emocionantes em um mundo aberto vibrante e dinâmico.",
+    "imagem": "https://example.com/forza_horizon_5.jpg",
+    "generos": "Corrida/Simulação",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "id": 69,
+    "nomeJogo": "Halo Infinite",
+    "descricao": "Master Chief retorna para enfrentar o Banished e salvar a humanidade mais uma vez.",
+    "imagem": "https://example.com/halo_infinite.jpg",
+    "generos": "FPS/Ação",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "id": 70,
+    "nomeJogo": "Psychonauts 2",
+    "descricao": "Razputin Aquato junta-se aos Psychonauts e explora mentes intrigantes para derrotar uma ameaça misteriosa.",
+    "imagem": "https://example.com/psychonauts_2.jpg",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "id": 71,
+    "nomeJogo": "Metroid Dread",
+    "descricao": "Samus Aran enfrenta novos perigos em uma missão para descobrir os segredos do planeta ZDR.",
+    "imagem": "https://example.com/metroid_dread.jpg",
+    "generos": "Ação/Aventura",
+    "plataforma": "Nintendo Switch"
   }
 ]
