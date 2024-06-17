@@ -29,7 +29,7 @@
         <!-- NAV -->
         <ul class="nav" id="nav">
             <li><a href="#row-continuar" title="Continuar jogando">Continuar jogando</a></li>
-            <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
+            <li><a href="#row-top" title="Top 10 Games">Top 10 Jogos</a></li>
             <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
             <li><a href="#row-genesis" title="Genesis / Mega Drive<">Genesis / Mega Drive</a></li>
             <li><a href="#row-playstation" title="Playstation">Playstation</a></li>
@@ -84,7 +84,11 @@
               <a class="row-item" title="{{nomeJogo}}" href="#">
                 <div class="row-card">
                   <div class="row-card-front">
+                    {{#if imagem}}
                     <img src="{{imagem}}" alt="{{nomeJogo}}" />
+                    {{else}}
+                      <h3 class="title">{{nomeJogo}}</h3>
+                    {{/if}}
                   </div>
                   <div class="row-card-back">
                     <h3 class="title">{{nomeJogo}}</h3>
@@ -94,8 +98,8 @@
               </a>
             {{/each}}
           </div>
-          <button class="row-control row-arrow-left">◄</button>
-          <button class="row-control row-arrow-right">►</button>
+          <button class="row-control row-arrow-left" aria-label="Voltar um título"><b class="icon icon-leftCaret"></b></button>
+          <button class="row-control row-arrow-right" aria-label="Avançar um título"><b class="icon icon-rightCaret"></b></button>
         </div>
       {{else}}
         <div class="no-items">Nenhum jogo encontrado</div>
@@ -112,7 +116,7 @@
     </div>
 
     <div class="row top" id="row-top">
-        <h2 class="row-title">Top 10 Games</h2>
+        <h2 class="row-title">Top 10 Jogos</h2>
         <div class="row-container"></div>
     </div>
 
@@ -122,12 +126,12 @@
     </div>
 
     <div class="row" id="row-genesis">
-        <h2 class="row-title">Genesis / Mega Drive</h2>
+        <h2 class="row-title">Sega Genesis / Mega Drive</h2>
         <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-playstation">
-        <h2 class="row-title">Playstation</h2>
+        <h2 class="row-title">Sony Playstation</h2>
         <div class="row-container"></div>
     </div>
     <!-- FIM ROWS -->

@@ -1,5 +1,6 @@
 [
   {
+    "nota": "",
     "nomeJogo": "Super Mario World",
     "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%20%28USA%29.png",
@@ -8,6 +9,7 @@
     "id": 0
   },
   {
+    "nota": "",
     "nomeJogo": "The Legend of Zelda: A Link to the Past",
     "descricao": "Aventura épica de ação com Link em busca de salvar a terra de Hyrule.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%2C%20Europe%29%20%28Switch%20Online%29.png",
@@ -16,6 +18,7 @@
     "id": 1
   },
   {
+    "nota": "",
     "nomeJogo": "Super Mario Kart",
     "descricao": "Jogo de corrida com personagens da série Mario, com itens e atalhos.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20Kart%20%28USA%29.png",
@@ -24,6 +27,7 @@
     "id": 2
   },
   {
+    "nota": "",
     "nomeJogo": "Doom",
     "descricao": "Jogo de tiro em primeira pessoa ambientado em Marte, enfrentando criaturas alienígenas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Doom%20%28USA%29.png",
@@ -32,6 +36,7 @@
     "id": 3
   },
   {
+    "nota": "",
     "nomeJogo": "Donkey Kong Country",
     "descricao": "Aventura de plataforma com Donkey Kong e Diddy Kong em busca de tesouros de bananas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Donkey%20Kong%20Country%20%28USA%29.png",
@@ -40,6 +45,7 @@
     "id": 4
   },
   {
+    "nota": "",
     "nomeJogo": "Chrono Trigger",
     "descricao": "RPG com viagem no tempo para salvar o mundo, trilha sonora elogiada.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
@@ -48,6 +54,7 @@
     "id": 5
   },
   {
+    "nota": "",
     "nomeJogo": "Super Mario World 2: Yoshi’s Island\t",
     "descricao": "Continuação do clássico, focando em Yoshi e bebês Mario.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
@@ -56,6 +63,7 @@
     "id": 6
   },
   {
+    "nota": "",
     "nomeJogo": "Super Castlevania IV",
     "descricao": "Jogo de ação e aventura com temática de vampiros, onde você controla Simon Belmont.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Castlevania%20IV%20%28USA%29.png",
@@ -64,6 +72,7 @@
     "id": 7
   },
   {
+    "nota": "",
     "nomeJogo": "Final Fantasy III no EUA",
     "descricao": "Um dos melhores RPGs da era 16 bits, com uma história envolvente e personagens memoráveis.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Final%20Fantasy%20VI%20%28USA%29.png",
@@ -72,6 +81,7 @@
     "id": 8
   },
   {
+    "nota": "",
     "nomeJogo": "Earthbound",
     "descricao": "Uma aventura moderna e excêntrica, com elementos de humor e uma trilha sonora única.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/EarthBound%20%28USA%29.png",
@@ -80,6 +90,7 @@
     "id": 9
   },
   {
+    "nota": "",
     "nomeJogo": "Secret of Mana",
     "descricao": "Jogo cooperativo com gráficos coloridos e uma trilha sonora marcante.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Secret%20of%20Mana%20%28USA%29.png",
@@ -88,6 +99,7 @@
     "id": 10
   },
   {
+    "nota": "",
     "nomeJogo": "Mega Man X",
     "descricao": "Ação e plataformas com o robô Mega Man X lutando contra Mavericks.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Mega%20Man%20X%20%28USA%29.png",
@@ -96,6 +108,7 @@
     "id": 11
   },
   {
+    "nota": "",
     "nomeJogo": "Super Bomberman",
     "descricao": "Coloque bombas e derrote inimigos em labirintos explosivos.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Bomberman%20%28USA%29.png",
@@ -104,6 +117,7 @@
     "id": 12
   },
   {
+    "nota": "",
     "nomeJogo": "F-Zero",
     "descricao": "Corridas futurísticas em alta velocidade com veículos antigravidade.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/F-Zero%20%28USA%29.png",
@@ -112,14 +126,16 @@
     "id": 13
   },
   {
+    "nota": "",
     "nomeJogo": "Star Fox",
     "descricao": "Pilote uma nave espacial e combata inimigos no espaço e em planetas alienígenas.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Star%20Fox%20%28USA%29.png",
-    "generos": "Tiro/Sci-fi",
+    "generos": "Shooter/Sci-fi",
     "plataforma": "Super Nintendo",
     "id": 14
   },
   {
+    "nota": "",
     "nomeJogo": "Super Punch-Out!!",
     "descricao": "Suba no ringue e enfrente uma variedade de boxeadores caricatos.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Punch-Out%21%21%20%28USA%29.png",
@@ -128,6 +144,7 @@
     "id": 15
   },
   {
+    "nota": "",
     "nomeJogo": "Kirby Super Star",
     "descricao": "Uma coleção de jogos estrelando o adorável Kirby e suas habilidades de cópia.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Kirby%20Super%20Star%20%28USA%29.png",
@@ -136,6 +153,7 @@
     "id": 16
   },
   {
+    "nota": "",
     "nomeJogo": "Super Mario RPG: Legend of the Seven Stars",
     "descricao": "Mario se aventura em um mundo RPG com aliados inesperados para derrotar Smithy.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20RPG%20-%20Legend%20of%20the%20Seven%20Stars%20%28USA%29.png",
@@ -144,6 +162,7 @@
     "id": 17
   },
   {
+    "nota": "",
     "nomeJogo": "Pilotwings",
     "descricao": "Aprenda a pilotar diferentes tipos de aeronaves em desafios variados.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Pilotwings%20%28USA%29.png",
@@ -152,6 +171,7 @@
     "id": 18
   },
   {
+    "nota": "",
     "nomeJogo": "Super Metroid",
     "descricao": "Samus Aran explora o planeta Zebes para derrotar Mother Brain.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Metroid%20%28USA%2C%20Europe%29%20%28En%2CJa%29%20%28Virtual%20Console%2C%20Classic%20Mini%2C%20Switch%20Online%29.png",
@@ -160,6 +180,7 @@
     "id": 19
   },
   {
+    "nota": "",
     "nomeJogo": "Sonic The Hedgehog 2",
     "descricao": "Aventuras velozes com Sonic e Tails.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%202%20%28USA%29.png",
@@ -168,6 +189,7 @@
     "id": 20
   },
   {
+    "nota": "",
     "nomeJogo": "Streets of Rage 2",
     "descricao": "Lute contra gangues nas ruas neste clássico beat 'em up.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Streets%20of%20Rage%202%20%28USA%29.png",
@@ -176,6 +198,7 @@
     "id": 21
   },
   {
+    "nota": "",
     "nomeJogo": "Shinobi III: Return of the Ninja Master",
     "descricao": "Missões ninja com ação e plataformas.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
@@ -184,14 +207,16 @@
     "id": 22
   },
   {
+    "nota": "",
     "nomeJogo": "Gunstar Heroes",
     "descricao": "Ação intensa e tiroteios em um jogo de tiro run and gun.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Gunstar%20Heroes%20%28USA%29.png",
-    "generos": "Tiro",
+    "generos": "Shooter",
     "plataforma": "Genesis/Mega Drive",
     "id": 23
   },
   {
+    "nota": "",
     "nomeJogo": "Phantasy Star IV: The End of the Millennium",
     "descricao": "Uma saga espacial épica em um RPG clássico.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Phantasy%20Star%20IV%20%28USA%29.png",
@@ -200,6 +225,7 @@
     "id": 24
   },
   {
+    "nota": "",
     "nomeJogo": "Castlevania: Bloodlines",
     "descricao": "A caçada aos vampiros continua com novos personagens e desafios.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Castlevania%20-%20Bloodlines%20%28USA%29.png",
@@ -208,14 +234,16 @@
     "id": 25
   },
   {
+    "nota": "",
     "nomeJogo": "Sonic The Hedgehog",
     "descricao": "Aventura de alta velocidade com o icônico ouriço azul.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
-    "generos": "Plataforma, Aventura",
+    "generos": "Plataforma/Aventura",
     "plataforma": "Genesis/Mega Drive",
     "id": 26
   },
   {
+    "nota": "",
     "nomeJogo": "Shining Force II",
     "descricao": "Estratégia tática envolvente com elementos de RPG.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shining%20Force%20II%20%28USA%29.png",
@@ -224,6 +252,7 @@
     "id": 27
   },
   {
+    "nota": "",
     "nomeJogo": "Contra: Hard Corps",
     "descricao": "Shooter intenso com muita ação e cooperação.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Contra%20-%20Hard%20Corps%20%28USA%29%20%28Genesis%20Mini%29.png",
@@ -232,11 +261,408 @@
     "id": 28
   },
   {
+    "nota": "",
     "nomeJogo": "Shinobi III",
     "descricao": "Ninja enfrenta inimigos em um jogo de ação e plataforma.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
     "generos": "Plataforma/Ação",
     "plataforma": "Genesis/Mega Drive",
     "id": 29
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Street Fighter II’",
+    "descricao": "O clássico jogo de luta que definiu um gênero.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Street%20Fighter%20II%27%20-%20Remastered%20Edition.png",
+    "generos": "Luta",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 30
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Earthworm Jim",
+    "descricao": "Humor e ação se misturam neste jogo de plataforma.",
+    "imagem": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4d37a06-258e-423e-ac50-a4ace0f9d76c/da3gai7-f555427e-bf22-463d-b008-196f40ed98fd.png/v1/fill/w_1024,h_1400,q_80,strp/earthworm_jim_box_art_1_by_artchanxv_da3gai7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQwMCIsInBhdGgiOiJcL2ZcL2M0ZDM3YTA2LTI1OGUtNDIzZS1hYzUwLWE0YWNlMGY5ZDc2Y1wvZGEzZ2FpNy1mNTU1NDI3ZS1iZjIyLTQ2M2QtYjAwOC0xOTZmNDBlZDk4ZmQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ascdy3Dzeod22g4KSKwhd4FDA8V8OAMMxsb5fm2DY0w",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 31
+  },
+  {
+    "nota": "",
+    "id": 32,
+    "nomeJogo": "Altered Beast",
+    "descricao": "Transforme-se em feras poderosas neste clássico beat 'em up.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Altered%20Beast%20%28USA%2C%20Europe%29.png",
+    "generos": "Beat 'em up, Ação",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 33,
+    "nomeJogo": "Golden Axe",
+    "descricao": "Aventura épica em um mundo de fantasia com combate intenso.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Golden%20Axe%20%28World%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 34,
+    "nomeJogo": "Comix Zone",
+    "descricao": "Lute contra vilões em um mundo de quadrinhos interativo.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Comix%20Zone%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 35,
+    "nomeJogo": "Ristar",
+    "descricao": "Estenda seus braços para explorar e resolver quebra-cabeças.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Ristar%20%28USA%2C%20Europe%29.png",
+    "generos": "Plataforma, Puzzle",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 36,
+    "nomeJogo": "Vectorman",
+    "descricao": "Salve a Terra como um robô poderoso neste shooter clássico.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Vectorman%20%28USA%29%20%28Beta%29.png",
+    "generos": "Shooter/Plataforma",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 37,
+    "nomeJogo": "Beyond Oasis",
+    "descricao": "Descubra segredos e magia neste RPG de ação.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
+    "generos": "RPG, Ação",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 38,
+    "nomeJogo": "Ecco the Dolphin",
+    "descricao": "Explore o oceano e resolva mistérios como um golfinho inteligente.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
+    "generos": "Aventura, Puzzle",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 39,
+    "nomeJogo": "ToeJam & Earl",
+    "descricao": "Ajude esta dupla alienígena a encontrar peças para sua nave.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/ToeJam%20_%20Earl%20%28World%29%20%28Rev%20A%29.png",
+    "generos": "Aventura, Roguelike",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 40,
+    "nomeJogo": "Mortal Kombat II",
+    "descricao": "Lute pela supremacia neste icônico jogo de luta.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Mortal%20Kombat%20II%20%28World%29.png",
+    "generos": "Luta",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "id": 41,
+    "nomeJogo": "NBA Jam",
+    "descricao": "Jogue basquete com regras exageradas e muita diversão.",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/NBA%20Jam%20%28USA%2C%20Europe%29.png",
+    "generos": "Esportes",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Final Fantasy VII",
+    "descricao": "Um RPG épico que segue a história de Cloud Strife enquanto ele e seu grupo lutam contra a corporação Shinra e o vilão Sephiroth.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20VII%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 42
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Metal Gear Solid",
+    "descricao": "Um jogo de ação e espionagem onde você controla Solid Snake em uma missão para desarmar um grupo terrorista que possui armas nucleares.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Metal%20Gear%20Solid%20%28USA%29.png",
+    "generos": "Ação/Stealth",
+    "plataforma": "PlayStation 1",
+    "id": 43
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Castlevania: Symphony of the Night",
+    "descricao": "Aventura de ação e exploração onde você controla Alucard, filho de Drácula, em uma missão para derrotar seu pai.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 44
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Resident Evil 2",
+    "descricao": "Um jogo de terror e sobrevivência onde os personagens principais, Leon e Claire, enfrentam zumbis e outras criaturas em uma cidade infestada.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Resident%20Evil%202%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 45
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Crash Bandicoot",
+    "descricao": "Um jogo de plataforma em que você controla Crash, um marsupial, em sua missão para derrotar o Dr. Neo Cortex.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Crash%20Bandicoot%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "PlayStation 1",
+    "id": 46
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Gran Turismo",
+    "descricao": "Um simulador de corrida que oferece uma grande variedade de carros e pistas, além de uma jogabilidade realista.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Gran%20Turismo%20%28USA%29.png",
+    "generos": "Corrida/Simulação",
+    "plataforma": "PlayStation 1",
+    "id": 47
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Silent Hill",
+    "descricao": "Um jogo de terror psicológico onde você controla Harry Mason em busca de sua filha desaparecida na misteriosa cidade de Silent Hill.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Silent%20Hill%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 48
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Tekken 3",
+    "descricao": "Um dos jogos de luta mais aclamados, oferecendo uma grande variedade de personagens e movimentos.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tekken%203%20%28USA%29.png",
+    "generos": "Luta",
+    "plataforma": "PlayStation 1",
+    "id": 49
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Tony Hawk's Pro Skater 2",
+    "descricao": "Um jogo de skate que permite realizar várias manobras e truques em diferentes pistas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
+    "generos": "Esportes/Skate",
+    "plataforma": "PlayStation 1",
+    "id": 50
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Spyro the Dragon",
+    "descricao": "Um jogo de plataforma onde você controla Spyro, um pequeno dragão, em uma missão para salvar seus amigos e derrotar vilões.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Spyro%20the%20Dragon%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "PlayStation 1",
+    "id": 51
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Tomb Raider",
+    "descricao": "Um jogo de ação e aventura onde você controla a arqueóloga Lara Croft em sua busca por artefatos antigos.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 52
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Final Fantasy IX",
+    "descricao": "Um RPG clássico que segue a história de Zidane e sua luta contra uma força maligna.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20IX%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 53
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Chrono Cross",
+    "descricao": "Um RPG que serve como sequência indireta de Chrono Trigger, com uma narrativa complexa e múltiplos finais.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Chrono%20Cross%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 54
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Vagrant Story",
+    "descricao": "Um RPG de ação que segue o protagonista Ashley Riot em uma missão para desvendar uma conspiração.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Vagrant%20Story%20%28USA%29.png ",
+    "generos": "RPG/Ação",
+    "plataforma": "PlayStation 1",
+    "id": 55
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Suikoden II",
+    "descricao": "Um RPG com uma narrativa profunda e um grande elenco de personagens recrutáveis.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Suikoden%20II%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 56
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Parasite Eve",
+    "descricao": "Um jogo que mistura elementos de RPG e survival horror, onde você controla Aya Brea contra mutações biológicas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Parasite%20Eve%20II%20%28USA%29.png",
+    "generos": "RPG/Terror",
+    "plataforma": "PlayStation 1",
+    "id": 57
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Xenogears",
+    "descricao": "Um RPG com uma história complexa e mecânicas de combate inovadoras que incluem mechas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Xenogears%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 58
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Oddworld: Abe's Oddysee",
+    "descricao": "Um jogo de plataforma e puzzle onde você controla Abe, um escravo que tenta libertar seu povo.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29.png",
+    "generos": "Plataforma/Puzzle",
+    "plataforma": "PlayStation 1",
+    "id": 59
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Legacy of Kain: Soul Reaver",
+    "descricao": "Um jogo de ação e aventura onde você controla Raziel, um vampiro em busca de vingança contra seu mestre, Kain.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 60
+  },
+  {
+    "nota": "",
+    "nomeJogo": "Dino Crisis",
+    "descricao": "Um jogo de terror e sobrevivência similar a Resident Evil, mas com dinossauros em vez de zumbis.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Dino%20Crisis%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 61
+  },
+  {
+    "nota": 96,
+    "id": 62,
+    "nomeJogo": "The Legend of Zelda: Tears of the Kingdom",
+    "descricao": "Uma nova aventura no vasto mundo de Hyrule, onde Link deve enfrentar novos desafios e descobrir segredos ocultos.",
+    "imagem": "",
+    "generos": "Ação/Aventura",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "nota": 97,
+    "id": 63,
+    "nomeJogo": "Super Mario Odyssey",
+    "descricao": "Mario explora diversos reinos ao redor do mundo para resgatar a Princesa Peach das garras de Bowser.",
+    "imagem": "",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "nota": 90,
+    "id": 64,
+    "nomeJogo": "Animal Crossing: New Horizons",
+    "descricao": "Crie e personalize sua ilha dos sonhos em um jogo relaxante de simulação de vida.",
+    "imagem": "",
+    "generos": "Simulação/Social",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "nota": 94,
+    "id": 65,
+    "nomeJogo": "God of War: Ragnarok",
+    "descricao": "Kratos e seu filho Atreus enfrentam novos perigos enquanto exploram os reinos nórdicos.",
+    "imagem": "",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "nota": 88,
+    "id": 66,
+    "nomeJogo": "Horizon Forbidden West",
+    "descricao": "Aloy explora terras desconhecidas e enfrenta máquinas perigosas em sua jornada para salvar a Terra.",
+    "imagem": "",
+    "generos": "Ação/RPG",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "nota": 88,
+    "id": 67,
+    "nomeJogo": "Ratchet & Clank: Rift Apart",
+    "descricao": "Ratchet e Clank viajam por diferentes dimensões para derrotar um imperador maligno.",
+    "imagem": "",
+    "generos": "Ação/Plataforma",
+    "plataforma": "PlayStation 5"
+  },
+  {
+    "nota": 92,
+    "id": 68,
+    "nomeJogo": "Forza Horizon 5",
+    "descricao": "Participe de corridas emocionantes em um mundo aberto vibrante e dinâmico.",
+    "imagem": "",
+    "generos": "Corrida/Simulação",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "nota": 87,
+    "id": 69,
+    "nomeJogo": "Halo Infinite",
+    "descricao": "Master Chief retorna para enfrentar o Banished e salvar a humanidade mais uma vez.",
+    "imagem": "",
+    "generos": "FPS/Ação",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "nota": 89,
+    "id": 70,
+    "nomeJogo": "Psychonauts 2",
+    "descricao": "Razputin Aquato junta-se aos Psychonauts e explora mentes intrigantes para derrotar uma ameaça misteriosa.",
+    "imagem": "",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Xbox Series X"
+  },
+  {
+    "nota": 88,
+    "id": 71,
+    "nomeJogo": "Metroid Dread",
+    "descricao": "Samus Aran enfrenta novos perigos em uma missão para descobrir os segredos do planeta ZDR.",
+    "imagem": "",
+    "generos": "Ação/Aventura",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "nomeJogo": "teste",
+    "descricao": "teste",
+    "imagem": "",
+    "generos": "teste",
+    "plataforma": "teste",
+    "nota": "",
+    "id": 72
+  },
+  {
+    "nomeJogo": "teste 2",
+    "descricao": "teste 2",
+    "imagem": "",
+    "generos": "teste",
+    "plataforma": "teste",
+    "nota": "100",
+    "id": 73
   }
 ]

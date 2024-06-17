@@ -12,7 +12,9 @@ const containerSuperNintendo = document.querySelector(
   "#row-snes .row-container"
 );
 const containerGenesis = document.querySelector("#row-genesis .row-container");
-const containerPlaystation = document.querySelector("#row-playstation .row-container");
+const containerPlaystation = document.querySelector(
+  "#row-playstation .row-container"
+);
 
 /* jogos iniciais */
 
@@ -89,37 +91,27 @@ function goToItem(items, currentItem) {
 }
 
 const applyRowControls = (e) => {
-  const controls = e.querySelectorAll(".row-control");
+  const controls = e.querySelectorAll("button.row-control");
   const items = e.querySelectorAll(".row-item");
 
   const numItems = items.length;
-  let controlJump = 1;
   let currentItem = -1;
 
-  if (numItems <= controlJump) controls.forEach((e) => e.remove());
-
   controls.forEach((control) => {
-    control.addEventListener("click", (e) => {
-      const isLeft = e.target.classList.contains("row-arrow-left");
-
-      if (currentItem >= 0 && isLeft) {
-        currentItem - controlJump >= 0
-          ? (currentItem -= controlJump)
-          : (currentItem = numItems - 1);
-        goToItem(items, currentItem);
-      } else if (currentItem < numItems && !isLeft) {
-        currentItem + controlJump <= numItems
-          ? (currentItem += controlJump)
-          : (currentItem = numItems - 1);
-        if (currentItem != numItems) {
-          goToItem(items, currentItem);
-        } else {
+    control.addEventListener("click", () => {
+      const isLeft = control.classList.contains("row-arrow-left");
+      if (currentItem >= -1 && isLeft) {
+        currentItem--;
+        if (currentItem < 0) {
+          currentItem = numItems - 1;
+        }
+      } else if (currentItem <= numItems - 1 && !isLeft) {
+        currentItem++;
+        if (currentItem > numItems - 1) {
           currentItem = 0;
-          goToItem(items, currentItem);
         }
       }
-
-      console.log(currentItem);
+      goToItem(items, currentItem);
     });
 
     items.forEach((item, key) => {
@@ -146,3 +138,5 @@ window.addEventListener("scroll", () => {
     ? header.classList.add("transparent")
     : header.classList.remove("transparent");
 });
+
+/* filtros */

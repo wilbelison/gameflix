@@ -51,6 +51,8 @@ class Jogo {
 
     for (let i = 0; i < this.arrayJogos.length; i++) {
       let tr = tbody.insertRow();
+      tr.classList.add("row");
+      tr.classList.add("id-" + this.arrayJogos[i].id);
 
       let td_id = tr.insertCell();
       let td_jogo = tr.insertCell();
@@ -58,6 +60,7 @@ class Jogo {
       let td_imagem = tr.insertCell();
       let td_generos = tr.insertCell();
       let td_plataforma = tr.insertCell();
+      let td_nota = tr.insertCell();
       let td_acao = tr.insertCell();
 
       td_id.innerText = this.arrayJogos[i].id;
@@ -76,6 +79,14 @@ class Jogo {
       td_generos.innerText = this.arrayJogos[i].generos;
       td_plataforma.innerText = this.arrayJogos[i].plataforma;
 
+      if (this.arrayJogos[i].nota) {
+        td_nota.innerText = this.arrayJogos[i].nota;
+      } else {
+        td_nota.innerText = "N/A";
+      }
+
+      /* edit button */
+
       let buttonEdit = document.createElement("button");
       buttonEdit.setAttribute(
         "onclick",
@@ -84,6 +95,8 @@ class Jogo {
       let imgEdit = document.createElement("img");
       imgEdit.src = "./assets/images/icon-edit.svg";
       buttonEdit.appendChild(imgEdit);
+
+      /* delete button */
 
       let buttonDelete = document.createElement("button");
       buttonDelete.setAttribute(
@@ -94,13 +107,45 @@ class Jogo {
       imgDelete.src = "./assets/images/icon-delete.svg";
       buttonDelete.appendChild(imgDelete);
 
-      let actionButtons = document.createElement("div");
-      actionButtons.classList.add("buttons");
+      /* action buttons */
 
+      let actionButtons = document.createElement("div");
+      actionButtons.classList.add("actionButtons");
       actionButtons.appendChild(buttonEdit);
       actionButtons.appendChild(buttonDelete);
 
+      /* confirm edit button */
+
+      let buttonConfirm = document.createElement("button");
+      buttonConfirm.setAttribute(
+        "onclick",
+        `jogo.atualizar(${this.arrayJogos[i].id})`
+      );
+      let imgConfirm = document.createElement("img");
+      imgConfirm.src = "./assets/images/icon-confirm.svg";
+      buttonConfirm.appendChild(imgConfirm);
+
+      /* cancel edit button */
+
+      let buttonCancel = document.createElement("button");
+      buttonCancel.setAttribute(
+        "onclick",
+        `jogo.cancelar(${this.arrayJogos[i].id})`
+      );
+      let imgCancel = document.createElement("img");
+      imgCancel.src = "./assets/images/icon-cancel.svg";
+      buttonCancel.appendChild(imgCancel);
+
+      /* edit buttons */
+
+      let editButtons = document.createElement("div");
+      editButtons.classList.add("editButtons");
+      editButtons.appendChild(buttonConfirm);
+      editButtons.appendChild(buttonCancel);  
+  
+
       td_acao.appendChild(actionButtons);
+      td_acao.appendChild(editButtons);
     }
   }
 
@@ -117,6 +162,7 @@ class Jogo {
     jogo.imagem = document.getElementById("imagem").value;
     jogo.generos = document.getElementById("generos").value;
     jogo.plataforma = document.getElementById("plataforma").value;
+    jogo.nota = document.getElementById("nota").value;
     return jogo;
   }
 
@@ -128,9 +174,10 @@ class Jogo {
     if (jogo.descricao == "") {
       msg += "Informe a descrição do jogo \n";
     }
-    if (jogo.imagem == "") {
-      msg += "Informe a URL da imagem do jogo \n";
-    }
+    /* imagem agora é opcional */
+    // if (jogo.imagem == "") {
+    //   msg += "Informe a URL da imagem do jogo \n";
+    // }
     if (jogo.generos == "") {
       msg += "Informe os gêneros do jogo \n";
     }
@@ -151,10 +198,12 @@ class Jogo {
     document.getElementById("imagem").value = "";
     document.getElementById("generos").value = "";
     document.getElementById("plataforma").value = "";
+    document.getElementById("nota").value = "";
   }
 
   deletar(id) {
-    let result = confirm(`Excluir o jogo ${this.arrayJogos[id].nomeJogo}?`);
+    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
+    let result = confirm(`Excluir o jogo ${nome}?`);
     if (result === true) {
       this.arrayJogos = this.arrayJogos.filter(
         (jogo) => parseInt(jogo.id) !== parseInt(id)
@@ -164,7 +213,8 @@ class Jogo {
   }
 
   editar(id) {
-    console.log(id);
+    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
+    console.log(nome);
   }
 
   exportarJSON() {

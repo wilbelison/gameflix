@@ -78,9 +78,37 @@ p {
   padding: 0;
 }
 
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .title {
+  display: block;
   font-size: 36px;
   margin-bottom: 20px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.link {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .sub-title {
@@ -187,7 +215,8 @@ table td {
   border: 1px solid #ccc;
 }
 
-table .buttons {
+table .actionButtons,
+table .editButtons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -196,7 +225,8 @@ table .buttons {
   align-items: center;
 }
 
-table .buttons button {
+table .actionButtons button,
+table .editButtons button {
   width: 36px;
   height: 36px;
   object-fit: contain;
