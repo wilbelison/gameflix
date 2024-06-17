@@ -51,6 +51,8 @@ class Jogo {
 
     for (let i = 0; i < this.arrayJogos.length; i++) {
       let tr = tbody.insertRow();
+      tr.classList.add("row");
+      tr.classList.add("id-" + this.arrayJogos[i].id);
 
       let td_id = tr.insertCell();
       let td_jogo = tr.insertCell();
@@ -83,6 +85,8 @@ class Jogo {
         td_nota.innerText = "N/A";
       }
 
+      /* edit button */
+
       let buttonEdit = document.createElement("button");
       buttonEdit.setAttribute(
         "onclick",
@@ -91,6 +95,8 @@ class Jogo {
       let imgEdit = document.createElement("img");
       imgEdit.src = "./assets/images/icon-edit.svg";
       buttonEdit.appendChild(imgEdit);
+
+      /* delete button */
 
       let buttonDelete = document.createElement("button");
       buttonDelete.setAttribute(
@@ -101,13 +107,45 @@ class Jogo {
       imgDelete.src = "./assets/images/icon-delete.svg";
       buttonDelete.appendChild(imgDelete);
 
-      let actionButtons = document.createElement("div");
-      actionButtons.classList.add("buttons");
+      /* action buttons */
 
+      let actionButtons = document.createElement("div");
+      actionButtons.classList.add("actionButtons");
       actionButtons.appendChild(buttonEdit);
       actionButtons.appendChild(buttonDelete);
 
+      /* confirm edit button */
+
+      let buttonConfirm = document.createElement("button");
+      buttonConfirm.setAttribute(
+        "onclick",
+        `jogo.atualizar(${this.arrayJogos[i].id})`
+      );
+      let imgConfirm = document.createElement("img");
+      imgConfirm.src = "./assets/images/icon-confirm.svg";
+      buttonConfirm.appendChild(imgConfirm);
+
+      /* cancel edit button */
+
+      let buttonCancel = document.createElement("button");
+      buttonCancel.setAttribute(
+        "onclick",
+        `jogo.cancelar(${this.arrayJogos[i].id})`
+      );
+      let imgCancel = document.createElement("img");
+      imgCancel.src = "./assets/images/icon-cancel.svg";
+      buttonCancel.appendChild(imgCancel);
+
+      /* edit buttons */
+
+      let editButtons = document.createElement("div");
+      editButtons.classList.add("editButtons");
+      editButtons.appendChild(buttonConfirm);
+      editButtons.appendChild(buttonCancel);  
+  
+
       td_acao.appendChild(actionButtons);
+      td_acao.appendChild(editButtons);
     }
   }
 

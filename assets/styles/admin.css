@@ -215,7 +215,8 @@ table td {
   border: 1px solid #ccc;
 }
 
-table .buttons {
+table .actionButtons,
+table .editButtons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -224,7 +225,8 @@ table .buttons {
   align-items: center;
 }
 
-table .buttons button {
+table .actionButtons button,
+table .editButtons button {
   width: 36px;
   height: 36px;
   object-fit: contain;
