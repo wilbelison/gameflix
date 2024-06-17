@@ -204,16 +204,40 @@ textarea {
 #lista table th,
 #lista table td {
   text-align: left;
-  padding: 8px 16px;
+  padding: 8px;
   border: 1px solid #ccc;
 }
 
 #lista table th {
+  font-weight: bold;
+  font-size: 13px;
   background-color: #eee;
 }
 
 #lista table td {
+  position: relative;
+  font-size: 13px;
   background-color: #fff;
+}
+
+#lista table td .thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+
+#lista table td {
+  overflow: visible;
+}
+
+#lista table td:hover .thumb { 
+  transform: scale(2);
+  z-index: 1;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
 }
 
 #lista table tr:hover td {
@@ -248,6 +272,9 @@ textarea {
 
 #lista table .row.edit td {
   background-color: #e5e5e5;
+  border-top-color: #e5e5e5;
+  border-right-color: #e5e5e5;
+  border-left-color: #e5e5e5;
 }
 
 #lista table .row .editButtons {

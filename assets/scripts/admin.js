@@ -70,7 +70,7 @@ class Jogo {
       if (this.arrayJogos[i].imagem) {
         let img = document.createElement("img");
         img.src = this.arrayJogos[i].imagem;
-        img.style.width = "50px";
+        img.classList.add("thumb");
         td_imagem.appendChild(img);
       } else {
         td_imagem.innerText = "N/A";
@@ -78,6 +78,8 @@ class Jogo {
 
       td_generos.innerText = this.arrayJogos[i].generos;
       td_plataforma.innerText = this.arrayJogos[i].plataforma;
+
+      td_nota.classList.add("center");
 
       if (this.arrayJogos[i].nota) {
         td_nota.innerText = this.arrayJogos[i].nota;
