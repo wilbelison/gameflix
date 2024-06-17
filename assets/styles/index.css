@@ -330,11 +330,6 @@ body {
   height: 100%;
   transform-style: preserve-3d;
   transition: 200ms all ease-in-out;
-}
-
-.row-item:hover {
-  border: solid 2px #333;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
   background-color: #000;
 }
 
@@ -344,7 +339,6 @@ body {
   transform: scale(1.1);
   z-index: 9;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
-  background-color: #000;
 }
 
 .row-current-item .row-card,

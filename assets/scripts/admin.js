@@ -154,6 +154,7 @@ class Jogo {
   }
 
   deletar(id) {
+    console.log(this.arrayJogos[id]);
     let result = confirm(`Excluir o jogo ${this.arrayJogos[id].nomeJogo}?`);
     if (result === true) {
       this.arrayJogos = this.arrayJogos.filter(

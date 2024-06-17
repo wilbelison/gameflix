@@ -159,7 +159,6 @@
     "plataforma": "Super Nintendo",
     "id": 19
   },
-
   {
     "nomeJogo": "Sonic The Hedgehog 2",
     "descricao": "Aventuras velozes com Sonic e Tails.",
@@ -248,23 +247,101 @@
     "plataforma": "Genesis/Mega Drive",
     "id": 30
   },
-
-
-
-
-
-
-
-
-  
-
+  {
+    "nomeJogo": "Earthworm Jim",
+    "descricao": "Humor e ação se misturam neste jogo de plataforma.",
+    "imagem": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4d37a06-258e-423e-ac50-a4ace0f9d76c/da3gai7-f555427e-bf22-463d-b008-196f40ed98fd.png/v1/fill/w_1024,h_1400,q_80,strp/earthworm_jim_box_art_1_by_artchanxv_da3gai7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQwMCIsInBhdGgiOiJcL2ZcL2M0ZDM3YTA2LTI1OGUtNDIzZS1hYzUwLWE0YWNlMGY5ZDc2Y1wvZGEzZ2FpNy1mNTU1NDI3ZS1iZjIyLTQ2M2QtYjAwOC0xOTZmNDBlZDk4ZmQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ascdy3Dzeod22g4KSKwhd4FDA8V8OAMMxsb5fm2DY0w",
+    "generos": "Plataforma/Aventura",
+    "plataforma": "Genesis/Mega Drive",
+    "id": 31
+  },
+  {
+    "id": 32,
+    "nomeJogo": "Altered Beast",
+    "descricao": "Transforme-se em feras poderosas neste clássico beat 'em up.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Beat 'em up, Ação",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 33,
+    "nomeJogo": "Golden Axe",
+    "descricao": "Aventura épica em um mundo de fantasia com combate intenso.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Ação, Aventura",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 34,
+    "nomeJogo": "Comix Zone",
+    "descricao": "Lute contra vilões em um mundo de quadrinhos interativo.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Ação, Aventura",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 35,
+    "nomeJogo": "Ristar",
+    "descricao": "Estenda seus braços para explorar e resolver quebra-cabeças.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Plataforma, Puzzle",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 36,
+    "nomeJogo": "Vectorman",
+    "descricao": "Salve a Terra como um robô poderoso neste shooter clássico.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Shooter, Plataforma",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 37,
+    "nomeJogo": "Beyond Oasis",
+    "descricao": "Descubra segredos e magia neste RPG de ação.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "RPG, Ação",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 38,
+    "nomeJogo": "Ecco the Dolphin",
+    "descricao": "Explore o oceano e resolva mistérios como um golfinho inteligente.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Aventura, Puzzle",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 39,
+    "nomeJogo": "ToeJam & Earl",
+    "descricao": "Ajude esta dupla alienígena a encontrar peças para sua nave.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Aventura, Roguelike",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 40,
+    "nomeJogo": "Mortal Kombat II",
+    "descricao": "Lute pela supremacia neste icônico jogo de luta.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Luta",
+    "plataforma": "Genesis/Mega Drive"
+  },
+  {
+    "id": 41,
+    "nomeJogo": "NBA Jam",
+    "descricao": "Jogue basquete com regras exageradas e muita diversão.",
+    "imagem": "COLOQUE_IMAGEM_AQUI",
+    "generos": "Esportes",
+    "plataforma": "Genesis/Mega Drive"
+  },
   {
     "nomeJogo": "Final Fantasy VII",
     "descricao": "Um RPG épico que segue a história de Cloud Strife enquanto ele e seu grupo lutam contra a corporação Shinra e o vilão Sephiroth.",
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20VII%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "PlayStation 1",
-    "id": 41
+    "id": 42
   },
   {
     "nomeJogo": "Metal Gear Solid",
@@ -272,7 +349,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Metal%20Gear%20Solid%20%28USA%29.png",
     "generos": "Ação/Stealth",
     "plataforma": "PlayStation 1",
-    "id": 42
+    "id": 43
   },
   {
     "nomeJogo": "Castlevania: Symphony of the Night",
@@ -280,7 +357,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29.png",
     "generos": "Ação/Aventura",
     "plataforma": "PlayStation 1",
-    "id": 43
+    "id": 44
   },
   {
     "nomeJogo": "Resident Evil 2",
@@ -288,7 +365,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Resident%20Evil%202%20%28USA%29.png",
     "generos": "Terror/Sobrevivência",
     "plataforma": "PlayStation 1",
-    "id": 44
+    "id": 45
   },
   {
     "nomeJogo": "Crash Bandicoot",
@@ -296,7 +373,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Crash%20Bandicoot%20%28USA%29.png",
     "generos": "Plataforma",
     "plataforma": "PlayStation 1",
-    "id": 45
+    "id": 46
   },
   {
     "nomeJogo": "Gran Turismo",
@@ -304,7 +381,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Gran%20Turismo%20%28USA%29.png",
     "generos": "Corrida/Simulação",
     "plataforma": "PlayStation 1",
-    "id": 46
+    "id": 47
   },
   {
     "nomeJogo": "Silent Hill",
@@ -312,7 +389,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Silent%20Hill%20%28USA%29.png",
     "generos": "Terror/Sobrevivência",
     "plataforma": "PlayStation 1",
-    "id": 47
+    "id": 48
   },
   {
     "nomeJogo": "Tekken 3",
@@ -320,7 +397,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tekken%203%20%28USA%29.png",
     "generos": "Luta",
     "plataforma": "PlayStation 1",
-    "id": 48
+    "id": 49
   },
   {
     "nomeJogo": "Tony Hawk's Pro Skater 2",
@@ -328,7 +405,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
     "generos": "Esportes/Skate",
     "plataforma": "PlayStation 1",
-    "id": 49
+    "id": 50
   },
   {
     "nomeJogo": "Spyro the Dragon",
@@ -336,7 +413,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Spyro%20the%20Dragon%20%28USA%29.png",
     "generos": "Plataforma",
     "plataforma": "PlayStation 1",
-    "id": 50
+    "id": 51
   },
   {
     "nomeJogo": "Tomb Raider",
@@ -344,7 +421,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
     "generos": "Ação/Aventura",
     "plataforma": "PlayStation 1",
-    "id": 51
+    "id": 52
   },
   {
     "nomeJogo": "Final Fantasy IX",
@@ -352,7 +429,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20IX%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "PlayStation 1",
-    "id": 52
+    "id": 53
   },
   {
     "nomeJogo": "Chrono Cross",
@@ -360,7 +437,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Chrono%20Cross%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "PlayStation 1",
-    "id": 53
+    "id": 54
   },
   {
     "nomeJogo": "Vagrant Story",
@@ -368,7 +445,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Vagrant%20Story%20%28USA%29.png ",
     "generos": "RPG/Ação",
     "plataforma": "PlayStation 1",
-    "id": 54
+    "id": 55
   },
   {
     "nomeJogo": "Suikoden II",
@@ -376,7 +453,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Suikoden%20II%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "PlayStation 1",
-    "id": 55
+    "id": 56
   },
   {
     "nomeJogo": "Parasite Eve",
@@ -384,7 +461,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Parasite%20Eve%20II%20%28USA%29.png",
     "generos": "RPG/Terror",
     "plataforma": "PlayStation 1",
-    "id": 56
+    "id": 57
   },
   {
     "nomeJogo": "Xenogears",
@@ -392,7 +469,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Xenogears%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "PlayStation 1",
-    "id": 57
+    "id": 58
   },
   {
     "nomeJogo": "Oddworld: Abe's Oddysee",
@@ -400,7 +477,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29.png",
     "generos": "Plataforma/Puzzle",
     "plataforma": "PlayStation 1",
-    "id": 58
+    "id": 59
   },
   {
     "nomeJogo": "Legacy of Kain: Soul Reaver",
@@ -408,7 +485,7 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29.png",
     "generos": "Ação/Aventura",
     "plataforma": "PlayStation 1",
-    "id": 59
+    "id": 60
   },
   {
     "nomeJogo": "Dino Crisis",
@@ -416,6 +493,6 @@
     "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Dino%20Crisis%20%28USA%29.png",
     "generos": "Terror/Sobrevivência",
     "plataforma": "PlayStation 1",
-    "id": 60
+    "id": 61
   }
 ]
