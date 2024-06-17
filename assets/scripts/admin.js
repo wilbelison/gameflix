@@ -154,8 +154,8 @@ class Jogo {
   }
 
   deletar(id) {
-    console.log(this.arrayJogos[id]);
-    let result = confirm(`Excluir o jogo ${this.arrayJogos[id].nomeJogo}?`);
+    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
+    let result = confirm(`Excluir o jogo ${nome}?`);
     if (result === true) {
       this.arrayJogos = this.arrayJogos.filter(
         (jogo) => parseInt(jogo.id) !== parseInt(id)
@@ -165,7 +165,8 @@ class Jogo {
   }
 
   editar(id) {
-    console.log(id);
+    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
+    console.log(nome);
   }
 
   exportarJSON() {

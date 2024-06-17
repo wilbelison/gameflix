@@ -291,7 +291,7 @@
     "id": 36,
     "nomeJogo": "Vectorman",
     "descricao": "Salve a Terra como um robô poderoso neste shooter clássico.",
-    "imagem": "Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Vectorman%20%28USA%29%20%28Beta%29.png",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Vectorman%20%28USA%29%20%28Beta%29.png",
     "generos": "Shooter/Plataforma",
     "plataforma": "Genesis/Mega Drive"
   },
