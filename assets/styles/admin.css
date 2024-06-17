@@ -208,6 +208,23 @@ td {
   text-align: left;
   padding: 16px;
 }
+
+table .row.edit td {
+  background-color: #e5e5e5;
+}
+
+table .row .editButtons {
+  display: none;
+}
+
+table .row.edit .actionButtons {
+  display: none;
+}
+
+table .row.edit .editButtons {
+  display: initial;
+}
+
 table td {
   background-color: #fff;
   border: 1px solid #ccc;

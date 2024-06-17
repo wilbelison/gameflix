@@ -141,8 +141,7 @@ class Jogo {
       let editButtons = document.createElement("div");
       editButtons.classList.add("editButtons");
       editButtons.appendChild(buttonConfirm);
-      editButtons.appendChild(buttonCancel);  
-  
+      editButtons.appendChild(buttonCancel);
 
       td_acao.appendChild(actionButtons);
       td_acao.appendChild(editButtons);
@@ -213,8 +212,10 @@ class Jogo {
   }
 
   editar(id) {
+    this.cancelar();
     const row = document.querySelector("#lista .row.id-" + id);
-    console.log(row);
+
+    row.classList.add("edit");
     const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
     console.log(nome);
   }
@@ -224,9 +225,8 @@ class Jogo {
     console.log(nome);
   }
 
-  cancelar(id) {
-    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
-    console.log(nome);
+  cancelar() {
+    this.listaTabela();
   }
 
   exportarJSON() {
