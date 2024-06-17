@@ -304,7 +304,6 @@ body {
   border-radius: 4px;
   overflow: clip;
   color: #e5e5e5;
-  background-color: #000;
   text-decoration: none;
   outline-style: none;
   z-index: 0;
@@ -336,6 +335,7 @@ body {
 .row-item:hover {
   border: solid 2px #333;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+  background-color: #000;
 }
 
 .row-current-item,
@@ -344,6 +344,7 @@ body {
   transform: scale(1.1);
   z-index: 9;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+  background-color: #000;
 }
 
 .row-current-item .row-card,
@@ -358,7 +359,6 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: #000;
 }
 
 .row-card-front img {
