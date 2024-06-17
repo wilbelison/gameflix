@@ -213,7 +213,7 @@ class Jogo {
   }
 
   editar(id) {
-    const row = document.querySelector(`#list row id-${{id}}`);
+    const row = document.querySelector("#lista .row.id-" + id);
     console.log(row);
     const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
     console.log(nome);
