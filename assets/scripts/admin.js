@@ -58,6 +58,7 @@ class Jogo {
       let td_imagem = tr.insertCell();
       let td_generos = tr.insertCell();
       let td_plataforma = tr.insertCell();
+      let td_nota = tr.insertCell();
       let td_acao = tr.insertCell();
 
       td_id.innerText = this.arrayJogos[i].id;
@@ -75,6 +76,12 @@ class Jogo {
 
       td_generos.innerText = this.arrayJogos[i].generos;
       td_plataforma.innerText = this.arrayJogos[i].plataforma;
+
+      if (this.arrayJogos[i].nota) {
+        td_nota.innerText = this.arrayJogos[i].nota;
+      } else {
+        td_nota.innerText = "N/A";
+      }
 
       let buttonEdit = document.createElement("button");
       buttonEdit.setAttribute(
@@ -117,6 +124,7 @@ class Jogo {
     jogo.imagem = document.getElementById("imagem").value;
     jogo.generos = document.getElementById("generos").value;
     jogo.plataforma = document.getElementById("plataforma").value;
+    jogo.nota = document.getElementById("nota").value;
     return jogo;
   }
 
@@ -128,9 +136,10 @@ class Jogo {
     if (jogo.descricao == "") {
       msg += "Informe a descrição do jogo \n";
     }
-    if (jogo.imagem == "") {
-      msg += "Informe a URL da imagem do jogo \n";
-    }
+    /* imagem agora é opcional */
+    // if (jogo.imagem == "") {
+    //   msg += "Informe a URL da imagem do jogo \n";
+    // }
     if (jogo.generos == "") {
       msg += "Informe os gêneros do jogo \n";
     }
@@ -151,6 +160,7 @@ class Jogo {
     document.getElementById("imagem").value = "";
     document.getElementById("generos").value = "";
     document.getElementById("plataforma").value = "";
+    document.getElementById("nota").value = "";
   }
 
   deletar(id) {

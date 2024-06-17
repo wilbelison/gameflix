@@ -106,7 +106,11 @@
               <a class="row-item" title="{{nomeJogo}}" href="#">
                 <div class="row-card">
                   <div class="row-card-front">
+                    {{#if imagem}}
                     <img src="{{imagem}}" alt="{{nomeJogo}}" />
+                    {{else}}
+                      <h3 class="title">{{nomeJogo}}</h3>
+                    {{/if}}
                   </div>
                   <div class="row-card-back">
                     <h3 class="title">{{nomeJogo}}</h3>
