@@ -1,5 +1,14 @@
 [
   {
+    "nota": 84,
+    "nomeJogo": "Super Mario RPG: Legend of the Seven Stars",
+    "descricao": "O Mario terá de juntar um grupo de aliados inesperados para combater o malvado Smithy Gang! Antes de Paper Mario e de Mario & Luigi, este foi o primeiro RPG do Mario, uma colaboração entre a Nintendo e os criadores de Final Fantasy™, Squaresoft™ (agora Square Enix™).",
+    "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20RPG%20-%20Legend%20of%20the%20Seven%20Stars%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "Super Nintendo",
+    "id": 17
+  },
+  {
     "nota": "",
     "nomeJogo": "Super Mario World",
     "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
@@ -153,9 +162,9 @@
     "id": 16
   },
   {
-    "nota": "",
+    "nota": 84,
     "nomeJogo": "Super Mario RPG: Legend of the Seven Stars",
-    "descricao": "Mario se aventura em um mundo RPG com aliados inesperados para derrotar Smithy.",
+    "descricao": "O Mario terá de juntar um grupo de aliados inesperados para combater o malvado Smithy Gang! Antes de Paper Mario e de Mario & Luigi, este foi o primeiro RPG do Mario, uma colaboração entre a Nintendo e os criadores de Final Fantasy™, Squaresoft™ (agora Square Enix™).",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20RPG%20-%20Legend%20of%20the%20Seven%20Stars%20%28USA%29.png",
     "generos": "RPG",
     "plataforma": "Super Nintendo",

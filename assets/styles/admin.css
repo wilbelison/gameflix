@@ -54,12 +54,12 @@ select,
 }
 
 .btn:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .btn-green {
   color: #fff;
-  background-color: hsl(138, 100%, 30%);
+  background-color: #46d369;
 }
 
 .btn-red {
