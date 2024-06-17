@@ -334,7 +334,7 @@ body {
 .row-item:focus {
   border: solid 2px #fff;
   transform: scale(1.1);
-  z-index: 9;
+  z-index: 1;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
 }
 
