@@ -499,7 +499,7 @@
     "id": 62,
     "nomeJogo": "The Legend of Zelda: Tears of the Kingdom",
     "descricao": "Uma nova aventura no vasto mundo de Hyrule, onde Link deve enfrentar novos desafios e descobrir segredos ocultos.",
-    "imagem": "https://example.com/zelda_tears_of_the_kingdom.jpg",
+    "imagem": "",
     "generos": "Ação/Aventura",
     "plataforma": "Nintendo Switch"
   },
@@ -507,7 +507,7 @@
     "id": 63,
     "nomeJogo": "Super Mario Odyssey",
     "descricao": "Mario explora diversos reinos ao redor do mundo para resgatar a Princesa Peach das garras de Bowser.",
-    "imagem": "https://example.com/super_mario_odyssey.jpg",
+    "imagem": "",
     "generos": "Plataforma/Aventura",
     "plataforma": "Nintendo Switch"
   },
@@ -515,7 +515,7 @@
     "id": 64,
     "nomeJogo": "Animal Crossing: New Horizons",
     "descricao": "Crie e personalize sua ilha dos sonhos em um jogo relaxante de simulação de vida.",
-    "imagem": "https://example.com/animal_crossing_new_horizons.jpg",
+    "imagem": "",
     "generos": "Simulação/Social",
     "plataforma": "Nintendo Switch"
   },
@@ -523,7 +523,7 @@
     "id": 65,
     "nomeJogo": "God of War: Ragnarok",
     "descricao": "Kratos e seu filho Atreus enfrentam novos perigos enquanto exploram os reinos nórdicos.",
-    "imagem": "https://example.com/god_of_war_ragnarok.jpg",
+    "imagem": "",
     "generos": "Ação/Aventura",
     "plataforma": "PlayStation 5"
   },
@@ -531,7 +531,7 @@
     "id": 66,
     "nomeJogo": "Horizon Forbidden West",
     "descricao": "Aloy explora terras desconhecidas e enfrenta máquinas perigosas em sua jornada para salvar a Terra.",
-    "imagem": "https://example.com/horizon_forbidden_west.jpg",
+    "imagem": "",
     "generos": "Ação/RPG",
     "plataforma": "PlayStation 5"
   },
@@ -539,7 +539,7 @@
     "id": 67,
     "nomeJogo": "Ratchet & Clank: Rift Apart",
     "descricao": "Ratchet e Clank viajam por diferentes dimensões para derrotar um imperador maligno.",
-    "imagem": "https://example.com/ratchet_clank_rift_apart.jpg",
+    "imagem": "",
     "generos": "Ação/Plataforma",
     "plataforma": "PlayStation 5"
   },
@@ -547,7 +547,7 @@
     "id": 68,
     "nomeJogo": "Forza Horizon 5",
     "descricao": "Participe de corridas emocionantes em um mundo aberto vibrante e dinâmico.",
-    "imagem": "https://example.com/forza_horizon_5.jpg",
+    "imagem": "",
     "generos": "Corrida/Simulação",
     "plataforma": "Xbox Series X"
   },
@@ -555,7 +555,7 @@
     "id": 69,
     "nomeJogo": "Halo Infinite",
     "descricao": "Master Chief retorna para enfrentar o Banished e salvar a humanidade mais uma vez.",
-    "imagem": "https://example.com/halo_infinite.jpg",
+    "imagem": "",
     "generos": "FPS/Ação",
     "plataforma": "Xbox Series X"
   },
@@ -563,7 +563,7 @@
     "id": 70,
     "nomeJogo": "Psychonauts 2",
     "descricao": "Razputin Aquato junta-se aos Psychonauts e explora mentes intrigantes para derrotar uma ameaça misteriosa.",
-    "imagem": "https://example.com/psychonauts_2.jpg",
+    "imagem": "",
     "generos": "Plataforma/Aventura",
     "plataforma": "Xbox Series X"
   },
@@ -571,7 +571,7 @@
     "id": 71,
     "nomeJogo": "Metroid Dread",
     "descricao": "Samus Aran enfrenta novos perigos em uma missão para descobrir os segredos do planeta ZDR.",
-    "imagem": "https://example.com/metroid_dread.jpg",
+    "imagem": "",
     "generos": "Ação/Aventura",
     "plataforma": "Nintendo Switch"
   }
