@@ -107,7 +107,7 @@ const applyRowControls = (e) => {
         }
       } else if (currentItem <= numItems - 1 && !isLeft) {
         currentItem++;
-        if (currentItem >= numItems - 1) {
+        if (currentItem > numItems - 1) {
           currentItem = 0;
         }
       }
