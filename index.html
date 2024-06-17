@@ -1,98 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gameflix - Home</title>
-    <link
-      rel="icon"
-      type="image/png"
-      rel="noopener"
-      target="_blank"
-      href="./assets/images/favicon.png"
-    />
+    <link rel="icon" type="image/png" rel="noopener" target="_blank" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./assets/scripts/index.js"
-    ></script>
-  </head>
-  <body>
+    <script defer type="text/javascript" src="./assets/scripts/index.js"></script>
+</head>
+
+<body>
     <!-- HEADER -->
-
     <div class="header transparent">
-      <h1 class="logo">
-        <a href="/" title="Ir para a Home"
-          ><img src="./assets/images/logo-gameflix.svg" alt="Gameflix"
-        /></a>
-      </h1>
+        <h1 class="logo">
+            <a href="/" title="Ir para a Home">
+                <img src="./assets/images/logo-gameflix.svg" alt="Gameflix" />
+            </a>
+        </h1>
 
-      <!-- NAV -->
+        <!-- Botão de menu hambúrguer -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
 
-      <ul class="nav">
-        <li><a href="#row-continuar" title="Continuar jogando">Continuar jogando</a></li>
-        <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
-        <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
-        <li><a href="#row-genesis" title="Genesis / Mega Drive<">Genesis / Mega Drive</a></li>
-        <li><a href="#row-playstation" title="Playstation">Playstation</a></li>
-        <li class="right">
-          <a
-            href="./admin.html"
-            class="admin"
-            title="Gerenciar jogos"
-            target="_blank"
-            >Gerenciador de jogos</a
-          >
-        </li>
-      </ul>
-
-      <!-- FIM NAV-->
+        <!-- NAV -->
+        <ul class="nav" id="nav">
+            <li><a href="#row-continuar" title="Continuar jogando">Continuar jogando</a></li>
+            <li><a href="#row-top" title="Top 10 Games">Top 10 Games</a></li>
+            <li><a href="#row-snes" title="Super Nintendo">Super Nintendo</a></li>
+            <li><a href="#row-genesis" title="Genesis / Mega Drive<">Genesis / Mega Drive</a></li>
+            <li><a href="#row-playstation" title="Playstation">Playstation</a></li>
+            <li class="right">
+                <a href="./admin.html" class="admin" title="Gerenciar jogos" target="_blank">Gerenciador de jogos</a>
+            </li>
+        </ul>
+        <!-- FIM NAV-->
     </div>
-
     <!-- FIM HEADER -->
+
 
     <!-- HERO -->
 
     <div class="hero">
-      <div class="background-video-overlay"></div>
-      <div class="background-video-fade"></div>
-      <video
-        class="background-video"
-        autoplay
-        playsinline
-        muted
-        loop
-        preload
-        poster="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_600,q_auto,w_1000/v1/ncom/software/switch/70010000072957/Video/posters/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264"
-      >
-        <source
-          src="https://assets.nintendo.com/video/upload/br_3500k,c_limit,h_540,vc_h265,w_960/v1716497154/ncom/software/switch/70010000072957/Video/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264.m4s"
-        />
-      </video>
-      <div class="infos">
-        <h2 class="title">
-          <img
-            src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/05-May/Paper%20Mario%20TTYD/Animated/Ncom-CS-Desktop-PMTTYD-Logo"
-            alt="Paper Mario: The Thousand-Year Door"
-          />
-        </h2>
-        <div class="description">
-          Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o
-          que encontram são segredos, forças sobrenaturais e uma menina.
+        <div class="background-video-overlay"></div>
+        <div class="background-video-fade"></div>
+        <video class="background-video" autoplay playsinline muted loop preload
+            poster="https://assets.nintendo.com/image/upload/c_limit,f_auto,h_600,q_auto,w_1000/v1/ncom/software/switch/70010000072957/Video/posters/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264">
+            <source
+                src="https://assets.nintendo.com/video/upload/br_3500k,c_limit,h_540,vc_h265,w_960/v1716497154/ncom/software/switch/70010000072957/Video/Switch_PMTTYD_Heroick_LaunchTLR-AvailNow_EN_ESRB_16x9_H264.m4s" />
+        </video>
+        <div class="infos">
+            <h2 class="title">
+                <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-stories/2024/05-May/Paper%20Mario%20TTYD/Animated/Ncom-CS-Desktop-PMTTYD-Logo"
+                    alt="Paper Mario: The Thousand-Year Door" />
+            </h2>
+            <div class="description">
+                Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.
+            </div>
+            <div class="buttons">
+                <button class="primary">
+                    <img src="./assets/images/icon-play.svg" class="icon-play" /> Jogar
+                </button>
+                <button>
+                    <img src="./assets/images/icon-info.svg" class="icon-info" /> Mais informações
+                </button>
+            </div>
         </div>
-        <div class="buttons">
-          <button class="primary">
-            <img src="./assets/images/icon-play.svg" class="icon-play"/> Jogar
-          </button>
-          <button>
-            <img src="./assets/images/icon-info.svg" class="icon-info" /> Mais informações
-          </button>
-        </div>
-      </div>
     </div>
+
 
     <!-- FIM HERO -->
 
@@ -129,36 +107,47 @@
     <!-- ROWS -->
 
     <div class="row" id="row-continuar">
-      <h2 class="row-title">Continuar jogando</h2>
-      <div class="row-container"></div>
+        <h2 class="row-title">Continuar jogando</h2>
+        <div class="row-container"></div>
     </div>
 
     <div class="row top" id="row-top">
-      <h2 class="row-title">Top 10 Games</h2>
-      <div class="row-container"></div>
+        <h2 class="row-title">Top 10 Games</h2>
+        <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-snes">
-      <h2 class="row-title">Super Nintendo</h2>
-      <div class="row-container"></div>
+        <h2 class="row-title">Super Nintendo</h2>
+        <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-genesis">
-      <h2 class="row-title">Genesis / Mega Drive</h2>
-      <div class="row-container"></div>
+        <h2 class="row-title">Genesis / Mega Drive</h2>
+        <div class="row-container"></div>
     </div>
 
     <div class="row" id="row-playstation">
-      <h2 class="row-title">Playstation</h2>
-      <div class="row-container"></div>
+        <h2 class="row-title">Playstation</h2>
+        <div class="row-container"></div>
     </div>
-  </body>
+    <!-- FIM ROWS -->
+    <!-- FOOTER -->
 
-  <!-- FIM ROWS -->
+    <div class="footer">© 2024-2024 Gameflix, Inc.</div>
 
-  <!-- FOOTER -->
+    <!-- FIM FOOTER -->
+</body>
 
-  <div class="footer">© 2024-2024 Gameflix, Inc.</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
 
-  <!-- FIM FOOTER -->
+        hamburger.addEventListener('click', function () {
+            nav.classList.toggle('active');
+        });
+    });
+
+</script>
+
 </html>
