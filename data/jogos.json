@@ -159,6 +159,7 @@
     "plataforma": "Super Nintendo",
     "id": 19
   },
+
   {
     "nomeJogo": "Sonic The Hedgehog 2",
     "descricao": "Aventuras velozes com Sonic e Tails.",
@@ -211,7 +212,7 @@
     "nomeJogo": "Sonic The Hedgehog",
     "descricao": "Aventura de alta velocidade com o icônico ouriço azul.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20The%20Hedgehog%20%28USA%29.png",
-    "generos": "Plataforma, Aventura",
+    "generos": "Plataforma/Aventura",
     "plataforma": "Genesis/Mega Drive",
     "id": 26
   },
@@ -246,5 +247,166 @@
     "generos": "Luta",
     "plataforma": "Genesis/Mega Drive",
     "id": 30
+  },
+
+  {
+    "nomeJogo": "Final Fantasy VII",
+    "descricao": "Um RPG épico que segue a história de Cloud Strife enquanto ele e seu grupo lutam contra a corporação Shinra e o vilão Sephiroth.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20VII%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 41
+  },
+  {
+    "nomeJogo": "Metal Gear Solid",
+    "descricao": "Um jogo de ação e espionagem onde você controla Solid Snake em uma missão para desarmar um grupo terrorista que possui armas nucleares.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Metal%20Gear%20Solid%20%28USA%29.png",
+    "generos": "Ação/Stealth",
+    "plataforma": "PlayStation 1",
+    "id": 42
+  },
+  {
+    "nomeJogo": "Castlevania: Symphony of the Night",
+    "descricao": "Aventura de ação e exploração onde você controla Alucard, filho de Drácula, em uma missão para derrotar seu pai.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 43
+  },
+  {
+    "nomeJogo": "Resident Evil 2",
+    "descricao": "Um jogo de terror e sobrevivência onde os personagens principais, Leon e Claire, enfrentam zumbis e outras criaturas em uma cidade infestada.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Resident%20Evil%202%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 44
+  },
+  {
+    "nomeJogo": "Crash Bandicoot",
+    "descricao": "Um jogo de plataforma em que você controla Crash, um marsupial, em sua missão para derrotar o Dr. Neo Cortex.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Crash%20Bandicoot%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "PlayStation 1",
+    "id": 45
+  },
+  {
+    "nomeJogo": "Gran Turismo",
+    "descricao": "Um simulador de corrida que oferece uma grande variedade de carros e pistas, além de uma jogabilidade realista.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Gran%20Turismo%20%28USA%29.png",
+    "generos": "Corrida/Simulação",
+    "plataforma": "PlayStation 1",
+    "id": 46
+  },
+  {
+    "nomeJogo": "Silent Hill",
+    "descricao": "Um jogo de terror psicológico onde você controla Harry Mason em busca de sua filha desaparecida na misteriosa cidade de Silent Hill.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Silent%20Hill%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 47
+  },
+  {
+    "nomeJogo": "Tekken 3",
+    "descricao": "Um dos jogos de luta mais aclamados, oferecendo uma grande variedade de personagens e movimentos.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tekken%203%20%28USA%29.png",
+    "generos": "Luta",
+    "plataforma": "PlayStation 1",
+    "id": 48
+  },
+  {
+    "nomeJogo": "Tony Hawk's Pro Skater 2",
+    "descricao": "Um jogo de skate que permite realizar várias manobras e truques em diferentes pistas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
+    "generos": "Esportes/Skate",
+    "plataforma": "PlayStation 1",
+    "id": 49
+  },
+  {
+    "nomeJogo": "Spyro the Dragon",
+    "descricao": "Um jogo de plataforma onde você controla Spyro, um pequeno dragão, em uma missão para salvar seus amigos e derrotar vilões.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Spyro%20the%20Dragon%20%28USA%29.png",
+    "generos": "Plataforma",
+    "plataforma": "PlayStation 1",
+    "id": 50
+  },
+  {
+    "nomeJogo": "Tomb Raider",
+    "descricao": "Um jogo de ação e aventura onde você controla a arqueóloga Lara Croft em sua busca por artefatos antigos.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 51
+  },
+  {
+    "nomeJogo": "Final Fantasy IX",
+    "descricao": "Um RPG clássico que segue a história de Zidane e sua luta contra uma força maligna.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Final%20Fantasy%20IX%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 52
+  },
+  {
+    "nomeJogo": "Chrono Cross",
+    "descricao": "Um RPG que serve como sequência indireta de Chrono Trigger, com uma narrativa complexa e múltiplos finais.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Chrono%20Cross%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 53
+  },
+  {
+    "nomeJogo": "Vagrant Story",
+    "descricao": "Um RPG de ação que segue o protagonista Ashley Riot em uma missão para desvendar uma conspiração.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Vagrant%20Story%20%28USA%29.png ",
+    "generos": "RPG/Ação",
+    "plataforma": "PlayStation 1",
+    "id": 54
+  },
+  {
+    "nomeJogo": "Suikoden II",
+    "descricao": "Um RPG com uma narrativa profunda e um grande elenco de personagens recrutáveis.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Suikoden%20II%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 55
+  },
+  {
+    "nomeJogo": "Parasite Eve",
+    "descricao": "Um jogo que mistura elementos de RPG e survival horror, onde você controla Aya Brea contra mutações biológicas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Parasite%20Eve%20II%20%28USA%29.png",
+    "generos": "RPG/Terror",
+    "plataforma": "PlayStation 1",
+    "id": 56
+  },
+  {
+    "nomeJogo": "Xenogears",
+    "descricao": "Um RPG com uma história complexa e mecânicas de combate inovadoras que incluem mechas.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Xenogears%20%28USA%29.png",
+    "generos": "RPG",
+    "plataforma": "PlayStation 1",
+    "id": 57
+  },
+  {
+    "nomeJogo": "Oddworld: Abe's Oddysee",
+    "descricao": "Um jogo de plataforma e puzzle onde você controla Abe, um escravo que tenta libertar seu povo.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29.png",
+    "generos": "Plataforma/Puzzle",
+    "plataforma": "PlayStation 1",
+    "id": 58
+  },
+  {
+    "nomeJogo": "Legacy of Kain: Soul Reaver",
+    "descricao": "Um jogo de ação e aventura onde você controla Raziel, um vampiro em busca de vingança contra seu mestre, Kain.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29.png",
+    "generos": "Ação/Aventura",
+    "plataforma": "PlayStation 1",
+    "id": 59
+  },
+  {
+    "nomeJogo": "Dino Crisis",
+    "descricao": "Um jogo de terror e sobrevivência similar a Resident Evil, mas com dinossauros em vez de zumbis.",
+    "imagem": "https://thumbnails.libretro.com/Sony%20-%20PlayStation/Named_Boxarts/Dino%20Crisis%20%28USA%29.png",
+    "generos": "Terror/Sobrevivência",
+    "plataforma": "PlayStation 1",
+    "id": 60
   }
 ]
