@@ -23,8 +23,18 @@
   <body>
     <main>
       <div class="container">
+        <!-- HEADER -->
 
-        <h1 class="title">Gerenciador de jogos</h1>
+        <div class="header">
+          <h1 class="title">Gerenciador de jogos</h1>
+
+          <ul class="nav">
+            <li><a href="#lista" class="link">↓ Lista de jogos</a></li>
+            <li><a href="/" class="link">← Voltar para a Home</a></li>
+          </ul>
+        </div>
+
+        <!-- FIM HEADER -->
 
         <!-- ADICIONAR NOVO JOGO -->
 
@@ -76,8 +86,7 @@
 
         <!-- LISTA DE JOGOS -->
 
-        <div class="content">
-
+        <div class="content" id="lista">
           <h2 class="sub-title">Lista de jogos</h2>
 
           <table>
@@ -103,7 +112,6 @@
               Restaurar JSON
             </button>
           </div>
-          
         </div>
       </div>
     </main>
