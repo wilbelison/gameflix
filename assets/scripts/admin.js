@@ -63,29 +63,47 @@ class Jogo {
       let td_nota = tr.insertCell();
       let td_acao = tr.insertCell();
 
-      td_id.innerText = this.arrayJogos[i].id;
-      td_jogo.innerText = this.arrayJogos[i].nomeJogo;
-      td_descricao.innerText = this.arrayJogos[i].descricao;
+      td_id.innerHTML =
+        "<input type='text' disabled class='input-id center' value='" +
+        this.arrayJogos[i].id +
+        "' />";
+
+      td_jogo.innerHTML =
+        "<input type='text' disabled class='input-nomeJogo' value='" +
+        this.arrayJogos[i].nomeJogo +
+        "' />";
+
+      td_descricao.innerHTML =
+        "<textarea disabled class='input-descricao'>" +
+        this.arrayJogos[i].descricao +
+        "</textarea>";
+
+      td_imagem.innerHTML =
+        "<textarea disabled class='input-imagem'>" +
+        this.arrayJogos[i].imagem +
+        "</textarea>";
 
       if (this.arrayJogos[i].imagem) {
         let img = document.createElement("img");
         img.src = this.arrayJogos[i].imagem;
         img.classList.add("thumb");
         td_imagem.appendChild(img);
-      } else {
-        td_imagem.innerText = "N/A";
       }
 
-      td_generos.innerText = this.arrayJogos[i].generos;
-      td_plataforma.innerText = this.arrayJogos[i].plataforma;
+      td_generos.innerHTML =
+        "<input type='text' disabled class='input-generos' value='" +
+        this.arrayJogos[i].generos +
+        "' />";
 
-      td_nota.classList.add("center");
+      td_plataforma.innerHTML =
+        "<input type='text' disabled class='input-plataforma' value='" +
+        this.arrayJogos[i].plataforma +
+        "' />";
 
-      if (this.arrayJogos[i].nota) {
-        td_nota.innerText = this.arrayJogos[i].nota;
-      } else {
-        td_nota.innerText = "N/A";
-      }
+      td_nota.innerHTML =
+        "<input type='text' disabled class='input-nota center' value='" +
+        this.arrayJogos[i].nota +
+        "' />";
 
       /* edit button */
 
@@ -127,10 +145,7 @@ class Jogo {
         "onclick",
         `jogo.atualizar(${this.arrayJogos[i].id})`
       );
-      buttonConfirm.setAttribute(
-        "title",
-        "Confirmar"
-      );
+      buttonConfirm.setAttribute("title", "Confirmar");
       buttonConfirm.classList.add("confirm");
       let imgConfirm = document.createElement("img");
       imgConfirm.src = "./assets/images/icon-confirm.svg";
@@ -229,13 +244,40 @@ class Jogo {
     const row = document.querySelector("#lista .row.id-" + id);
 
     row.classList.add("edit");
-    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
-    console.log(nome);
+
+    row.querySelectorAll("input").forEach((e) => {
+      e.removeAttribute("disabled");
+    });
+
+    row.querySelectorAll("textarea").forEach((e) => {
+      e.removeAttribute("disabled");
+    });
   }
 
   atualizar(id) {
-    const nome = this.arrayJogos.filter((jogo) => jogo.id == id)[0].nomeJogo;
-    console.log(nome);
+    const row = document.querySelector("#lista .row.id-" + id);
+
+    const novoJogo = {
+      id: parseInt(row.querySelector(".input-id").value),
+      nomeJogo: row.querySelector(".input-nomeJogo").value,
+      imagem: row.querySelector(".input-imagem").value,
+      descricao: row.querySelector(".input-descricao").value,
+      generos: row.querySelector(".input-generos").value,
+      plataforma: row.querySelector(".input-plataforma").value,
+      nota: row.querySelector(".input-nota").value
+        ? parseInt(row.querySelector(".input-nota").value)
+        : "",
+    };
+
+    this.arrayJogos = this.arrayJogos.map((jogo) => {
+      if (jogo.id == id) {
+        return novoJogo;
+      } else {
+        return jogo;
+      }
+    });
+
+    this.listaTabela();
   }
 
   cancelar() {

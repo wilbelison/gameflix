@@ -342,13 +342,13 @@
     "plataforma": "Genesis/Mega Drive"
   },
   {
-    "nota": "",
     "id": 38,
     "nomeJogo": "Ecco the Dolphin",
+    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Ecco%20the%20Dolphin%20%28USA%29.png",
     "descricao": "Explore o oceano e resolva mistérios como um golfinho inteligente.",
-    "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
     "generos": "Aventura, Puzzle",
-    "plataforma": "Genesis/Mega Drive"
+    "plataforma": "Genesis/Mega Drive",
+    "nota": ""
   },
   {
     "nota": "",
@@ -646,23 +646,5 @@
     "imagem": "",
     "generos": "Ação/Aventura",
     "plataforma": "Nintendo Switch"
-  },
-  {
-    "nomeJogo": "teste",
-    "descricao": "teste",
-    "imagem": "",
-    "generos": "teste",
-    "plataforma": "teste",
-    "nota": "",
-    "id": 72
-  },
-  {
-    "nomeJogo": "teste 2",
-    "descricao": "teste 2",
-    "imagem": "",
-    "generos": "teste",
-    "plataforma": "teste",
-    "nota": "100",
-    "id": 73
   }
 ]

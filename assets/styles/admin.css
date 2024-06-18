@@ -201,6 +201,30 @@ textarea {
   color: #141414;
 }
 
+#lista table input,
+#lista table textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  padding: 8px;
+  border: solid 1px #ccc;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+#lista table input:disabled,
+#lista table textarea:disabled {
+  color: #141414;
+  background-color: transparent;
+  border: none;
+}
+
+#lista table input.center {  
+  text-align: center;
+}
+
 #lista table th,
 #lista table td {
   text-align: left;
@@ -222,12 +246,14 @@ textarea {
 
 #lista table td .thumb {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
   object-fit: cover;
   transition: all 200ms ease-in-out;
+  z-index: 1;
+  border-radius: 8px;
 }
 
 #lista table td {
@@ -235,8 +261,11 @@ textarea {
 }
 
 #lista table td:hover .thumb { 
-  transform: scale(2);
-  z-index: 1;
+  top: -50%;
+  left: 8px;
+  height: fit-content;
+  transform: scale(1.5);
+  z-index: 2;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
 }
 
@@ -275,6 +304,10 @@ textarea {
   border-top-color: #e5e5e5;
   border-right-color: #e5e5e5;
   border-left-color: #e5e5e5;
+}
+
+#lista table .row.edit .thumb {
+  display:none;
 }
 
 #lista table .row .editButtons {
