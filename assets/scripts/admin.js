@@ -147,9 +147,10 @@ class Jogo {
       );
       buttonConfirm.setAttribute("title", "Confirmar");
       buttonConfirm.classList.add("confirm");
-      let imgConfirm = document.createElement("img");
-      imgConfirm.src = "./assets/images/icon-confirm.svg";
-      buttonConfirm.appendChild(imgConfirm);
+      buttonConfirm.innerText = "Aplicar";
+      // let imgConfirm = document.createElement("img");
+      // imgConfirm.src = "./assets/images/icon-confirm.svg";
+      // buttonConfirm.appendChild(imgConfirm);
 
       /* cancel edit button */
 
@@ -160,9 +161,10 @@ class Jogo {
       );
       buttonCancel.classList.add("cancel");
       buttonCancel.setAttribute("title", "Cancelar");
-      let imgCancel = document.createElement("img");
-      imgCancel.src = "./assets/images/icon-cancel.svg";
-      buttonCancel.appendChild(imgCancel);
+      buttonCancel.innerText = "Cancelar";
+      // let imgCancel = document.createElement("img");
+      // imgCancel.src = "./assets/images/icon-cancel.svg";
+      // buttonCancel.appendChild(imgCancel);
 
       /* edit buttons */
 

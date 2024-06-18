@@ -250,6 +250,7 @@ textarea {
   color: #141414;
   background-color: transparent;
   border: none;
+  overflow: auto;
 }
 
 #lista table input.center {
@@ -365,10 +366,14 @@ textarea {
   border: none;
   cursor: pointer;
   width: 100%;
+  min-width: 64px;
   height: 48px;
   border-radius: 8px;
   opacity: 0.75;
   transition: all 200ms ease-in-out;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
 }
 
 #lista table button:hover {
@@ -383,4 +388,11 @@ textarea {
 
 #lista .center {
   text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  #lista table button {
+    opacity: 1;
+  }
 }
