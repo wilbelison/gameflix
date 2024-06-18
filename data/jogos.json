@@ -1,12 +1,12 @@
 [
   {
-    "nota": "",
+    "id": 0,
     "nomeJogo": "Super Mario World",
-    "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
     "imagem": "https://thumbnails.libretro.com/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Named_Boxarts/Super%20Mario%20World%20%28USA%29.png",
+    "descricao": "Clássico jogo de plataforma onde Mario e Luigi enfrentam desafios para resgatar a Princesa Peach.",
     "generos": "Plataforma",
     "plataforma": "Super Nintendo",
-    "id": 0
+    "nota": ""
   },
   {
     "nota": "",
@@ -558,49 +558,49 @@
     "id": 61
   },
   {
-    "nota": 96,
     "id": 62,
     "nomeJogo": "The Legend of Zelda: Tears of the Kingdom",
+    "imagem": "https://m.media-amazon.com/images/I/618GR0WMoQL._AC_SL1000_.jpg",
     "descricao": "Uma nova aventura no vasto mundo de Hyrule, onde Link deve enfrentar novos desafios e descobrir segredos ocultos.",
-    "imagem": "",
     "generos": "Ação/Aventura",
-    "plataforma": "Nintendo Switch"
+    "plataforma": "Nintendo Switch",
+    "nota": 96
   },
   {
-    "nota": 97,
     "id": 63,
     "nomeJogo": "Super Mario Odyssey",
+    "imagem": "https://m.media-amazon.com/images/I/81odYsejCWL._AC_SL1500_.jpg",
     "descricao": "Mario explora diversos reinos ao redor do mundo para resgatar a Princesa Peach das garras de Bowser.",
-    "imagem": "",
     "generos": "Plataforma/Aventura",
-    "plataforma": "Nintendo Switch"
+    "plataforma": "Nintendo Switch",
+    "nota": 97
   },
   {
-    "nota": 90,
     "id": 64,
     "nomeJogo": "Animal Crossing: New Horizons",
+    "imagem": "https://m.media-amazon.com/images/I/81UfEdvf2kL._AC_SL1500_.jpg",
     "descricao": "Crie e personalize sua ilha dos sonhos em um jogo relaxante de simulação de vida.",
-    "imagem": "",
     "generos": "Simulação/Social",
-    "plataforma": "Nintendo Switch"
+    "plataforma": "Nintendo Switch",
+    "nota": 90
   },
   {
-    "nota": 94,
     "id": 65,
     "nomeJogo": "God of War: Ragnarok",
+    "imagem": "https://m.media-amazon.com/images/I/8136lnf0n2L._AC_SL1500_.jpg",
     "descricao": "Kratos e seu filho Atreus enfrentam novos perigos enquanto exploram os reinos nórdicos.",
-    "imagem": "",
     "generos": "Ação/Aventura",
-    "plataforma": "PlayStation 5"
+    "plataforma": "PlayStation 5",
+    "nota": 94
   },
   {
-    "nota": 88,
     "id": 66,
     "nomeJogo": "Horizon Forbidden West",
+    "imagem": "https://m.media-amazon.com/images/I/711eymrSAML._AC_SL1000_.jpg",
     "descricao": "Aloy explora terras desconhecidas e enfrenta máquinas perigosas em sua jornada para salvar a Terra.",
-    "imagem": "",
     "generos": "Ação/RPG",
-    "plataforma": "PlayStation 5"
+    "plataforma": "PlayStation 5",
+    "nota": 88
   },
   {
     "nota": 88,
