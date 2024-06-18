@@ -315,13 +315,13 @@
     "plataforma": "Genesis/Mega Drive"
   },
   {
-    "nota": "",
     "id": 35,
     "nomeJogo": "Ristar",
-    "descricao": "Estenda seus braços para explorar e resolver quebra-cabeças.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Ristar%20%28USA%2C%20Europe%29.png",
-    "generos": "Plataforma, Puzzle",
-    "plataforma": "Genesis/Mega Drive"
+    "descricao": "Estenda seus braços para explorar e resolver quebra-cabeças.",
+    "generos": "Plataforma/Puzzle",
+    "plataforma": "Genesis/Mega Drive",
+    "nota": ""
   },
   {
     "nota": "",
@@ -333,13 +333,13 @@
     "plataforma": "Genesis/Mega Drive"
   },
   {
-    "nota": "",
     "id": 37,
     "nomeJogo": "Beyond Oasis",
-    "descricao": "Descubra segredos e magia neste RPG de ação.",
     "imagem": "https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Beyond%20Oasis%20%28USA%29.png",
-    "generos": "RPG, Ação",
-    "plataforma": "Genesis/Mega Drive"
+    "descricao": "Descubra segredos e magia neste RPG de ação.",
+    "generos": "RPG/Ação",
+    "plataforma": "Genesis/Mega Drive",
+    "nota": ""
   },
   {
     "id": 38,
@@ -603,48 +603,48 @@
     "nota": 88
   },
   {
-    "nota": 88,
     "id": 67,
     "nomeJogo": "Ratchet & Clank: Rift Apart",
+    "imagem": "https://m.media-amazon.com/images/I/613kWig1C1L._AC_SL1500_.jpg",
     "descricao": "Ratchet e Clank viajam por diferentes dimensões para derrotar um imperador maligno.",
-    "imagem": "",
     "generos": "Ação/Plataforma",
-    "plataforma": "PlayStation 5"
+    "plataforma": "PlayStation 5",
+    "nota": 88
   },
   {
-    "nota": 92,
     "id": 68,
     "nomeJogo": "Forza Horizon 5",
+    "imagem": "https://m.media-amazon.com/images/I/61RvJphIh0L._AC_SL1000_.jpg",
     "descricao": "Participe de corridas emocionantes em um mundo aberto vibrante e dinâmico.",
-    "imagem": "",
     "generos": "Corrida/Simulação",
-    "plataforma": "Xbox Series X"
+    "plataforma": "Xbox Series X",
+    "nota": 92
   },
   {
-    "nota": 87,
     "id": 69,
     "nomeJogo": "Halo Infinite",
+    "imagem": "https://m.media-amazon.com/images/I/61aD5rcWynL._AC_SL1000_.jpg",
     "descricao": "Master Chief retorna para enfrentar o Banished e salvar a humanidade mais uma vez.",
-    "imagem": "",
     "generos": "FPS/Ação",
-    "plataforma": "Xbox Series X"
+    "plataforma": "Xbox Series X",
+    "nota": 87
   },
   {
-    "nota": 89,
     "id": 70,
     "nomeJogo": "Psychonauts 2",
+    "imagem": "https://store-images.s-microsoft.com/image/apps.59150.13578175979543723.424401c3-5602-4e35-abfc-c00f9156296a.99cd91cb-4b52-4353-b333-28a9e48f06fe",
     "descricao": "Razputin Aquato junta-se aos Psychonauts e explora mentes intrigantes para derrotar uma ameaça misteriosa.",
-    "imagem": "",
     "generos": "Plataforma/Aventura",
-    "plataforma": "Xbox Series X"
+    "plataforma": "Xbox Series X",
+    "nota": 89
   },
   {
-    "nota": 88,
     "id": 71,
     "nomeJogo": "Metroid Dread",
+    "imagem": "https://m.media-amazon.com/images/I/71LVHNX3vLS._AC_SL1500_.jpg",
     "descricao": "Samus Aran enfrenta novos perigos em uma missão para descobrir os segredos do planeta ZDR.",
-    "imagem": "",
     "generos": "Ação/Aventura",
-    "plataforma": "Nintendo Switch"
+    "plataforma": "Nintendo Switch",
+    "nota": 88
   }
 ]
