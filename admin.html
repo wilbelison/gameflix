@@ -92,21 +92,23 @@
         <div class="content" id="lista">
           <h2 class="sub-title">Lista de jogos</h2>
 
-          <table class="lista-jogos" aria-label="Lista de jogos">
-            <thead class="table__header table__header--sticky">
-              <tr>
-                <th class="center" width="10%">ID</th>
-                <th width="20%">Jogo</th>
-                <th width="20%">Descrição</th>
-                <th width="10%">Imagem</th>
-                <th width="10%">Gêneros</th>
-                <th width="10%">Plataforma</th>
-                <th width="10%" class="center">Nota</th>
-                <th width="10%" class="center">Ações</th>
-              </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-          </table>
+          <div class="lista-wrapper">
+            <table class="lista-jogos" aria-label="Lista de jogos">
+              <thead class="table__header table__header--sticky">
+                <tr>
+                  <th class="center" width="10%">ID</th>
+                  <th width="20%">Jogo</th>
+                  <th width="20%">Descrição</th>
+                  <th width="10%">Imagem</th>
+                  <th width="10%">Gêneros</th>
+                  <th width="10%">Plataforma</th>
+                  <th width="10%" class="center">Nota</th>
+                  <th width="10%" class="center">Ações</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
 
           <div class="content-btn">
             <button onclick="jogo.exportarJSON()" class="btn btn-green">
