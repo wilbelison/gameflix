@@ -149,7 +149,7 @@ p {
     overflow: auto;
   }
 
-  #lista table {
+  #lista .lista-jogos {
     position: relative;
     min-width: 800px;
   }
@@ -224,15 +224,15 @@ textarea {
   margin-top: 20px;
 }
 
-#lista table {
+#lista .lista-jogos {
   border-collapse: collapse;
   width: 100%;
   background: #e5e5e5;
   color: #141414;
 }
 
-#lista table input,
-#lista table textarea {
+#lista .lista-jogos input,
+#lista .lista-jogos textarea {
   width: 100%;
   height: 100%;
   border: none;
@@ -245,38 +245,49 @@ textarea {
     sans-serif;
 }
 
-#lista table input:disabled,
-#lista table textarea:disabled {
+#lista .lista-jogos input:disabled,
+#lista .lista-jogos textarea:disabled {
   color: #141414;
   background-color: transparent;
   border: none;
   overflow: auto;
+  cursor: text;
 }
 
-#lista table input.center {
+#lista .lista-jogos input.center {
   text-align: center;
 }
 
-#lista table th,
-#lista table td {
+#lista .lista-jogos th,
+#lista .lista-jogos td {
   position: relative;
   text-align: left;
-  padding: 8px;
   border: 1px solid #ccc;
 }
 
-#lista table th {
+#lista .lista-jogos .row td {
+  color: #141414;
+}
+
+#lista .lista-jogos .row.edit input,
+#lista .lista-jogos .row.edit textarea { 
+  color: #000;
+}
+
+#lista .lista-jogos th {
   font-weight: bold;
   font-size: 13px;
   background-color: #eee;
+  padding: 16px;
 }
 
-#lista table td {
+#lista .lista-jogos td {
+  padding: 8px;
   font-size: 13px;
   background-color: #fff;
 }
 
-#lista table td .thumb {
+#lista .lista-jogos td .thumb {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -286,27 +297,28 @@ textarea {
   transition: all 200ms ease-in-out;
   z-index: 1;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-#lista table td:hover {
+#lista .lista-jogos td:hover {
   overflow: visible;
 }
 
-#lista table td:hover .thumb {
+#lista .lista-jogos td:hover .thumb {
   top: -8px;
   left: 8px;
   height: fit-content;
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 2;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
 }
 
-#lista table tr:hover td {
+#lista .lista-jogos .row:hover td {
   background-color: #eee;
 }
 
-#lista table .row .actionButtons,
-#lista table .row .editButtons {
+#lista .lista-jogos .row .actionButtons,
+#lista .lista-jogos .row .editButtons {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -314,24 +326,24 @@ textarea {
   transition: all 200ms ease-in-out;
 }
 
-#lista table .row:hover .actionButtons {
+#lista .lista-jogos .row:hover .actionButtons {
   opacity: 1;
 }
 
-#lista table .row .actionButtons .edit {
+#lista .lista-jogos .row .actionButtons .edit {
   background-color: #141414;
 }
 
-#lista table .row .editButtons .confirm {
+#lista .lista-jogos .row .editButtons .confirm {
   background-color: #65b539;
 }
 
-#lista table .row .actionButtons .delete,
-#lista table .row .editButtons .cancel {
+#lista .lista-jogos .row .actionButtons .delete,
+#lista .lista-jogos .row .editButtons .cancel {
   background-color: #e50914;
 }
 
-#lista table .row.edit td {
+#lista .lista-jogos .row.edit td {
   background-color: #e5e5e5;
   border-top-color: #e5e5e5;
   border-right-color: #e5e5e5;
@@ -339,30 +351,30 @@ textarea {
   padding: 7px;
 }
 
-#lista table .row .input-imagem,
-#lista table .row.edit .thumb {
+#lista .lista-jogos .row.edit .thumb {
   display: none;
 }
 
-#lista table .row.edit .input-imagem,
-#lista table .row .thumb {
-  display: block;
+#lista .lista-jogos .row.edit .input-imagem,
+#lista .lista-jogos .row .thumb {
+  opacity: 1;
+  z-index: 1;
 }
 
-#lista table .row .editButtons {
+#lista .lista-jogos .row .editButtons {
   display: none;
 }
 
-#lista table .row.edit .actionButtons {
+#lista .lista-jogos .row.edit .actionButtons {
   display: none;
 }
 
-#lista table .row.edit .editButtons {
+#lista .lista-jogos .row.edit .editButtons {
   display: flex;
   opacity: 1;
 }
 
-#lista table button {
+#lista .lista-jogos button {
   border: none;
   cursor: pointer;
   width: 100%;
@@ -376,11 +388,11 @@ textarea {
   color: #fff;
 }
 
-#lista table button:hover {
+#lista .lista-jogos button:hover {
   opacity: 1;
 }
 
-#lista table button img {
+#lista .lista-jogos button img {
   width: 16px;
   height: 16px;
   object-fit: contain;
@@ -392,7 +404,13 @@ textarea {
 
 
 @media (max-width: 768px) {
-  #lista table button {
+  #lista .lista-jogos .row .actionButtons {
+    flex-direction: column;
+    display: flex;
+    opacity: 1;
+  }
+  #lista .lista-jogos .row.edit .editButtons {
+    flex-direction: column;
     opacity: 1;
   }
 }

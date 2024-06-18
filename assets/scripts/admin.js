@@ -87,6 +87,9 @@ class Jogo {
         let img = document.createElement("img");
         img.src = this.arrayJogos[i].imagem;
         img.classList.add("thumb");
+        img.addEventListener("click", () => {
+          window.open(img.src, this.arrayJogos[i].nomeJogo);
+        });
         td_imagem.appendChild(img);
       }
 
