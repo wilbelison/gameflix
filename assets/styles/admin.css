@@ -154,29 +154,6 @@ p {
     min-width: 800px;
   }
 }
-@media (min-width: 481px) {
-  body {
-    padding: 20px;
-  }
-  .content {
-    width: 100%;
-    overflow: auto;
-  }
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1280px) {
-  body {
-    padding: 40px;
-  }
-  .container {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-}
 
 /* admin card */
 
@@ -265,7 +242,7 @@ textarea {
 }
 
 #lista .lista-jogos .row.edit input,
-#lista .lista-jogos .row.edit textarea { 
+#lista .lista-jogos .row.edit textarea {
   color: #000;
 }
 
@@ -397,8 +374,20 @@ textarea {
   text-align: center;
 }
 
+/* mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+  .content {
+    width: 100%;
+    overflow: auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
   #lista .lista-jogos .row .actionButtons {
     flex-direction: column;
     display: flex;
@@ -407,5 +396,16 @@ textarea {
   #lista .lista-jogos .row.edit .editButtons {
     flex-direction: column;
     opacity: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 40px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
