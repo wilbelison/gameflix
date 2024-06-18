@@ -38,6 +38,8 @@ select,
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  font-size: 16px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 .content-btn {
@@ -116,14 +118,41 @@ p {
   margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   html {
     padding: 10px;
   }
-  .content {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header .title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .header .nav {
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center ;
+  }
+
+  .header .link {
+    font-size: 16px;
+  }
+
+
+  #lista {
     width: 100%;
     overflow: auto;
   }
+
+  #lista table {
+    min-width: 800px;
+  }
+
   .container {
     width: 100%;
     overflow: auto;
@@ -256,7 +285,7 @@ textarea {
   border-radius: 8px;
 }
 
-#lista table td {
+#lista table td:hover {
   overflow: visible;
 }
 

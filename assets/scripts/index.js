@@ -139,4 +139,19 @@ window.addEventListener("scroll", () => {
     : header.classList.remove("transparent");
 });
 
+/* menu mobile */
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", function () {
+  nav.classList.toggle("active");
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
+
 /* filtros */
