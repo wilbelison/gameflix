@@ -155,3 +155,15 @@ nav.querySelectorAll("a").forEach((link) => {
 });
 
 /* filtros */
+
+const ordenarPor = function (data, field, order = "asc") {
+  return console.log("orderBy");
+};
+
+const limitarPor = function (data, quantity) {
+  return console.log("limitQuantity");
+};
+
+const buscarTermos = function (data, field, terms = []) {
+  return console.log("findTerms");
+};

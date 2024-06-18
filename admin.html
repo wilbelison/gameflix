@@ -29,8 +29,8 @@
           <h1 class="title">Painel de Controle</h1>
 
           <ul class="nav">
-            <li><a href="#lista" class="link">↓ Lista de jogos</a></li>
             <li><a href="./" class="link">← Voltar para a Home</a></li>
+            <li><a href="#lista" class="link">↓ Lista de jogos</a></li>
           </ul>
         </div>
 
@@ -73,11 +73,7 @@
           </div>
           <div class="lineInput">
             <label for="nota">Nota (opcional)</label>
-            <input
-              type="number"
-              id="nota"
-              placeholder="Ex.: 89"
-            />
+            <input type="number" id="nota" placeholder="Ex.: 89" />
           </div>
           <div class="content-btn">
             <button id="save" onclick="jogo.salvar()" class="btn btn-green">
@@ -96,17 +92,17 @@
         <div class="content" id="lista">
           <h2 class="sub-title">Lista de jogos</h2>
 
-          <table>
-            <thead>
+          <table id="jogos" aria-label="Lista de jogos">
+            <thead class="table__header table__header--sticky">
               <tr>
-                <th class="center">ID</th>
-                <th>Jogo</th>
-                <th>Descrição</th>
-                <th>Imagem</th>
-                <th>Gêneros</th>
-                <th>Plataforma</th>
-                <th class="center">Nota</th>
-                <th class="center">Ações</th>
+                <th class="center" width="10%">ID</th>
+                <th width="20%">Jogo</th>
+                <th width="20%">Descrição</th>
+                <th width="10%">Imagem</th>
+                <th width="10%">Gêneros</th>
+                <th width="10%">Plataforma</th>
+                <th width="10%" class="center">Nota</th>
+                <th width="10%" class="center">Ações</th>
               </tr>
             </thead>
             <tbody id="tbody"></tbody>
