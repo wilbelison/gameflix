@@ -98,17 +98,17 @@ fetch("./data/jogos.json")
     };
 
     const optionsSuperNintendo = {
-      ordenarPor: "nome",
+      ordenarPor: "nomeJogo",
       plataforma: ["Super Nintendo", "SNES"],
     };
 
     const optionsGenesis = {
-      ordenarPor: "nome",
+      ordenarPor: "nomeJogo",
       plataforma: ["Genesis", "Mega Drive"],
     };
 
     const optionsPlaystation = {
-      ordenarPor: "nome",
+      ordenarPor: "nomeJogo",
       plataforma: ["Playstation 1", "PS1"],
     };
 
