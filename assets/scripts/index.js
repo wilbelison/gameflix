@@ -1,8 +1,10 @@
-/* rows templates e containers */
+/* templates */
 
 const rowTemplate = Handlebars.compile(
   document.querySelector("#template-row").innerHTML
 );
+
+/* containers */
 
 const containerContinuar = document.querySelector(
   "#row-continuar .row-container"
@@ -15,6 +17,58 @@ const containerGenesis = document.querySelector("#row-genesis .row-container");
 const containerPlaystation = document.querySelector(
   "#row-playstation .row-container"
 );
+
+/* filtrarJogos */
+
+function filtrarJogos(jogos, options = {}) {
+  const {
+    nomeJogo = null,
+    ids = null,
+    limite = null,
+    ordenarPor = "nota",
+    reverso = false,
+    generos = null,
+    plataforma = null,
+  } = options;
+
+  const normalize = (str) =>
+    str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+  const filterByIds = (jogos) =>
+    ids
+      ? jogos.filter((jogo) =>
+          (Array.isArray(ids) ? ids : [ids]).includes(jogo.id)
+        )
+      : jogos;
+  const filterByField = (jogos, field, values) =>
+    values
+      ? jogos.filter((jogo) =>
+          (Array.isArray(values) ? values : [values]).some((value) =>
+            normalize(jogo[field]).includes(normalize(value))
+          )
+        )
+      : jogos;
+
+  let resultados = jogos;
+  resultados = filterByIds(resultados);
+  resultados = filterByField(resultados, "nomeJogo", nomeJogo);
+  resultados = filterByField(resultados, "generos", generos);
+  resultados = filterByField(resultados, "plataforma", plataforma);
+
+  if (ordenarPor) {
+    resultados.sort((a, b) => {
+      const [valorA, valorB] = [a[ordenarPor], b[ordenarPor]];
+      return valorA === valorB
+        ? 0
+        : (valorA < valorB ? -1 : 1) * (reverso ? -1 : 1);
+    });
+  }
+
+  return limite ? resultados.slice(0, limite) : resultados;
+}
 
 /* jogos iniciais */
 
@@ -31,35 +85,46 @@ fetch("./data/jogos.json")
       ? JSON.parse(localStorage.getItem("arrayJogos"))
       : jogosIniciais;
 
-    /* continuar jogando */
-    const jogosContinuar = arrayJogos.map((jogo) => {});
+    /* filtros */
 
-    /* super nintendo */
-    const jogosSuperNintendo = arrayJogos.filter(
-      (jogo) =>
-        jogo.plataforma.toLowerCase().includes("snes") ||
-        jogo.plataforma.toLowerCase().includes("super nintendo")
+    const optionsContinuar = {
+      ids: [0, 10, 20, 30, 40, 50, 1, 11, 21, 31, 41, 51]
+    };
+
+    const optionsTop = {
+      limite: 10,
+      ordenarPor: "nota",
+      reverso: true
+    };
+
+    const optionsSuperNintendo = {
+      ordenarPor: "nome",
+      plataforma: ["Super Nintendo", "SNES"],
+    };
+
+    const optionsGenesis = {
+      ordenarPor: "nome",
+      plataforma: ["Genesis", "Mega Drive"],
+    };
+
+    const optionsPlaystation = {
+      ordenarPor: "nome",
+      plataforma: ["Playstation 1", "PS1"],
+    };
+
+    containerContinuar.innerHTML = rowTemplate(
+      filtrarJogos(arrayJogos, optionsContinuar)
     );
-
-    /* mega drive */
-    const jogosGenesis = arrayJogos.filter(
-      (jogo) =>
-        jogo.plataforma.toLowerCase().includes("genesis") ||
-        jogo.plataforma.toLowerCase().includes("mega drive")
+    containerTop.innerHTML = rowTemplate(filtrarJogos(arrayJogos, optionsTop));
+    containerSuperNintendo.innerHTML = rowTemplate(
+      filtrarJogos(arrayJogos, optionsSuperNintendo)
     );
-
-    /* playstation  */
-    const jogosPlaystation = arrayJogos.filter((jogo) =>
-      jogo.plataforma.toLowerCase().includes("playstation")
+    containerGenesis.innerHTML = rowTemplate(
+      filtrarJogos(arrayJogos, optionsGenesis)
     );
-
-    /* renderiza conteudo */
-
-    containerContinuar.innerHTML = rowTemplate(arrayJogos);
-    containerTop.innerHTML = rowTemplate(arrayJogos);
-    containerSuperNintendo.innerHTML = rowTemplate(jogosSuperNintendo);
-    containerGenesis.innerHTML = rowTemplate(jogosGenesis);
-    containerPlaystation.innerHTML = rowTemplate(jogosPlaystation);
+    containerPlaystation.innerHTML = rowTemplate(
+      filtrarJogos(arrayJogos, optionsPlaystation)
+    );
 
     /* aplica controles de slider aos rows */
 
@@ -118,12 +183,12 @@ const applyRowControls = (e) => {
       item.addEventListener("click", (e) => {
         e.preventDefault();
         currentItem = key;
-        goToItem(items, currentItem);
+        goToItem(items, key);
       });
       item.addEventListener("focus", (e) => {
         e.preventDefault();
         currentItem = key;
-        goToItem(items, currentItem);
+        goToItem(items, key);
       });
     });
   });
@@ -153,17 +218,3 @@ nav.querySelectorAll("a").forEach((link) => {
     nav.classList.remove("active");
   });
 });
-
-/* filtros */
-
-const ordenarPor = function (data, field, order = "asc") {
-  return console.log("orderBy");
-};
-
-const limitarPor = function (data, quantity) {
-  return console.log("limitQuantity");
-};
-
-const buscarTermos = function (data, field, terms = []) {
-  return console.log("findTerms");
-};

@@ -258,6 +258,7 @@ body {
   margin: 238px 0;
   scroll-margin-top: 80px;
   margin-bottom: -210px;
+  counter-reset: item-number 0;
 }
 
 .row-title {
@@ -358,6 +359,7 @@ body {
   align-items: center;
   object-fit: cover;
   padding: 16px;
+  counter-increment: item-number 1;
 }
 
 .row-card-front .title {
@@ -387,7 +389,7 @@ body {
   width: 50%;
   top: -30px;
   left: 16px;
-  content: "#";
+  content: counter(item-number);
   font-size: 210px;
   line-height: 100%;
   font-weight: 700;
@@ -398,36 +400,10 @@ body {
     -4px 0 0 #595959;
 }
 
-.row.top .row-item:nth-child(1) .row-card-front::before {
-  content: "1";
-}
-.row.top .row-item:nth-child(2) .row-card-front::before {
-  content: "2";
-}
-.row.top .row-item:nth-child(3) .row-card-front::before {
-  content: "3";
-}
-.row.top .row-item:nth-child(4) .row-card-front::before {
-  content: "4";
-}
-.row.top .row-item:nth-child(5) .row-card-front::before {
-  content: "5";
-}
-.row.top .row-item:nth-child(6) .row-card-front::before {
-  content: "6";
-}
-.row.top .row-item:nth-child(7) .row-card-front::before {
-  content: "7";
-}
-.row.top .row-item:nth-child(8) .row-card-front::before {
-  content: "8";
-}
-.row.top .row-item:nth-child(9) .row-card-front::before {
-  content: "9";
-}
-.row.top .row-item:nth-child(10) .row-card-front::before {
-  content: "10";
-  left: -16px;
+.row.top .row-item:nth-child(n+10) .row-card-front::before {
+  left: 0;
+  top: -4px;
+  font-size: 160px;
 }
 
 .row-card-back {
@@ -463,14 +439,14 @@ body {
 }
 
 .row-card-back .score {
-  color: #F3D805;
+  color: #f3d805;
   font-size: 10px;
 }
 
 .row-card-back .score .number {
   line-height: 12px;
   padding: 2px;
-  background-color: #F3D805;
+  background-color: #f3d805;
   color: #000;
   margin: 4px;
   border-radius: 4px;
