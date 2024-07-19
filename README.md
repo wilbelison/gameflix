@@ -1,3 +1,5 @@
+#Gameflix Streaming Platform
+
 ![Gameflix](./assets/images/logo-gameflix.svg)
 
 **Projeto do Curso de JavaScript da Coderhouse**
