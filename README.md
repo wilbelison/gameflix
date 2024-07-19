@@ -1,4 +1,4 @@
-#Gameflix Streaming Platform
+# Gameflix Streaming Platform
 
 ![Gameflix](./assets/images/logo-gameflix.svg)
 
