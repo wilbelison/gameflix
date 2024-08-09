@@ -2,7 +2,7 @@
 
 ![Gameflix](./assets/images/logo-gameflix.svg)
 
-**Projeto do Curso de JavaScript da Coderhouse**
+**Selo Top 10 CoderTalent no Curso de JavaScript da Coderhouse**
 
 Gameflix é uma aplicação web desenvolvida durante o curso de JavaScript da Coderhouse. O objetivo foi criar uma plataforma onde fosse possível listar e administrar jogos, exibindo-os de forma interativa para os usuários finais, com um painel administrativo completo.
 
